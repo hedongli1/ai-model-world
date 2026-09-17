@@ -94,6 +94,22 @@ jobs:
           if-no-files-found: ignore
           retention-days: 30
 
+      # 快照提交后需要重建站点。但 GITHUB_TOKEN 推送不会触发 push 事件工作流
+      # （GitHub 官方限制），所以这里显式 dispatch 部署工作流。
+      # 不加这一步，数据每天同步成功、站点却永远停留在旧快照。
+      - name: 数据有更新时触发重新部署
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 只有本次确实提交了快照才需要重建，避免空跑。
+          if git diff --quiet HEAD~1 HEAD -- data/ 2>/dev/null; then
+            echo "本次未提交数据变更，跳过部署触发"
+            exit 0
+          fi
+          gh workflow run deploy.yml --repo "${{ github.repository }}" --ref main
+          echo "已触发 deploy.yml 重新部署"
+
       # 「零维护」承诺失效时必须留下一条看得见的痕迹。
       # 找标题为「数据同步失败」且仍 open 的 issue：有就追加评论，没有就新建——
       # 连续失败不会刷出一堆 issue，修好之后手动关掉那一条即可。

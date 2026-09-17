@@ -1,3 +1,26 @@
+> ### 📌 这是一份部署副本，不是原创项目
+>
+> **原作者：[程序员鱼皮（liyupi）](https://github.com/liyupi)**
+> **上游仓库：[liyupi/ai-model-world](https://github.com/liyupi/ai-model-world)**
+> **本项目：[hedongli1/ai-model-world](https://github.com/hedongli1/ai-model-world)**
+> **在线站点：https://hedongli1.github.io/ai-model-world/**
+>
+> 本仓库是上游项目的 **GitHub Pages 部署副本**。代码、文案、数据与视觉设计均出自原作者，
+> 遵循上游 **MIT 许可**（见 [LICENSE](LICENSE)）。
+>
+> **本副本只做了一件事**：新增 GitHub Pages 部署适配
+> （`.github/workflows/deploy.yml`，通过上游原生的 `NEXT_BASE_PATH` 机制把站点挂到
+> `/ai-model-world/` 子路径下），并让 `sync.yml` 在数据更新后显式触发重新部署。
+> **未改动任何业务代码、视觉或数据逻辑。**
+>
+> 若你只是想看这个项目，请优先访问[上游仓库](https://github.com/liyupi/ai-model-world)，
+> 那里有最新代码、完整文档与作者的一手说明。
+>
+> ⚠️ 第三方素材、字体与数据的署名义务**不因本副本而改变**，
+> 请务必阅读 [NOTICE.md](NOTICE.md) 与 [assets/lpc/CREDITS.md](assets/lpc/CREDITS.md)。
+
+---
+
 # 大模型世界 · AI Model World
 
 AI 模型多到记不住，新闻里天天蹦出新名字，可你很难说清此刻到底谁最强、谁最便宜、谁刚出生。

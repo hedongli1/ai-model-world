@@ -1,0 +1,98 @@
+name: 部署到 GitHub Pages
+
+# 把静态导出产物发布到 https://hedongli1.github.io/ai-model-world/
+#
+# 与上游的区别：上游用 Vercel / EdgeOne 托管，本仓库改用 GitHub Pages，
+# 因此需要 basePath —— 站点跑在 /ai-model-world/ 子路径下，不是域名根目录。
+# 项目原生支持这一点（见 next.config.ts 的 NEXT_BASE_PATH 说明），
+# 与上游发布到 B 站 Toy 时用的是同一套机制。
+
+on:
+  push:
+    branches: [main]
+    # 只跑数据/代码/构建配置的变更。纯文档改动不触发部署。
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'data/**'
+      - 'public/**'
+      - 'assets/**'
+      - 'next.config.ts'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+# sync.yml 用 GITHUB_TOKEN 推送数据后，不会自动触发本工作流
+# （GitHub 官方限制：除 workflow_dispatch / repository_dispatch 外，
+#  GITHUB_TOKEN 触发的事件不创建 workflow run）。
+# 所以 sync.yml 末尾会显式 dispatch 本工作流，确保数据更新后站点会重建。
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # 【重要】不要设置 NODE_ENV=development。
+      # 实测：该变量会让 `next build` 在预渲染 /_global-error 时崩溃，
+      # 报 `TypeError: Cannot read properties of null (reading 'useContext')`，
+      # 且错误信息完全指向无关方向（看起来像 React 副本冲突或 basePath 问题）。
+      # `next build` 必须在 production 模式下运行。
+      - name: 安装依赖
+        run: npm ci
+
+      # prebuild 钩子会先合成精灵图与搜索索引（约 13 秒），再执行 next build。
+      - name: 构建静态站点
+        env:
+          NEXT_BASE_PATH: /ai-model-world
+          NEXT_DIST_DIR: .next-build
+        run: npm run build
+
+      - name: 检查产物
+        run: |
+          echo "产物目录：.next-build" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| 项 | 值 |" >> $GITHUB_STEP_SUMMARY
+          echo "| :--- | ---: |" >> $GITHUB_STEP_SUMMARY
+          echo "| HTML 页面数 | $(find .next-build -name '*.html' | wc -l) |" >> $GITHUB_STEP_SUMMARY
+          echo "| 产物总大小 | $(du -sh .next-build | cut -f1) |" >> $GITHUB_STEP_SUMMARY
+          echo "| basePath | /ai-model-world |" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # 产物里必须带 basePath 前缀，否则子路径部署会全站 404。
+          # 这一步是廉价的前置断言，比部署完再发现要划算。
+          if ! grep -q '/ai-model-world/_next' .next-build/index.html; then
+            echo "::error::index.html 里找不到 /ai-model-world/_next 前缀，basePath 没生效，中止部署"
+            exit 1
+          fi
+          echo "✅ basePath 前缀检查通过"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .next-build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
