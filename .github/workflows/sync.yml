@@ -25,6 +25,9 @@ on:
 permissions:
   contents: write
   issues: write
+  # 需要它才能在快照提交后 dispatch 部署工作流。
+  # 实测缺失时报 `HTTP 403: Resource not accessible by integration`。
+  actions: write
 
 concurrency:
   group: sync
@@ -107,7 +110,12 @@ jobs:
             echo "本次未提交数据变更，跳过部署触发"
             exit 0
           fi
-          gh workflow run deploy.yml --repo "${{ github.repository }}" --ref main
+          # 直接打 API 而不走 gh CLI：少一层封装，缺权限时明确返回 403
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches" \
+            -d '{"ref":"main"}'
           echo "已触发 deploy.yml 重新部署"
 
       # 「零维护」承诺失效时必须留下一条看得见的痕迹。
