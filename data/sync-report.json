@@ -3,7 +3,7 @@
   "coding": {
     "_note": "ModelRecord.coding[] 的落地情况。一个赛制一条成绩，跨赛制永不混算。byLeague 是「该赛制覆盖了几个模型」，各赛制之间会重叠（一个模型可以有多条成绩）。flagship 是广场首屏当家门面的命中率——全站覆盖率会被长尾微调模型稀释，首屏才是用户真正看到的东西；without 如实列出仍然没有任何编程成绩的门面。modelsOnlyElo 是只有 WebDev Arena Elo、没有任何百分数成绩的模型：它们能排名，但读不出「解决了几成任务」，前端别把 Elo 塞进百分数的分位池。",
     "byAttribution": {
-      "third-party": 865,
+      "third-party": 867,
       "vendor-self-reported": 145
     },
     "byLeague": {
@@ -16,8 +16,8 @@
       "frontier_code": 33,
       "frontier_swe": 3,
       "gso": 35,
-      "livebench_agentic_coding": 101,
-      "livebench_coding": 120,
+      "livebench_agentic_coding": 102,
+      "livebench_coding": 121,
       "livecodebench": 3,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -42,7 +42,7 @@
     "byUnit": {
       "elo": 122,
       "index": 168,
-      "pct": 720
+      "pct": 722
     },
     "flagship": {
       "total": 40,
@@ -75,9 +75,9 @@
         "xiaomi/mimo-v2.5-pro-ultraspeed"
       ]
     },
-    "liveModels": 546,
+    "liveModels": 547,
     "modelsOnlyElo": 33,
-    "modelsWithAny": 240
+    "modelsWithAny": 241
   },
   "codingLeaguesBlocked": {
     "_note": "通过了合规过滤、但因为口径不是「写代码 / 软件工程」而没有进入 coding[] 的榜单，以及因为血缘指向 Artificial Analysis / LMArena 而被拦掉的条数。逐条理由写在 scripts/sync/sources/models-dev.ts 的 CODING_LEAGUES 与 sources/epoch.ts 的 CODING_BENCHMARKS 上方。",
@@ -109,221 +109,221 @@
   "counts": {
     "epochParamStrippedMatches": 3,
     "fromModelsDev": 403,
-    "models": 556,
-    "pendingDiscoveries": 42,
-    "promotedDiscoveries": 143,
+    "models": 557,
+    "pendingDiscoveries": 41,
+    "promotedDiscoveries": 144,
     "quickPromotedDiscoveries": 19,
     "releaseDateOutliersDropped": 22,
     "resurrected": 0,
     "retiredThisRun": 10,
     "retiredTotal": 10,
-    "vendors": 49
+    "vendors": 50
   },
   "coverage": {
     "benchmarks.aime": {
       "filled": 191,
-      "pct": 34.4,
-      "total": 556
+      "pct": 34.3,
+      "total": 557
     },
     "benchmarks.arc_agi_2": {
       "filled": 108,
       "pct": 19.4,
-      "total": 556
+      "total": 557
     },
     "benchmarks.eci": {
       "filled": 208,
-      "pct": 37.4,
-      "total": 556
+      "pct": 37.3,
+      "total": 557
     },
     "benchmarks.fiction_live": {
       "filled": 41,
       "pct": 7.4,
-      "total": 556
+      "total": 557
     },
     "benchmarks.gpqa_diamond": {
       "filled": 197,
       "pct": 35.4,
-      "total": 556
+      "total": 557
     },
     "benchmarks.swe_bench_pro": {
       "filled": 51,
       "pct": 9.2,
-      "total": 556
+      "total": 557
     },
     "benchmarks.swe_bench_vendor": {
       "filled": 40,
       "pct": 7.2,
-      "total": 556
+      "total": 557
     },
     "benchmarks.swe_bench_verified": {
       "filled": 48,
       "pct": 8.6,
-      "total": 556
+      "total": 557
     },
     "benchmarks.webdev_arena_elo": {
       "filled": 124,
       "pct": 22.3,
-      "total": 556
+      "total": 557
     },
     "benchmarks.任一编程信号": {
       "filled": 105,
       "pct": 18.9,
-      "total": 556
+      "total": 557
     },
     "benchmarks.任一编程信号(含 WebDev Arena)": {
       "filled": 161,
-      "pct": 29,
-      "total": 556
+      "pct": 28.9,
+      "total": 557
     },
     "capabilities.promptCaching": {
       "filled": 505,
-      "pct": 90.8,
-      "total": 556
+      "pct": 90.7,
+      "total": 557
     },
     "capabilities.reasoning": {
       "filled": 403,
-      "pct": 72.5,
-      "total": 556
+      "pct": 72.4,
+      "total": 557
     },
     "capabilities.structuredOutput": {
       "filled": 168,
       "pct": 30.2,
-      "total": 556
+      "total": 557
     },
     "capabilities.toolCall": {
       "filled": 403,
-      "pct": 72.5,
-      "total": 556
+      "pct": 72.4,
+      "total": 557
     },
     "coding.两条以上赛制": {
-      "filled": 196,
-      "pct": 35.3,
-      "total": 556
+      "filled": 197,
+      "pct": 35.4,
+      "total": 557
     },
     "coding.任一百分数成绩": {
-      "filled": 209,
-      "pct": 37.6,
-      "total": 556
+      "filled": 210,
+      "pct": 37.7,
+      "total": 557
     },
     "coding.任一编程成绩": {
-      "filled": 242,
-      "pct": 43.5,
-      "total": 556
+      "filled": 243,
+      "pct": 43.6,
+      "total": 557
     },
     "coding.有第三方复核成绩": {
-      "filled": 224,
-      "pct": 40.3,
-      "total": 556
+      "filled": 225,
+      "pct": 40.4,
+      "total": 557
     },
     "contextWindow": {
-      "filled": 550,
+      "filled": 551,
       "pct": 98.9,
-      "total": 556
+      "total": 557
     },
     "id": {
-      "filled": 556,
+      "filled": 557,
       "pct": 100,
-      "total": 556
+      "total": 557
     },
     "knowledgeCutoff": {
       "filled": 230,
-      "pct": 41.4,
-      "total": 556
+      "pct": 41.3,
+      "total": 557
     },
     "license": {
       "filled": 121,
-      "pct": 21.8,
-      "total": 556
+      "pct": 21.7,
+      "total": 557
     },
     "maxOutput": {
-      "filled": 538,
+      "filled": 539,
       "pct": 96.8,
-      "total": 556
+      "total": 557
     },
     "modalities.input": {
-      "filled": 556,
+      "filled": 557,
       "pct": 100,
-      "total": 556
+      "total": 557
     },
     "modalities.output": {
-      "filled": 556,
+      "filled": 557,
       "pct": 100,
-      "total": 556
+      "total": 557
     },
     "name": {
-      "filled": 556,
+      "filled": 557,
       "pct": 100,
-      "total": 556
+      "total": 557
     },
     "openWeights": {
       "filled": 403,
-      "pct": 72.5,
-      "total": 556
+      "pct": 72.4,
+      "total": 557
     },
     "params.activeB": {
       "filled": 31,
       "pct": 5.6,
-      "total": 556
+      "total": 557
     },
     "params.confidence!=unknown": {
       "filled": 513,
-      "pct": 92.3,
-      "total": 556
+      "pct": 92.1,
+      "total": 557
     },
     "params.sizeTier": {
       "filled": 299,
-      "pct": 53.8,
-      "total": 556
+      "pct": 53.7,
+      "total": 557
     },
     "params.totalB": {
       "filled": 214,
-      "pct": 38.5,
-      "total": 556
+      "pct": 38.4,
+      "total": 557
     },
     "pricing.cachedInputPerMTok": {
       "filled": 331,
-      "pct": 59.5,
-      "total": 556
+      "pct": 59.4,
+      "total": 557
     },
     "pricing.inputPerMTok": {
       "filled": 505,
-      "pct": 90.8,
-      "total": 556
+      "pct": 90.7,
+      "total": 557
     },
     "pricing.outputPerMTok": {
       "filled": 503,
-      "pct": 90.5,
-      "total": 556
+      "pct": 90.3,
+      "total": 557
     },
     "releaseDate": {
-      "filled": 556,
+      "filled": 557,
       "pct": 100,
-      "total": 556
+      "total": 557
     },
     "releaseDatePrecision.day": {
-      "filled": 547,
+      "filled": 548,
       "pct": 98.4,
-      "total": 556
+      "total": 557
     },
     "scores.三条以上榜单": {
       "filled": 266,
       "pct": 47.8,
-      "total": 556
+      "total": 557
     },
     "scores.任一成绩": {
-      "filled": 317,
-      "pct": 57,
-      "total": 556
+      "filled": 318,
+      "pct": 57.1,
+      "total": 557
     },
     "trainingComputeFlop": {
       "filled": 83,
       "pct": 14.9,
-      "total": 556
+      "total": 557
     },
     "vendorId": {
-      "filled": 556,
+      "filled": 557,
       "pct": 100,
-      "total": 556
+      "total": 557
     }
   },
   "epochBenchmarkRows": {
@@ -1515,8 +1515,8 @@
     },
     "nonEpochLeagues": {
       "claw_eval": 4,
-      "livebench_agentic_coding": 101,
-      "livebench_coding": 121,
+      "livebench_agentic_coding": 102,
+      "livebench_coding": 122,
       "livecodebench": 3,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -1833,9 +1833,9 @@
   "fallbackCoverage": {
     "_note": "models.dev 缺项时的兜底源贡献（存活模型口径）。before 是只认 models.dev 时的覆盖数，after 是兜底之后。仲裁顺序：定价 models.dev → LiteLLM → OpenRouter → Vercel；上下文 / 最大输出 / 模态 models.dev → OpenRouter → Vercel → LiteLLM。LiteLLM 只在第一方 provider 有条目、或所有托管商条目一致时才采信；图像/语音按张按分钟的价一律不折算。OpenRouter 的 benchmarks.* 已整段剔除，兜底只读 pricing / context_length / architecture。",
     "after": {
-      "contextWindow": 540,
-      "maxOutput": 528,
-      "modalities": 546,
+      "contextWindow": 541,
+      "maxOutput": 529,
+      "modalities": 547,
       "pricing.inputPerMTok": 495,
       "pricing.outputPerMTok": 493
     },
@@ -1848,15 +1848,15 @@
     },
     "bySource": {
       "contextWindow": {
-        "openrouter": 111,
-        "vercel-gateway": 32
-      },
-      "maxOutput": {
         "openrouter": 112,
         "vercel-gateway": 32
       },
+      "maxOutput": {
+        "openrouter": 113,
+        "vercel-gateway": 32
+      },
       "modalities": {
-        "openrouter": 111,
+        "openrouter": 112,
         "vercel-gateway": 32
       },
       "pricing.cachedInputPerMTok": {
@@ -1875,12 +1875,12 @@
         "vercel-gateway": 13
       }
     },
-    "liveModels": 546
+    "liveModels": 547
   },
-  "generatedAt": "2026-09-17T06:35:44.025Z",
+  "generatedAt": "2026-09-17T13:52:02.612Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
-    "matchedModels": 120,
+    "matchedModels": 121,
     "releaseSource": "LIVE_BENCH_RELEASES",
     "releasesSkipped": [
       "2024-06-24",
@@ -1974,7 +1974,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4110 条（对话类 3343 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4111 条（对话类 3344 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -1982,7 +1982,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 403 条；api.json 220 provider / 7843 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "note": "models.json 403 条；api.json 220 provider / 7842 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
@@ -2094,7 +2094,7 @@
         "xai/grok-4.6"
       ]
     },
-    "liveModels": 546,
+    "liveModels": 547,
     "upstreamRows": 309,
     "withFlop": 83
   },
