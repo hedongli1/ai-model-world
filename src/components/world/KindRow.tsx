@@ -80,7 +80,6 @@ export function KindRow({
       <SectionFrame
         accent={ACCENT}
         tint="linear-gradient(180deg, rgb(233 166 99 / 0.07), transparent 240px)"
-        scanDelay="-3s"
       >
         {/* 窄屏横向滑动；平板一行三张；1280 以上一行六张 */}
         <div className="-mx-2 flex snap-x gap-3 overflow-x-auto px-2 pb-1 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 md:grid-cols-3 xl:grid-cols-6 xl:gap-2">

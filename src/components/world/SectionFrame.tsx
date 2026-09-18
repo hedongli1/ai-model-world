@@ -17,7 +17,6 @@ import type { ReactNode } from 'react';
 export function SectionFrame({
   accent,
   tint,
-  scanDelay = '0s',
   className = 'px-2 pb-4 pt-4 sm:px-3',
   children,
 }: {
@@ -25,8 +24,6 @@ export function SectionFrame({
   accent: string;
   /** 顶部色晕，完整的 background-image 值 */
   tint: string;
-  /** 扫光的相位偏移，避免三个区同时亮 */
-  scanDelay?: string;
   /** 内边距，分区之间略有差别 */
   className?: string;
   children: ReactNode;
@@ -39,13 +36,9 @@ export function SectionFrame({
         borderColor: accent,
         backgroundImage: tint,
         backgroundColor: 'rgb(0 0 0 / 0.12)',
-        boxShadow: `0 -1px 12px -4px ${accent}`,
         ['--hud' as string]: accent,
       }}
     >
-      <span className="hud-scan-track" aria-hidden>
-        <span className="hud-scan" style={{ animationDelay: scanDelay }} />
-      </span>
 
       {/* 顶边两端的下垂短线 */}
       <span

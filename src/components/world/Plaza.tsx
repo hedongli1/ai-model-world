@@ -203,7 +203,6 @@ export function Plaza({
         <SectionFrame
           accent={style.accent}
           tint={style.ground}
-          scanDelay={continent === 'west' ? '-6s' : '-1.5s'}
           className="px-2 pb-5 pt-4 sm:px-3"
         >
           {streets.map((street, i) => (
