@@ -1,37 +1,7 @@
 {
   "_note": "只有单一上游源收录、尚未达到多源佐证门槛的模型。等到第二个独立源也收录它，下一次同步就会自动晋升进 data/models.json。例外：厂商已在 src/data/vendor-registry.ts 登记的，openrouter 或 vercel-gateway 单源即晋升，不会出现在这里。",
-  "generatedAt": "2026-09-18T02:36:55.192Z",
+  "generatedAt": "2026-09-18T17:11:37.522Z",
   "pending": [
-    {
-      "id": "aion-labs/aion-2.0",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "aion-labs/aion-3.0",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "aion-labs/aion-3.0-mini",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "aion-labs/aion-rp-llama-3.1-8b",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "anthracite-org/magnum-v4-72b",
-      "sources": [
-        "openrouter"
-      ]
-    },
     {
       "id": "anthropic/claude-opus-4.8-fast",
       "sources": [
@@ -40,30 +10,6 @@
     },
     {
       "id": "anthropic/claude-opus-5-fast",
-      "sources": [
-        "vercel-gateway"
-      ]
-    },
-    {
-      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-fin-free",
-      "sources": [
-        "vercel-gateway"
-      ]
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-sante-free",
-      "sources": [
-        "vercel-gateway"
-      ]
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash-vl-free",
       "sources": [
         "vercel-gateway"
       ]
@@ -180,66 +126,6 @@
       "id": "openai/o4-mini-fast",
       "sources": [
         "vercel-gateway"
-      ]
-    },
-    {
-      "id": "perceptron/perceptron-mk1",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "relace/relace-apply-3",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "relace/relace-search",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "sao10k/l3-lunaris-8b",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "sao10k/l3.1-euryale-70b",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "sao10k/l3.3-euryale-70b",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "thedrummer/cydonia-24b-v4.1",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "thedrummer/skyfall-36b-v2",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "thedrummer/unslopnemo-12b",
-      "sources": [
-        "openrouter"
-      ]
-    },
-    {
-      "id": "unbiased/pareto",
-      "sources": [
-        "openrouter"
       ]
     },
     {
