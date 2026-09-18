@@ -18,7 +18,8 @@
     "qa:tiers": "tsx scripts/qa/measure-tiers.ts",
     "bilibili": "tsx scripts/bilibili/refresh.ts",
     "toy:build": "NEXT_BASE_PATH=/toy/ai-model-world NEXT_DIST_DIR=.next-toy next build && tsx scripts/toy/pack.ts",
-    "_comment_toy": "B 站 Toy 包：构建时先统一前缀，pack.ts 再把它换成相对路径并给目录链接补 index.html。原因见 scripts/toy/pack.ts 顶部。产物在 .toy-pkg，用 toy create/update 上传。"
+    "toy:verify": "tsx scripts/toy/verify.ts",
+    "_comment_toy": "B 站 Toy 包：产物在 .toy-pkg，用 toy create/update 上传。上传前必须先跑 toy:verify——它把包挂到与线上同构的版本化路径下，用真实浏览器点一遍所有控件。线上挂载路径每次更新都会变，包里不能有任何写死的前缀，原因见 scripts/toy/pack.ts 顶部。"
   },
   "dependencies": {
     "csv-parse": "^7.0.2",

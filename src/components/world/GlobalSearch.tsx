@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { VendorCrest } from '@/components/character/VendorCrest';
 import { runSearch, type SearchIndex, type SearchResult } from '@/lib/search';
 import { DEFAULT_LANG, getDict } from '@/lib/i18n';
@@ -105,7 +105,6 @@ function toRows(r: SearchResult, dict: ReturnType<typeof getDict>): Row[] {
 
 export function GlobalSearch() {
   const dict = getDict(DEFAULT_LANG);
-  const router = useRouter();
   const [index, setIndex] = useState<SearchIndex | null>(cachedIndex);
   const [q, setQ] = useState('');
   /** 真正拿去查的关键词，比 q 慢半拍 */
@@ -148,12 +147,23 @@ export function GlobalSearch() {
     return () => document.removeEventListener('pointerdown', onDown);
   }, [open]);
 
-  const go = (href: string) => {
+  /**
+   * 结果行全部是真链接，跳转交给它们自己完成，这里只负责收起面板。
+   *
+   * 不用 `router.push`：静态托管到 B 站 Toy 那种只认完整文件路径的对象存储时，
+   * 编程式跳转会绕过打包脚本注入的链接兜底，落到一个 404 上。走真链接还顺带
+   * 拿到了中键新开、右键复制地址这些浏览器原生行为。
+   */
+  const dismiss = () => {
     setOpen(false);
     setQ('');
     setTerm('');
     inputRef.current?.blur();
-    router.push(href);
+  };
+
+  /** 键盘回车：找到面板里当前选中的那条链接，替用户点一下 */
+  const activate = (selector: string) => {
+    boxRef.current?.querySelector<HTMLElement>(selector)?.click();
   };
 
   const onKeyDown = (e: React.KeyboardEvent) => {
@@ -164,7 +174,7 @@ export function GlobalSearch() {
     }
     if (!open || !hasRows) {
       // 没有命中时回车退到总表，让读者至少落到一个能继续筛的地方
-      if (e.key === 'Enter' && q.trim()) go(allHref);
+      if (e.key === 'Enter' && q.trim()) activate('[data-nav="all"]');
       return;
     }
     if (e.key === 'ArrowDown') {
@@ -175,7 +185,7 @@ export function GlobalSearch() {
       setCursor((active - 1 + rows.length) % rows.length);
     } else if (e.key === 'Enter') {
       e.preventDefault();
-      go(rows[active]?.href ?? allHref);
+      activate('[data-active="1"], [data-nav="all"]');
     }
   };
 
@@ -233,9 +243,14 @@ export function GlobalSearch() {
           {index && !hasRows && !pending && (
             <div className="px-2 py-3 text-[13px] text-[var(--color-ghost)]">
               没有匹配的模型、厂商或能力。试试「多模态」「开源」「国内」，或者直接
-              <button type="button" onClick={() => go(allHref)} className="ml-1 text-[var(--color-gold)] underline">
+              <Link
+                href={allHref}
+                data-nav="all"
+                onClick={dismiss}
+                className="ml-1 text-[var(--color-gold)] underline"
+              >
                 去总表搜
-              </button>
+              </Link>
               。
             </div>
           )}
@@ -245,12 +260,13 @@ export function GlobalSearch() {
               {row.group && (
                 <div className="px-2 pb-0.5 pt-2 text-[12px] text-[var(--color-ghost)]">{row.group}</div>
               )}
-              <button
-                type="button"
+              <Link
+                href={row.href}
                 role="option"
                 aria-selected={i === active}
+                data-active={i === active ? '1' : undefined}
                 onPointerEnter={() => setCursor(i)}
-                onClick={() => go(row.href)}
+                onClick={dismiss}
                 className="flex w-full items-center gap-2 px-2 py-1.5 text-left"
                 style={{
                   background: i === active ? 'rgb(242 207 106 / 0.16)' : 'transparent',
@@ -273,18 +289,19 @@ export function GlobalSearch() {
                 {row.tail && (
                   <span className="shrink-0 font-pixel text-[12px] text-[var(--color-gold)]">{row.tail}</span>
                 )}
-              </button>
+              </Link>
             </div>
           ))}
 
           {result.modelTotal > result.models.length && (
-            <button
-              type="button"
-              onClick={() => go(allHref)}
-              className="mt-1 w-full border-t border-white/10 px-2 py-2 text-left text-[13px] text-[var(--color-parchment-dim)] hover:text-[var(--color-gold)]"
+            <Link
+              href={allHref}
+              data-nav="all"
+              onClick={dismiss}
+              className="mt-1 block w-full border-t border-white/10 px-2 py-2 text-left text-[13px] text-[var(--color-parchment-dim)] hover:text-[var(--color-gold)]"
             >
               在总表里看全部 {result.modelTotal} 个匹配 →
-            </button>
+            </Link>
           )}
         </div>
       )}
