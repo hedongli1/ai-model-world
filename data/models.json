@@ -27,7 +27,7 @@
     {
       "id": "aime",
       "inEci": true,
-      "models": 191,
+      "models": 192,
       "randomBaseline": 0.1,
       "releaseDate": "2024-12-19",
       "scoreCeiling": 100,
@@ -171,7 +171,7 @@
     {
       "id": "chess_puzzles",
       "inEci": true,
-      "models": 156,
+      "models": 157,
       "randomBaseline": 4.96,
       "releaseDate": "2025-12-10",
       "scoreCeiling": 100,
@@ -423,7 +423,7 @@
     {
       "id": "frontiermath_tier_4_v2",
       "inEci": true,
-      "models": 71,
+      "models": 72,
       "randomBaseline": 0,
       "releaseDate": "2026-06-12",
       "scoreCeiling": 100,
@@ -435,7 +435,7 @@
     {
       "id": "frontiermath_tiers_1_3_v2",
       "inEci": true,
-      "models": 99,
+      "models": 100,
       "randomBaseline": 0,
       "releaseDate": "2026-06-12",
       "scoreCeiling": 100,
@@ -699,7 +699,7 @@
     {
       "id": "mystery_game_puzzles",
       "inEci": true,
-      "models": 91,
+      "models": 92,
       "randomBaseline": 9.22,
       "releaseDate": "2026-07-30",
       "scoreCeiling": 100,
@@ -1117,7 +1117,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-17T13:55:05.964Z",
+  "generatedAt": "2026-09-18T02:36:55.192Z",
   "models": [
     {
       "benchmarks": {
@@ -12176,6 +12176,81 @@
         }
       ],
       "slug": "alibaba-qwen3-8-max-preview",
+      "trainingComputeFlop": null,
+      "vendorId": "alibaba"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-18T02:36:55.192Z",
+      "id": "alibaba/qwen3.8-omni-flash",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Qwen3.8 Omni Flash",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.016,
+        "inputPerMTok": 0.15,
+        "outputPerMTok": 0.47
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-17",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "alibaba-qwen3-8-omni-flash",
       "trainingComputeFlop": null,
       "vendorId": "alibaba"
     },
@@ -32408,8 +32483,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.255552,
-        "outputPerMTok": 1.1592
+        "inputPerMTok": 0.27,
+        "outputPerMTok": 1.2
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -44728,8 +44803,8 @@
         "totalB": 70.55
       },
       "pricing": {
-        "cachedInputPerMTok": 0.13,
-        "inputPerMTok": 0.25,
+        "cachedInputPerMTok": 0.11,
+        "inputPerMTok": 0.59,
         "outputPerMTok": 0.71
       },
       "provenance": {
@@ -46147,7 +46222,7 @@
     },
     {
       "benchmarks": {
-        "aime": null,
+        "aime": 99.17,
         "arc_agi_2": null,
         "eci": null,
         "fiction_live": null,
@@ -46214,6 +46289,7 @@
         "outputPerMTok": 4.25
       },
       "provenance": {
+        "benchmarks.aime": "epoch.ai",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.structuredOutput": "models.dev",
@@ -46239,6 +46315,38 @@
       "scores": [
         {
           "attribution": "third-party",
+          "league": "aime",
+          "score": 99.17,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "chess_puzzles",
+          "score": 35,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontiermath_tier_4_v2",
+          "score": 41.46,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontiermath_tiers_1_3_v2",
+          "score": 74.39,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "livebench_agentic_coding",
           "score": 64.09,
           "source": "livebench",
@@ -46251,6 +46359,14 @@
           "score": 81.06,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "mystery_game_puzzles",
+          "score": 14.14,
+          "source": "epoch.ai",
+          "sourceUrl": null,
           "unit": "pct"
         }
       ],
@@ -50028,8 +50144,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.34611,
-        "outputPerMTok": 0.46148
+        "inputPerMTok": 0.34443,
+        "outputPerMTok": 0.45924
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -74007,6 +74123,148 @@
     },
     {
       "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": null,
+      "firstSeenAt": "2026-09-18T02:36:55.192Z",
+      "id": "openai/gpt-image-2.5-flare",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "name": "GPT Image 2.5 Flare",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 4,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 1.25,
+        "inputPerMTok": 5,
+        "outputPerMTok": 30
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-08",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "openai-gpt-image-2-5-flare",
+      "trainingComputeFlop": null,
+      "vendorId": "openai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": null,
+      "firstSeenAt": "2026-09-18T02:36:55.192Z",
+      "id": "openai/gpt-image-2.5-sunburst",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "name": "GPT Image 2.5 Sunburst",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 4,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 1.25,
+        "inputPerMTok": 5,
+        "outputPerMTok": 30
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-08",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "openai-gpt-image-2-5-sunburst",
+      "trainingComputeFlop": null,
+      "vendorId": "openai"
+    },
+    {
+      "benchmarks": {
         "aime": 88.89,
         "arc_agi_2": null,
         "eci": 140.1,
@@ -78522,12 +78780,13 @@
         "name": "derived",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-16",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-09-18",
       "scores": [
         {
           "attribution": "third-party",
@@ -87788,38 +88047,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
-      "note": "ZIP 87 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 76 个；训练算力 309 行；去重后 407 个模型实体；合规拦截 1 个文件",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
+      "note": "ZIP 87 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 76 个；训练算力 309 行；去重后 408 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
       "note": "请求 155 个开源模型，成功 151，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
-      "note": "4111 条（对话类 3344 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
+      "note": "4115 条（对话类 3345 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
-      "note": "models.json 403 条；api.json 220 provider / 7842 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
+      "note": "models.json 406 条；api.json 221 provider / 7842 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
-      "note": "444 条；已剔除 artificial_analysis 187 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
+      "note": "446 条；已剔除 artificial_analysis 189 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -87828,8 +88087,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-17T13:55:05.964Z",
-      "note": "374 条（language 247 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-18T02:36:55.192Z",
+      "note": "375 条（language 248 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
