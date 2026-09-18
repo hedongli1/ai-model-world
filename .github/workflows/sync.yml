@@ -10,15 +10,16 @@ name: 同步模型数据
 
 on:
   schedule:
-    # 每 12 小时一次。上游 models.dev 的 CI 每小时第 17 分钟跑，我们错开到第 40 分钟，
-    # 这样抓到的总是它刚同步完的新数据。
+    # 每小时一次，固定在第 40 分钟。
     #
-    # 从每小时改成每天两次，是因为模型发布本来就不是按小时发生的事，
-    # 实测连着跑两次多数时候只有几个价格小数点在动。真要抢时效就手动触发
-    # （Actions 页的 Run workflow，或者 gh workflow run sync.yml），一分钟就跑完。
+    # 为什么不是更密：models.dev（主元数据源）的 CI 每小时第 17 分钟才跑一次，
+    # 它是这条血缘链的上游 —— 抓得比一小时更密不会增加数据新鲜度，只会白跑。
+    # 第 40 分钟是为了在它同步完（第 17 分）之后留出余量。
+    # GitHub 官方允许的下限是 5 分钟，但同时警告负载高时排队任务会被丢弃，
+    # 越密越可能不稳。每小时是与上游节奏对齐的最优解。
     #
-    # GitHub 的 cron 走 UTC，这里的 01:40 与 13:40 对应北京时间的 09:40 与 21:40。
-    - cron: '40 1,13 * * *'
+    # GitHub 的 cron 走 UTC。公开仓库使用标准 runner 免费，运行次数不产生费用。
+    - cron: '40 * * * *'
   workflow_dispatch:
 
 # 只申请所需的最小权限：contents 用于提交快照，issues 用于同步失败时开 issue 留痕
@@ -62,9 +63,14 @@ jobs:
         run: npm run sync
 
       - name: 提交快照
+        id: commit
         run: |
           if git diff --quiet -- data/; then
             echo "上游无变化，跳过提交"
+            # 显式标记「本次没有产生提交」。下游据此决定是否触发重新部署 ——
+            # 不能用 git log 反推：无提交时 HEAD 仍是上一次的提交，
+            # 拿它和它的父提交比较会一直为真，导致每次空跑都误触发部署。
+            echo "committed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name  "github-actions[bot]"
@@ -84,6 +90,7 @@ jobs:
           ")
           git commit -m "chore(data): 同步模型快照 — ${summary}"
           git push
+          echo "committed=true" >> "$GITHUB_OUTPUT"
 
       # 闸门拦截时留下证据，方便回溯是哪一次上游出了问题
       - name: 上传同步报告
@@ -100,17 +107,16 @@ jobs:
       # 快照提交后需要重建站点。但 GITHUB_TOKEN 推送不会触发 push 事件工作流
       # （GitHub 官方限制），所以这里显式 dispatch 部署工作流。
       # 不加这一步，数据每天同步成功、站点却永远停留在旧快照。
+      # 只有「本次运行确实提交了快照」才重建站点。
+      # 判断依据是上一步的 output，而不是 git log —— 无提交时 HEAD 不变，
+      # 用 HEAD~1..HEAD 去比较会永远为真，每次空跑都会白触发一次部署。
       - name: 数据有更新时触发重新部署
-        if: success()
+        if: success() && steps.commit.outputs.committed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          # 只有本次确实提交了快照才需要重建，避免空跑。
-          if git diff --quiet HEAD~1 HEAD -- data/ 2>/dev/null; then
-            echo "本次未提交数据变更，跳过部署触发"
-            exit 0
-          fi
           # 直接打 API 而不走 gh CLI：少一层封装，缺权限时明确返回 403
+          # （缺 actions: write 时报 `Resource not accessible by integration`）
           curl -fsS -X POST \
             -H "Authorization: Bearer $GH_TOKEN" \
             -H "Accept: application/vnd.github+json" \
