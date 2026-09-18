@@ -21,63 +21,20 @@ const ART_SOURCES = [
   },
 ];
 
-/** 站长与他的其他站点。放在页脚最上面一行，是全站唯一的引流位。站长名链到 B 站主页。 */
-const AUTHOR = { name: '程序员鱼皮', href: 'https://space.bilibili.com/12890453' };
-
 /**
- * 开源仓库。
+ * 二次开源标识（本仓库为部署副本）。
  *
- * 放在页脚下半段的署名区，与数据源、美术素材并排，而不是挤进上面那排引流按钮——
- * 那一排留给站长自己的站点。这里的三行本来就是在回答「这些东西都是哪来的」，
- * 「代码本身也是公开的」正好是同一个问题的最后一问。
+ * 原版页脚这里放的是原作者的身份标识与个人推广链接。本副本按部署方要求
+ * 移除个人引流位，改为标明本站的二次开源谱系——上游仓库保留在下方署名区，
+ * 与数据源、美术素材并列回答「这些东西都是哪来的」。
+ *
+ * ⚠️ 许可边界（改动前必读）：LICENSE（MIT）的版权声明、DATA_SOURCES（CC-BY 4.0）、
+ * ART_SOURCES（OGA-BY / OFL）、/credits/ 页面是许可要求，不是装饰，不得删。
  */
-const REPO = { name: 'liyupi/ai-model-world', href: 'https://github.com/liyupi/ai-model-world' };
-
-/** 免费教程单独拎出来做主按钮：三个站点并列时它会被淹没，而它是这里最值得点的一个。 */
-const TUTORIAL = {
-  name: 'AI 编程入门教程',
-  blurb: '零基础学 Vibe Coding · 免费',
-  href: 'https://ai.codefather.cn/vibe',
+const FORK = {
+  upstream: { name: 'liyupi/ai-model-world', href: 'https://github.com/liyupi/ai-model-world' },
+  thisRepo: { name: 'hedongli1/ai-model-world', href: 'https://github.com/hedongli1/ai-model-world' },
 };
-
-const AUTHOR_SITES = [
-  {
-    name: '鱼皮 AI 导航',
-    blurb: 'AI 工具、资讯与提示词大全',
-    href: 'https://ai.codefather.cn',
-  },
-  {
-    name: '编程导航',
-    blurb: '程序员一站式编程学习交流社区',
-    href: 'https://www.codefather.cn',
-  },
-];
-
-/** 一条像素小鱼，站长的徽记 */
-function FishCrest({ size = 14 }: { size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 12 12"
-      shapeRendering="crispEdges"
-      aria-hidden
-      className="shrink-0"
-    >
-      <rect x="3" y="3" width="6" height="6" fill="var(--color-gold)" />
-      <rect x="2" y="4" width="1" height="4" fill="var(--color-gold)" />
-      <rect x="4" y="2" width="4" height="1" fill="var(--color-gold)" />
-      <rect x="4" y="9" width="4" height="1" fill="var(--color-gold)" />
-      <rect x="9" y="4" width="1" height="1" fill="var(--color-gold)" />
-      <rect x="9" y="7" width="1" height="1" fill="var(--color-gold)" />
-      <rect x="10" y="3" width="1" height="1" fill="var(--color-gold)" />
-      <rect x="10" y="8" width="1" height="1" fill="var(--color-gold)" />
-      <rect x="10" y="5" width="1" height="2" fill="var(--color-gold)" />
-      <rect x="4" y="4" width="1" height="1" fill="var(--color-ink)" />
-      <rect x="6" y="6" width="2" height="1" fill="var(--color-ink)" opacity="0.4" />
-    </svg>
-  );
-}
 
 function ExtLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
@@ -104,45 +61,21 @@ export function SiteFooter() {
   return (
     <footer className="relative mt-12 border-t border-white/10 bg-black/40">
       <div className="mx-auto max-w-6xl px-4 py-5 text-[12px] leading-relaxed text-[var(--color-ghost)] sm:px-8">
-        {/*
-          站长与他的另外两个站。做成一排像素按钮而不是一行小字：
-          这是全站唯一的引流位，得让人看见；但只占一行，不抢正文。
-        */}
+        {/* 二次开源标识：上游谱系 + 本仓库，替代原版的作者身份行与引流按钮 */}
         <div className="mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-white/10 pb-4">
-          <a
-            href={AUTHOR.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 font-pixel text-[13px] text-[var(--color-parchment)] hover:text-[var(--color-gold)]"
-          >
-            <FishCrest />
-            {dict.footer.author}：{AUTHOR.name}
-          </a>
+          <span className="font-pixel text-[13px] text-[var(--color-parchment)]">
+            二次开源 · 基于 <ExtLink href={FORK.upstream.href}>{FORK.upstream.name}</ExtLink>（MIT）
+          </span>
           <span className="hidden opacity-40 sm:inline">|</span>
           <a
-            href={TUTORIAL.href}
+            href={FORK.thisRepo.href}
             target="_blank"
             rel="noopener noreferrer"
-            title={TUTORIAL.blurb}
             className="pixel-button flex items-center gap-1.5 bg-[var(--color-gold)] px-2 py-0.5 text-[12px] leading-tight text-[var(--color-ink)] hover:brightness-110"
           >
-            <span className="font-semibold">{TUTORIAL.name}</span>
-            <span className="hidden text-[var(--color-ink-soft)] sm:inline">{TUTORIAL.blurb}</span>
+            <span className="font-semibold">本站源码</span>
+            <span className="hidden text-[var(--color-ink-soft)] sm:inline">hedongli1/ai-model-world · 深海霓虹主题</span>
           </a>
-          <span className="text-[var(--color-ghost)]">{dict.footer.alsoVisit}</span>
-          {AUTHOR_SITES.map((s) => (
-            <a
-              key={s.href}
-              href={s.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={s.blurb}
-              className="pixel-button flex items-center gap-1.5 px-2 py-0.5 text-[12px] leading-tight text-[var(--color-ink)] hover:bg-[var(--color-gold)]"
-            >
-              <span className="font-semibold">{s.name}</span>
-              <span className="hidden text-[var(--color-ink-soft)] sm:inline">{s.blurb}</span>
-            </a>
-          ))}
         </div>
 
         <div className="flex flex-wrap gap-x-1.5 gap-y-1">
@@ -174,7 +107,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-1 flex flex-wrap gap-x-1.5 gap-y-1" title={dict.footer.sourceCodeHint}>
           <span>{dict.footer.sourceCode}</span>
-          <ExtLink href={REPO.href}>{REPO.name}</ExtLink>
+          <ExtLink href={FORK.upstream.href}>{FORK.upstream.name}</ExtLink>
           <span className="opacity-70">（MIT）</span>
         </div>
       </div>

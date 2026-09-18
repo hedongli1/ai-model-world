@@ -1,9 +1,8 @@
-> ### 📌 这是一份部署副本，不是原创项目
+> ### 📌 本项目是 [liyupi/ai-model-world](https://github.com/liyupi/ai-model-world)（MIT）的二次开源部署
 >
-> **原作者：[程序员鱼皮（liyupi）](https://github.com/liyupi)**
-> **上游仓库：[liyupi/ai-model-world](https://github.com/liyupi/ai-model-world)**
-> **本项目：[hedongli1/ai-model-world](https://github.com/hedongli1/ai-model-world)**
-> **在线站点：https://hedongli1.github.io/ai-model-world/**
+> 上游仓库：[liyupi/ai-model-world](https://github.com/liyupi/ai-model-world)
+> 本项目：[hedongli1/ai-model-world](https://github.com/hedongli1/ai-model-world)
+> 在线站点：https://hedongli1.github.io/ai-model-world/
 >
 > 本仓库是上游项目的 **GitHub Pages 部署副本**。代码、文案、数据与视觉设计均出自原作者，
 > 遵循上游 **MIT 许可**（见 [LICENSE](LICENSE)）。
