@@ -79,6 +79,136 @@
   --radius-none: 0px;
 }
 
+/* ═══════════════════════════════════════════════════════════════
+   二次开发主题层：「深海霓虹」Deep-Sea Neon（2026-09-18）
+   ═══════════════════════════════════════════════════════════════
+
+   本段为本仓库（部署副本）的视觉二次开发，仅覆盖颜色变量与新增动效，
+   不触碰任何组件逻辑、布局结构与数据展示。
+
+   设计意图：原「黎明」主题（蓝灰底 + 金色标题）保持克制。本主题把
+   天空换成深海——更深邃的墨蓝底、青绿色（teal/cyan）信息色、
+   琥珀保留为强调色。整体观感从「黎明小镇」变为「深海观测站」，
+   与原版可一键切换（见文末回退说明）。
+
+   ⚠️ 可回退性：删除本段（从 `二次开发主题层` 注释到 `回退说明结束`）
+   即完全恢复上游原版视觉，无需改动任何其他文件。
+   ═══════════════════════════════════════════════════════════════ */
+
+@layer theme {
+  /*
+   * ⚠️ 覆盖写法要点（踩过）：@theme 生成的变量形如
+   * `:root, :host { --color-void: #0d1017; }`。
+   * 在 @layer theme 里覆盖必须带同样的选择器 —— 裸写变量声明
+   * 是孤儿声明，浏览器静默丢弃（本主题第一版就是这么全灭的）。
+   * 同层内后出现的规则覆盖先出现的，因此这里整体生效。
+   */
+  :root,
+  :host {
+    /* 天空 · 深海：墨蓝更沉，晨昏线压暗 */
+    --color-void: #070d14;
+    --color-dusk: #0f1a24;
+    --color-twilight: #2a4a58;
+    --color-ember: #c05a4e;
+    --color-dawn: #52c7b8;
+    --color-gold: #4dd8c4;
+
+  /* 界面：羊皮纸保持暖白，但墨色带一点深海底的冷 */
+    --color-ink: #0a121a;
+    --color-ink-soft: #35505e;
+    --color-parchment: #e6f0ec;
+    --color-parchment-dim: #a9c4bc;
+    --color-parchment-lit: #f4fbf8;
+
+  /* 国外 / 国内识别色：天蓝更冷，朱红偏珊瑚（深海生物的暖色点缀） */
+    --color-west: #5cc8e8;
+    --color-east: #f08575;
+
+  /* 地面与建筑：浸入水下的石蓝 */
+    --color-grass: #3d6d6a;
+    --color-grass-dark: #2a4c4a;
+    --color-stone: #4a5e6e;
+    --color-stone-dark: #2e3d4a;
+    --color-ground: #16222c;
+
+  /* 屋子墙面的五档房龄：同一族深海蓝灰，明度阶不变 */
+    --color-wall-new: #263c4c;
+    --color-wall-young: #223646;
+    --color-wall-mid: #1f3240;
+    --color-wall-old: #1b2c39;
+    --color-wall-ghost: #182632;
+    --color-floor: #101a24;
+    --color-plate: #0d1620;
+
+  /* 状态：皇冠改青金，新生为荧光绿，幽灵灰 */
+    --color-crown: #4dd8c4;
+    --color-newborn: #7ee8a2;
+    --color-ghost: #7a93a3;
+  }
+}
+
+@layer base {
+  /*
+   * 深海光柱。深夜里从页面顶部渗下的微光，营造「水下光带」氛围。
+   * 只作用于背景层，不干扰任何内容可读性（最大亮度仅 4%）。
+   */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 50% -5%, rgb(93 216 196 / 0.06), transparent 70%),
+      radial-gradient(ellipse 40% 30% at 85% 110%, rgb(92 200 232 / 0.04), transparent 70%);
+  }
+
+  /* 尊重减弱动效偏好：环境光也随之静止 */
+  @media (prefers-reduced-motion: reduce) {
+    body::before {
+      display: none;
+    }
+  }
+}
+
+@layer components {
+  /*
+   * 深海气泡：悬浮容器的入场动效。从下方轻轻托起 6px 后停住，
+   * 只播一次，不循环——入场之后页画完全安静，不与既有
+   * idle-bob / walk-cycle 争抢注意力。
+   */
+  @keyframes deep-rise {
+    from {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .anim-rise {
+    animation: deep-rise 0.5s ease-out both;
+  }
+
+  /*
+   * 霓虹名牌：hover 时给标题描一圈深海荧光边。
+   * 复用上游已有的 --hud 变量机制（见 globals.css 的 hud-sweep），
+   * 颜色跟随主题层自动变化，无需写死色值。
+   */
+  .neon-frame:hover {
+    box-shadow:
+      0 0 0 1px var(--color-gold),
+      0 0 12px rgb(77 216 196 / 0.25);
+  }
+}
+
+/* ═══════════════════ 回退说明结束 ═══════════════════
+   恢复上游原版「黎明」主题：删除上方整个二次开发主题层即可。
+   上游变量定义（@theme 段）从未被修改，删除覆盖后自动生效。
+   ═══════════════════════════════════════════════════ */
+
 :root {
   /*
    * 角色显示盒。精灵图源是 64×64。

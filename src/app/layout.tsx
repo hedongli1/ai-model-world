@@ -26,7 +26,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#0d1017',
+  // 主题层已切换为「深海霓虹」，地址栏底色跟随。详见 globals.css 的二次开发主题层。
+  themeColor: '#070d14',
   colorScheme: 'dark',
 };
 
