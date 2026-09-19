@@ -110,9 +110,9 @@
     "epochParamStrippedMatches": 3,
     "fromModelsDev": 408,
     "models": 581,
-    "pendingDiscoveries": 23,
+    "pendingDiscoveries": 24,
     "promotedDiscoveries": 162,
-    "quickPromotedDiscoveries": 9,
+    "quickPromotedDiscoveries": 8,
     "releaseDateOutliersDropped": 22,
     "resurrected": 0,
     "retiredThisRun": 11,
@@ -1848,36 +1848,36 @@
     },
     "bySource": {
       "contextWindow": {
-        "openrouter": 126,
-        "vercel-gateway": 36
+        "openrouter": 127,
+        "vercel-gateway": 35
       },
       "maxOutput": {
-        "openrouter": 127,
-        "vercel-gateway": 36
+        "openrouter": 128,
+        "vercel-gateway": 35
       },
       "modalities": {
-        "openrouter": 126,
-        "vercel-gateway": 36
+        "openrouter": 127,
+        "vercel-gateway": 35
       },
       "pricing.cachedInputPerMTok": {
         "litellm": 97,
-        "openrouter": 10,
-        "vercel-gateway": 12
+        "openrouter": 11,
+        "vercel-gateway": 11
       },
       "pricing.inputPerMTok": {
         "litellm": 126,
-        "openrouter": 34,
-        "vercel-gateway": 14
+        "openrouter": 35,
+        "vercel-gateway": 13
       },
       "pricing.outputPerMTok": {
         "litellm": 126,
-        "openrouter": 34,
-        "vercel-gateway": 14
+        "openrouter": 35,
+        "vercel-gateway": 13
       }
     },
     "liveModels": 570
   },
-  "generatedAt": "2026-09-18T17:11:37.522Z",
+  "generatedAt": "2026-09-19T06:34:03.679Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 120,
@@ -1945,17 +1945,10 @@
       "sakana/namazu",
       "tencent/hy-mt2-lite",
       "tencent/hy-mt2-plus",
-      "tencent/hy-mt2-pro",
-      "zhipuai/glm-5.3-flashx"
+      "tencent/hy-mt2-pro"
     ]
   },
-  "releaseDateConflicts": [
-    {
-      "from": "2025-12-01",
-      "id": "mistral/mistral-large-2512",
-      "to": "2025-12-02"
-    }
-  ],
+  "releaseDateConflicts": [],
   "sources": {
     "derived": {
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
@@ -1970,7 +1963,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4306 条（对话类 3536 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4317 条（对话类 3537 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -1978,11 +1971,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 408 条；api.json 222 provider / 7852 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "note": "models.json 408 条；api.json 222 provider / 7859 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "note": "445 条；已剔除 artificial_analysis 188 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "447 条；已剔除 artificial_analysis 188 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -1990,7 +1983,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "376 条（language 249 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "372 条（language 249 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -2095,7 +2088,5 @@
     "withFlop": 83
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
-  "warnings": [
-    "1 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
-  ]
+  "warnings": []
 }
