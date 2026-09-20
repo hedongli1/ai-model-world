@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-09-19T16:46:28.420Z",
+  "generatedAt": "2026-09-20T06:56:54.664Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -706,6 +706,10 @@
       "basis": "price+naming",
       "tier": 4
     },
+    "mixedbread/toast-1": {
+      "basis": "price",
+      "tier": 1
+    },
     "moonshotai/kimi-k2": {
       "basis": "price",
       "tier": 2
@@ -1042,6 +1046,14 @@
       "basis": "price+naming",
       "tier": 4
     },
+    "quiverai/arrow-2": {
+      "basis": "price",
+      "tier": 4
+    },
+    "quiverai/arrow-2-telos": {
+      "basis": "price",
+      "tier": 4
+    },
     "rekaai/reka-edge": {
       "basis": "price+naming",
       "tier": 1
@@ -1075,6 +1087,10 @@
       "tier": 2
     },
     "sakana/sakana-namazu": {
+      "basis": "price",
+      "tier": 2
+    },
+    "stepfun/step-5-preview": {
       "basis": "price",
       "tier": 2
     },

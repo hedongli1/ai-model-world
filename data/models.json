@@ -1117,7 +1117,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-19T16:46:28.420Z",
+  "generatedAt": "2026-09-20T06:56:54.664Z",
   "models": [
     {
       "benchmarks": {
@@ -7909,7 +7909,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": true,
         "structuredOutput": true,
         "toolCall": true
@@ -7949,7 +7949,7 @@
         "totalB": 35.95
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.15625,
         "inputPerMTok": 0.25,
         "outputPerMTok": 2
       },
@@ -7970,6 +7970,7 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -11431,7 +11432,7 @@
         "totalB": 27.78
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
+        "cachedInputPerMTok": 0.085,
         "inputPerMTok": 0.4,
         "outputPerMTok": 2.55
       },
@@ -32612,7 +32613,7 @@
         "totalB": 1623.5
       },
       "pricing": {
-        "cachedInputPerMTok": 0.044,
+        "cachedInputPerMTok": 0.047907,
         "inputPerMTok": 1.32,
         "outputPerMTok": 3.96
       },
@@ -32888,8 +32889,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.255552,
-        "outputPerMTok": 1.1592
+        "inputPerMTok": 0.27,
+        "outputPerMTok": 1.19015
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -55582,6 +55583,78 @@
       "slug": "mistral-voxtral-small-latest",
       "trainingComputeFlop": null,
       "vendorId": "mistral"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 131000,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "mixedbread/toast-1",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 4000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Toast 1",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.036,
+        "inputPerMTok": 0.3,
+        "outputPerMTok": 0.72
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-08-13",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "mixedbread-toast-1",
+      "trainingComputeFlop": null,
+      "vendorId": "mixedbread"
     },
     {
       "benchmarks": {
@@ -78467,6 +78540,221 @@
         "toolCall": null
       },
       "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Ternary Bonsai 2 27B",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "totalB": 27
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.075,
+        "outputPerMTok": 0.5
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.totalB": "derived",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-18",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "prism-ml-ternary-bonsai-2-27b",
+      "trainingComputeFlop": null,
+      "vendorId": "prism-ml"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 131072,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "quiverai/arrow-2",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "image",
+          "text"
+        ]
+      },
+      "name": "Arrow 2",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 4,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.4,
+        "inputPerMTok": 4,
+        "outputPerMTok": 20
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-16",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "quiverai-arrow-2",
+      "trainingComputeFlop": null,
+      "vendorId": "quiverai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1050000,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "quiverai/arrow-2-telos",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "image",
+          "text"
+        ]
+      },
+      "name": "Arrow 2 Telos",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 4,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.6,
+        "inputPerMTok": 6,
+        "outputPerMTok": 30
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-16",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "quiverai-arrow-2-telos",
+      "trainingComputeFlop": null,
+      "vendorId": "quiverai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": false,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
       "contextWindow": 16384,
       "firstSeenAt": "2026-09-02T09:52:35.668Z",
       "id": "rekaai/reka-edge",
@@ -80151,6 +80439,76 @@
         }
       ],
       "slug": "stepfun-step-3-7-flash",
+      "trainingComputeFlop": null,
+      "vendorId": "stepfun"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "stepfun/step-5-preview",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 1000000,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Step 5 Preview",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.05,
+        "inputPerMTok": 1,
+        "outputPerMTok": 2.7
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-20",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "stepfun-step-5-preview",
       "trainingComputeFlop": null,
       "vendorId": "stepfun"
     },
@@ -85731,6 +86089,136 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
+        "promptCaching": null,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 15000,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "xai/grok-voice-stt-1.0",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 15000,
+      "modalities": {
+        "input": [
+          "audio"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Grok Voice STT 1.0",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "unknown",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-08-04",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "xai-grok-voice-stt-1-0",
+      "trainingComputeFlop": null,
+      "vendorId": "xai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 15000,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "xai/grok-voice-tts-1.0",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 15000,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "audio"
+        ]
+      },
+      "name": "Grok Voice TTS 1.0",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "unknown",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-07-31",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "xai-grok-voice-tts-1-0",
+      "trainingComputeFlop": null,
+      "vendorId": "xai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
         "promptCaching": true,
         "reasoning": true,
         "structuredOutput": null,
@@ -87043,9 +87531,9 @@
         "totalB": 10.29
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0043,
-        "inputPerMTok": 0.02,
-        "outputPerMTok": 0.21
+        "cachedInputPerMTok": 0.0044,
+        "inputPerMTok": 0.0218,
+        "outputPerMTok": 0.2184
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -89272,9 +89760,9 @@
         "modalities": "openrouter",
         "name": "derived",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
         "vendorId": "derived"
@@ -89467,42 +89955,109 @@
       "slug": "zhipuai-glm-5v-turbo",
       "trainingComputeFlop": null,
       "vendorId": "zhipuai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 10240,
+      "firstSeenAt": "2026-09-20T06:56:54.664Z",
+      "id": "zhipuai/glm-image",
+      "knowledgeCutoff": null,
+      "license": "MIT",
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "name": "GLM-Image",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 6.93
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-01-19",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "zhipuai-glm-image",
+      "trainingComputeFlop": null,
+      "vendorId": "zhipuai"
     }
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
       "note": "ZIP 87 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 76 个；训练算力 309 行；去重后 408 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
-      "note": "请求 157 个开源模型，成功 153，失败 4",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
+      "note": "请求 158 个开源模型，成功 154，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
-      "note": "4317 条（对话类 3537 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
+      "note": "4319 条（对话类 3539 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
-      "note": "models.json 408 条；api.json 222 provider / 7862 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
+      "note": "models.json 414 条；api.json 222 provider / 7869 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
-      "note": "447 条；已剔除 artificial_analysis 188 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
+      "note": "446 条；已剔除 artificial_analysis 187 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -89511,8 +90066,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-19T16:46:28.420Z",
-      "note": "375 条（language 252 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-20T06:56:54.664Z",
+      "note": "376 条（language 253 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -89788,6 +90343,16 @@
       "nameZh": "Mistral"
     },
     {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": null,
+      "id": "mixedbread",
+      "motif": "wanderer",
+      "name": "Mixedbread",
+      "nameZh": "Mixedbread"
+    },
+    {
       "accentColor": "#0d1117",
       "continent": "east",
       "country": "CN",
@@ -89886,6 +90451,26 @@
       "motif": "wave",
       "name": "Poolside",
       "nameZh": "Poolside"
+    },
+    {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": null,
+      "id": "prism-ml",
+      "motif": "wanderer",
+      "name": "Prism ML",
+      "nameZh": "Prism ML"
+    },
+    {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": null,
+      "id": "quiverai",
+      "motif": "wanderer",
+      "name": "Quiverai",
+      "nameZh": "Quiverai"
     },
     {
       "accentColor": "#5b5bd6",
