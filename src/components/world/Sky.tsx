@@ -47,7 +47,7 @@ function Stars() {
             top: `${s.top}%`,
             width: s.size,
             height: s.size,
-            background: '#fffaf0',
+            background: '#f4f6f8',
             opacity: s.opacity,
             animationDuration: `${2 + (i % 4)}s`,
           }}
@@ -64,13 +64,13 @@ function Sun() {
   return (
     <div
       className="absolute"
-      style={{ right: '9%', top: '22%', filter: 'drop-shadow(0 0 24px rgb(245 215 110 / 0.45))' }}
+      style={{ right: '9%', top: '22%', filter: 'drop-shadow(0 0 24px rgb(232 180 92 / 0.45))' }}
     >
       <div
         className="absolute rounded-full"
         style={{
           inset: -46,
-          background: 'radial-gradient(circle, rgb(245 215 110 / 0.22) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgb(232 180 92 / 0.22) 0%, transparent 70%)',
         }}
       />
       <div className="relative">
@@ -81,7 +81,7 @@ function Sun() {
               width: w * px,
               height: px,
               marginLeft: ((10 - w) / 2) * px,
-              background: i < 4 ? '#f7e08a' : i < 8 ? '#f5d76e' : '#f2a65a',
+              background: i < 4 ? '#f0ca7a' : i < 8 ? '#e8b45c' : '#d8943f',
             }}
           />
         ))}
@@ -271,7 +271,7 @@ export function Sky({
         className="absolute inset-0"
         style={{
           background:
-            'linear-gradient(to bottom, transparent 45%, rgb(242 166 90 / 0.16) 80%, rgb(245 215 110 / 0.26) 100%)',
+            'linear-gradient(to bottom, transparent 45%, rgb(216 148 63 / 0.16) 80%, rgb(232 180 92 / 0.26) 100%)',
         }}
       />
       <Skyline height={skylineHeight} />
