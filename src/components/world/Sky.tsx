@@ -264,9 +264,20 @@ export function Sky({
         }}
       />
       <Stars />
+      {/* 银河光带：西侧夜空的淡蓝紫柔光，与「左夜右昼」隐喻一致。
+          纯径向渐变、确定性，只在天空 banner 内（SSR 安全的装饰层） */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse 95% 42% at 32% 46%, rgb(130 160 220 / 0.12), transparent 68%), radial-gradient(ellipse 70% 28% at 24% 52%, rgb(190 170 235 / 0.08), transparent 70%)',
+        }}
+      />
       <Sun />
       <Clouds />
-      {/* 地平线附近压一层暖光，制造大气透视 */}
+      {/* 地平线附近压一层暖光，制造大气透视。
+          底部透明→暖色过渡同时充当 banner 与正文的渐隐衔接，消除「贴片感」 */}
+      
       <div
         className="absolute inset-0"
         style={{

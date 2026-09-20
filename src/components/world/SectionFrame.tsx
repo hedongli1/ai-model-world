@@ -53,12 +53,12 @@ export function SectionFrame({
       />
       {/* 底边两角的折角。透明度压到一半，让顶边始终是这个区最亮的一条线 */}
       <span
-        className={`${corner} -bottom-px -left-px border-b-2 border-l-2 opacity-50`}
+        className={`${corner} -bottom-px -left-px border-b-2 border-l-2 opacity-35`}
         style={{ borderColor: accent }}
         aria-hidden
       />
       <span
-        className={`${corner} -bottom-px -right-px border-b-2 border-r-2 opacity-50`}
+        className={`${corner} -bottom-px -right-px border-b-2 border-r-2 opacity-35`}
         style={{ borderColor: accent }}
         aria-hidden
       />
