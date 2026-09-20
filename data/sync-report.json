@@ -76,7 +76,7 @@
         "xiaomi/mimo-v2.5-pro-ultraspeed"
       ]
     },
-    "liveModels": 578,
+    "liveModels": 577,
     "modelsOnlyElo": 33,
     "modelsWithAny": 240
   },
@@ -109,15 +109,15 @@
   },
   "counts": {
     "epochParamStrippedMatches": 3,
-    "fromModelsDev": 414,
+    "fromModelsDev": 413,
     "models": 589,
     "pendingDiscoveries": 23,
     "promotedDiscoveries": 164,
     "quickPromotedDiscoveries": 9,
     "releaseDateOutliersDropped": 22,
     "resurrected": 0,
-    "retiredThisRun": 11,
-    "retiredTotal": 11,
+    "retiredThisRun": 12,
+    "retiredTotal": 12,
     "vendors": 62
   },
   "coverage": {
@@ -590,9 +590,9 @@
         "landed": 157,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 223,
+        "rows": 224,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 215,
+        "scored": 216,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -890,9 +890,9 @@
         "landed": 72,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 63,
+        "rows": 64,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 63,
+        "scored": 64,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -905,9 +905,9 @@
         "landed": 100,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 107,
+        "rows": 108,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 107,
+        "scored": 108,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1160,9 +1160,9 @@
         "landed": 92,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 128,
+        "rows": 129,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 128,
+        "scored": 129,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1834,17 +1834,17 @@
   "fallbackCoverage": {
     "_note": "models.dev 缺项时的兜底源贡献（存活模型口径）。before 是只认 models.dev 时的覆盖数，after 是兜底之后。仲裁顺序：定价 models.dev → LiteLLM → OpenRouter → Vercel；上下文 / 最大输出 / 模态 models.dev → OpenRouter → Vercel → LiteLLM。LiteLLM 只在第一方 provider 有条目、或所有托管商条目一致时才采信；图像/语音按张按分钟的价一律不折算。OpenRouter 的 benchmarks.* 已整段剔除，兜底只读 pricing / context_length / architecture。",
     "after": {
-      "contextWindow": 570,
+      "contextWindow": 569,
       "maxOutput": 556,
-      "modalities": 578,
-      "pricing.inputPerMTok": 521,
+      "modalities": 577,
+      "pricing.inputPerMTok": 520,
       "pricing.outputPerMTok": 518
     },
     "before": {
-      "contextWindow": 406,
+      "contextWindow": 405,
       "maxOutput": 391,
-      "modalities": 414,
-      "pricing.inputPerMTok": 345,
+      "modalities": 413,
+      "pricing.inputPerMTok": 344,
       "pricing.outputPerMTok": 342
     },
     "bySource": {
@@ -1876,9 +1876,9 @@
         "vercel-gateway": 14
       }
     },
-    "liveModels": 578
+    "liveModels": 577
   },
-  "generatedAt": "2026-09-20T06:56:54.664Z",
+  "generatedAt": "2026-09-20T16:57:41.647Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 120,
@@ -1973,7 +1973,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 414 条；api.json 222 provider / 7869 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "note": "models.json 413 条；api.json 222 provider / 7865 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
@@ -2085,7 +2085,7 @@
         "xai/grok-4.6"
       ]
     },
-    "liveModels": 578,
+    "liveModels": 577,
     "upstreamRows": 309,
     "withFlop": 83
   },
