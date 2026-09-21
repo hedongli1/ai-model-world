@@ -1117,7 +1117,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-21T07:05:52.035Z",
+  "generatedAt": "2026-09-21T18:53:46.354Z",
   "models": [
     {
       "benchmarks": {
@@ -7027,7 +7027,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.0574,
-        "inputPerMTok": 0.45,
+        "inputPerMTok": 0.5,
         "outputPerMTok": 3.95
       },
       "provenance": {
@@ -11432,9 +11432,9 @@
         "totalB": 27.78
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
+        "cachedInputPerMTok": 0.085,
         "inputPerMTok": 0.4,
-        "outputPerMTok": 2.5
+        "outputPerMTok": 2.55
       },
       "provenance": {
         "benchmarks.swe_bench_pro": "models.dev",
@@ -12501,8 +12501,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.016,
-        "inputPerMTok": 0.15,
-        "outputPerMTok": 0.47
+        "inputPerMTok": 0.13,
+        "outputPerMTok": 0.43
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -16369,7 +16369,7 @@
       "id": "anthropic/claude-opus-4",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 32000,
+      "maxOutput": 8192,
       "modalities": {
         "input": [
           "image",
@@ -16403,9 +16403,9 @@
         "benchmarks.swe_bench_verified": "epoch.ai",
         "capabilities.promptCaching": "derived",
         "coding": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "litellm",
@@ -20672,7 +20672,7 @@
           "unit": "index"
         }
       ],
-      "contextWindow": 1000000,
+      "contextWindow": 200000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "anthropic/claude-sonnet-4",
       "knowledgeCutoff": null,
@@ -30156,7 +30156,7 @@
         "webdev_arena_elo": 1367
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": null,
         "structuredOutput": null,
         "toolCall": null
@@ -30227,7 +30227,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.02,
         "inputPerMTok": 0.27,
         "outputPerMTok": 0.41
       },
@@ -30245,6 +30245,7 @@
         "modalities": "openrouter",
         "name": "derived",
         "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "litellm",
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "epoch.ai",
@@ -30539,7 +30540,7 @@
         "webdev_arena_elo": 1324.54
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": null,
         "structuredOutput": null,
         "toolCall": null
@@ -30594,7 +30595,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.028,
         "inputPerMTok": 0.28,
         "outputPerMTok": 0.4
       },
@@ -30612,6 +30613,7 @@
         "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "litellm",
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "epoch.ai",
@@ -31550,9 +31552,9 @@
         "totalB": 296.35
       },
       "pricing": {
-        "cachedInputPerMTok": 0.028,
+        "cachedInputPerMTok": 0.0252,
         "inputPerMTok": 0.14,
-        "outputPerMTok": 0.28
+        "outputPerMTok": 0.284
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -32889,8 +32891,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.29754,
-        "outputPerMTok": 1.2
+        "inputPerMTok": 0.27,
+        "outputPerMTok": 1.19015
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -41385,6 +41387,79 @@
     },
     {
       "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-09-21T18:53:46.354Z",
+      "id": "google/gemma-4-12b-it",
+      "knowledgeCutoff": null,
+      "license": "Apache-2.0",
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Gemma 4 12B IT",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 11.96
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.025,
+        "inputPerMTok": 0.1,
+        "outputPerMTok": 0.25
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-06-09",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "google-gemma-4-12b-it",
+      "trainingComputeFlop": null,
+      "vendorId": "google"
+    },
+    {
+      "benchmarks": {
         "aime": 82.22,
         "arc_agi_2": null,
         "eci": 141.86,
@@ -42658,9 +42733,9 @@
         "totalB": 8
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.15
+        "cachedInputPerMTok": 0.015,
+        "inputPerMTok": 0.06,
+        "outputPerMTok": 0.25
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -42669,9 +42744,9 @@
         "modalities": "openrouter",
         "name": "derived",
         "params.totalB": "derived",
-        "pricing.cachedInputPerMTok": "litellm",
-        "pricing.inputPerMTok": "litellm",
-        "pricing.outputPerMTok": "litellm",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
         "vendorId": "derived"
@@ -50749,8 +50824,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.3438,
-        "outputPerMTok": 0.4584
+        "inputPerMTok": 0.3447,
+        "outputPerMTok": 0.4596
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -58423,6 +58498,79 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-09-21T18:53:46.354Z",
+      "id": "nex-agi/nex-n2-pro",
+      "knowledgeCutoff": null,
+      "license": "Apache-2.0",
+      "maxOutput": 262144,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Nex-N2-Pro",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 396.8
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.25,
+        "inputPerMTok": 0.5,
+        "outputPerMTok": 2.5
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-06-02",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "nex-agi-nex-n2-pro",
+      "trainingComputeFlop": null,
+      "vendorId": "nex-agi"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
         "promptCaching": false,
         "reasoning": null,
         "structuredOutput": null,
@@ -59320,9 +59468,9 @@
         "totalB": 30
       },
       "pricing": {
-        "cachedInputPerMTok": 0.025,
-        "inputPerMTok": 0.06,
-        "outputPerMTok": 0.24
+        "cachedInputPerMTok": 0.03,
+        "inputPerMTok": 0.05,
+        "outputPerMTok": 0.2
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -59335,9 +59483,9 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "derived",
-        "pricing.cachedInputPerMTok": "vercel-gateway",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
         "vendorId": "derived"
@@ -75300,7 +75448,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.03,
         "inputPerMTok": 0.05,
-        "outputPerMTok": 0.19999999999999998
+        "outputPerMTok": 0.2
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -80456,9 +80604,9 @@
       },
       "capabilities": {
         "promptCaching": true,
-        "reasoning": null,
-        "structuredOutput": null,
-        "toolCall": null
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
       },
       "coding": [],
       "contextWindow": 1000000,
@@ -80470,14 +80618,15 @@
       "modalities": {
         "input": [
           "image",
-          "text"
+          "text",
+          "video"
         ],
         "output": [
           "text"
         ]
       },
       "name": "Step 5 Preview",
-      "openWeights": null,
+      "openWeights": false,
       "params": {
         "activeB": null,
         "confidence": "estimated",
@@ -80492,19 +80641,23 @@
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "vercel-gateway",
-        "maxOutput": "vercel-gateway",
-        "modalities": "vercel-gateway",
-        "name": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "vercel-gateway",
-        "pricing.inputPerMTok": "vercel-gateway",
-        "pricing.outputPerMTok": "vercel-gateway",
-        "releaseDate": "vercel-gateway",
-        "releaseDatePrecision": "vercel-gateway",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
       },
-      "releaseDate": "2026-09-20",
+      "releaseDate": "2026-09-16",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [],
@@ -82790,6 +82943,81 @@
       "slug": "vispark-vision-small",
       "trainingComputeFlop": null,
       "vendorId": "vispark"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-21T18:53:46.354Z",
+      "id": "vivgrid/viv-fast",
+      "knowledgeCutoff": "2026-09",
+      "license": null,
+      "maxOutput": 256000,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Viv Fast",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.05,
+        "inputPerMTok": 0.13,
+        "outputPerMTok": 0.4
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-21",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "vivgrid-viv-fast",
+      "trainingComputeFlop": null,
+      "vendorId": "vivgrid"
     },
     {
       "benchmarks": {
@@ -85837,6 +86065,82 @@
         "structuredOutput": true,
         "toolCall": true
       },
+      "coding": [],
+      "contextWindow": 500000,
+      "firstSeenAt": "2026-09-21T18:53:46.354Z",
+      "id": "xai/grok-4.7",
+      "knowledgeCutoff": "2026-05",
+      "license": null,
+      "maxOutput": 500000,
+      "modalities": {
+        "input": [
+          "image",
+          "pdf",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Grok 4.7",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 3,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.5,
+        "inputPerMTok": 2,
+        "outputPerMTok": 6
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-21",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "xai-grok-4-7",
+      "trainingComputeFlop": null,
+      "vendorId": "xai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
+      },
       "coding": [
         {
           "attribution": "third-party",
@@ -86008,6 +86312,71 @@
       "retiredAt": null,
       "scores": [],
       "slug": "xai-grok-imagine-image-2-0",
+      "trainingComputeFlop": null,
+      "vendorId": "xai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 16000,
+      "firstSeenAt": "2026-09-21T18:53:46.354Z",
+      "id": "xai/grok-imagine-image-quality",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "image"
+        ]
+      },
+      "name": "Grok Imagine Image Quality",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "unknown",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-04-03",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "xai-grok-imagine-image-quality",
       "trainingComputeFlop": null,
       "vendorId": "xai"
     },
@@ -87502,7 +87871,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -87532,12 +87901,11 @@
         "totalB": 10.29
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0044,
-        "inputPerMTok": 0.0218,
-        "outputPerMTok": 0.2184
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -87547,9 +87915,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
-        "pricing.inputPerMTok": "models.dev",
-        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -90027,38 +90392,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
       "note": "ZIP 87 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 76 个；训练算力 309 行；去重后 408 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
-      "note": "请求 158 个开源模型，成功 154，失败 4",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
+      "note": "请求 160 个开源模型，成功 156，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
-      "note": "4325 条（对话类 3539 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
+      "note": "4464 条（对话类 3551 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
-      "note": "models.json 413 条；api.json 222 provider / 7864 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
+      "note": "models.json 419 条；api.json 223 provider / 7942 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
-      "note": "446 条；已剔除 artificial_analysis 187 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
+      "note": "440 条；已剔除 artificial_analysis 181 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -90067,8 +90432,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-21T07:05:52.035Z",
-      "note": "376 条（language 253 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-21T18:53:46.354Z",
+      "note": "377 条（language 254 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -90384,6 +90749,16 @@
       "nameZh": "Motif Technologies"
     },
     {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": null,
+      "id": "nex-agi",
+      "motif": "wanderer",
+      "name": "NEX AGI",
+      "nameZh": "NEX AGI"
+    },
+    {
       "accentColor": "#e0b341",
       "continent": "west",
       "country": "US",
@@ -90652,6 +91027,16 @@
       "motif": "wanderer",
       "name": "Vispark",
       "nameZh": "Vispark"
+    },
+    {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": "https://docs.vivgrid.com",
+      "id": "vivgrid",
+      "motif": "wanderer",
+      "name": "Vivgrid",
+      "nameZh": "Vivgrid"
     },
     {
       "accentColor": "#7c8da6",

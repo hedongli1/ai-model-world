@@ -46,8 +46,8 @@
     },
     "flagship": {
       "total": 40,
-      "withAnyCoding": 15,
-      "withPercentCoding": 13,
+      "withAnyCoding": 14,
+      "withPercentCoding": 12,
       "without": [
         "ai21/jamba-mini",
         "aisingapore/gemma-sea-lion-v4-27b-it",
@@ -73,10 +73,11 @@
         "tencent/hy-mt2-plus",
         "trendyol/asure-12b",
         "upstage/solar-pro4",
+        "xai/grok-4.7",
         "xiaomi/mimo-v2.5-pro-ultraspeed"
       ]
     },
-    "liveModels": 577,
+    "liveModels": 582,
     "modelsOnlyElo": 33,
     "modelsWithAny": 240
   },
@@ -109,222 +110,222 @@
   },
   "counts": {
     "epochParamStrippedMatches": 3,
-    "fromModelsDev": 413,
-    "models": 589,
+    "fromModelsDev": 419,
+    "models": 594,
     "pendingDiscoveries": 23,
-    "promotedDiscoveries": 164,
-    "quickPromotedDiscoveries": 9,
+    "promotedDiscoveries": 163,
+    "quickPromotedDiscoveries": 8,
     "releaseDateOutliersDropped": 22,
     "resurrected": 0,
     "retiredThisRun": 12,
     "retiredTotal": 12,
-    "vendors": 62
+    "vendors": 64
   },
   "coverage": {
     "benchmarks.aime": {
       "filled": 192,
-      "pct": 32.6,
-      "total": 589
+      "pct": 32.3,
+      "total": 594
     },
     "benchmarks.arc_agi_2": {
       "filled": 108,
-      "pct": 18.3,
-      "total": 589
+      "pct": 18.2,
+      "total": 594
     },
     "benchmarks.eci": {
       "filled": 208,
-      "pct": 35.3,
-      "total": 589
+      "pct": 35,
+      "total": 594
     },
     "benchmarks.fiction_live": {
       "filled": 41,
-      "pct": 7,
-      "total": 589
+      "pct": 6.9,
+      "total": 594
     },
     "benchmarks.gpqa_diamond": {
       "filled": 197,
-      "pct": 33.4,
-      "total": 589
+      "pct": 33.2,
+      "total": 594
     },
     "benchmarks.swe_bench_pro": {
       "filled": 51,
-      "pct": 8.7,
-      "total": 589
+      "pct": 8.6,
+      "total": 594
     },
     "benchmarks.swe_bench_vendor": {
       "filled": 40,
-      "pct": 6.8,
-      "total": 589
+      "pct": 6.7,
+      "total": 594
     },
     "benchmarks.swe_bench_verified": {
       "filled": 48,
       "pct": 8.1,
-      "total": 589
+      "total": 594
     },
     "benchmarks.webdev_arena_elo": {
       "filled": 124,
-      "pct": 21.1,
-      "total": 589
+      "pct": 20.9,
+      "total": 594
     },
     "benchmarks.任一编程信号": {
       "filled": 105,
-      "pct": 17.8,
-      "total": 589
+      "pct": 17.7,
+      "total": 594
     },
     "benchmarks.任一编程信号(含 WebDev Arena)": {
       "filled": 161,
-      "pct": 27.3,
-      "total": 589
+      "pct": 27.1,
+      "total": 594
     },
     "capabilities.promptCaching": {
-      "filled": 531,
-      "pct": 90.2,
-      "total": 589
+      "filled": 534,
+      "pct": 89.9,
+      "total": 594
     },
     "capabilities.reasoning": {
-      "filled": 414,
-      "pct": 70.3,
-      "total": 589
+      "filled": 420,
+      "pct": 70.7,
+      "total": 594
     },
     "capabilities.structuredOutput": {
-      "filled": 170,
-      "pct": 28.9,
-      "total": 589
+      "filled": 175,
+      "pct": 29.5,
+      "total": 594
     },
     "capabilities.toolCall": {
-      "filled": 414,
-      "pct": 70.3,
-      "total": 589
+      "filled": 420,
+      "pct": 70.7,
+      "total": 594
     },
     "coding.两条以上赛制": {
       "filled": 197,
-      "pct": 33.4,
-      "total": 589
+      "pct": 33.2,
+      "total": 594
     },
     "coding.任一百分数成绩": {
       "filled": 210,
-      "pct": 35.7,
-      "total": 589
+      "pct": 35.4,
+      "total": 594
     },
     "coding.任一编程成绩": {
       "filled": 243,
-      "pct": 41.3,
-      "total": 589
+      "pct": 40.9,
+      "total": 594
     },
     "coding.有第三方复核成绩": {
       "filled": 225,
-      "pct": 38.2,
-      "total": 589
+      "pct": 37.9,
+      "total": 594
     },
     "contextWindow": {
-      "filled": 581,
-      "pct": 98.6,
-      "total": 589
+      "filled": 586,
+      "pct": 98.7,
+      "total": 594
     },
     "id": {
-      "filled": 589,
+      "filled": 594,
       "pct": 100,
-      "total": 589
+      "total": 594
     },
     "knowledgeCutoff": {
-      "filled": 230,
-      "pct": 39,
-      "total": 589
+      "filled": 232,
+      "pct": 39.1,
+      "total": 594
     },
     "license": {
-      "filled": 123,
-      "pct": 20.9,
-      "total": 589
+      "filled": 125,
+      "pct": 21,
+      "total": 594
     },
     "maxOutput": {
-      "filled": 567,
-      "pct": 96.3,
-      "total": 589
+      "filled": 571,
+      "pct": 96.1,
+      "total": 594
     },
     "modalities.input": {
-      "filled": 589,
+      "filled": 594,
       "pct": 100,
-      "total": 589
+      "total": 594
     },
     "modalities.output": {
-      "filled": 589,
+      "filled": 594,
       "pct": 100,
-      "total": 589
+      "total": 594
     },
     "name": {
-      "filled": 589,
+      "filled": 594,
       "pct": 100,
-      "total": 589
+      "total": 594
     },
     "openWeights": {
-      "filled": 414,
-      "pct": 70.3,
-      "total": 589
+      "filled": 420,
+      "pct": 70.7,
+      "total": 594
     },
     "params.activeB": {
       "filled": 31,
-      "pct": 5.3,
-      "total": 589
+      "pct": 5.2,
+      "total": 594
     },
     "params.confidence!=unknown": {
-      "filled": 543,
-      "pct": 92.2,
-      "total": 589
+      "filled": 547,
+      "pct": 92.1,
+      "total": 594
     },
     "params.sizeTier": {
-      "filled": 316,
-      "pct": 53.7,
-      "total": 589
+      "filled": 318,
+      "pct": 53.5,
+      "total": 594
     },
     "params.totalB": {
-      "filled": 227,
-      "pct": 38.5,
-      "total": 589
+      "filled": 229,
+      "pct": 38.6,
+      "total": 594
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 352,
-      "pct": 59.8,
-      "total": 589
+      "filled": 357,
+      "pct": 60.1,
+      "total": 594
     },
     "pricing.inputPerMTok": {
-      "filled": 531,
-      "pct": 90.2,
-      "total": 589
+      "filled": 534,
+      "pct": 89.9,
+      "total": 594
     },
     "pricing.outputPerMTok": {
-      "filled": 528,
-      "pct": 89.6,
-      "total": 589
+      "filled": 531,
+      "pct": 89.4,
+      "total": 594
     },
     "releaseDate": {
-      "filled": 589,
+      "filled": 594,
       "pct": 100,
-      "total": 589
+      "total": 594
     },
     "releaseDatePrecision.day": {
-      "filled": 580,
+      "filled": 585,
       "pct": 98.5,
-      "total": 589
+      "total": 594
     },
     "scores.三条以上榜单": {
       "filled": 267,
-      "pct": 45.3,
-      "total": 589
+      "pct": 44.9,
+      "total": 594
     },
     "scores.任一成绩": {
       "filled": 318,
-      "pct": 54,
-      "total": 589
+      "pct": 53.5,
+      "total": 594
     },
     "trainingComputeFlop": {
       "filled": 83,
-      "pct": 14.1,
-      "total": 589
+      "pct": 14,
+      "total": 594
     },
     "vendorId": {
-      "filled": 589,
+      "filled": 594,
       "pct": 100,
-      "total": 589
+      "total": 594
     }
   },
   "epochBenchmarkRows": {
@@ -1834,51 +1835,51 @@
   "fallbackCoverage": {
     "_note": "models.dev 缺项时的兜底源贡献（存活模型口径）。before 是只认 models.dev 时的覆盖数，after 是兜底之后。仲裁顺序：定价 models.dev → LiteLLM → OpenRouter → Vercel；上下文 / 最大输出 / 模态 models.dev → OpenRouter → Vercel → LiteLLM。LiteLLM 只在第一方 provider 有条目、或所有托管商条目一致时才采信；图像/语音按张按分钟的价一律不折算。OpenRouter 的 benchmarks.* 已整段剔除，兜底只读 pricing / context_length / architecture。",
     "after": {
-      "contextWindow": 569,
-      "maxOutput": 556,
-      "modalities": 577,
-      "pricing.inputPerMTok": 520,
-      "pricing.outputPerMTok": 518
+      "contextWindow": 574,
+      "maxOutput": 560,
+      "modalities": 582,
+      "pricing.inputPerMTok": 523,
+      "pricing.outputPerMTok": 521
     },
     "before": {
-      "contextWindow": 405,
-      "maxOutput": 391,
-      "modalities": 413,
-      "pricing.inputPerMTok": 344,
-      "pricing.outputPerMTok": 342
+      "contextWindow": 411,
+      "maxOutput": 396,
+      "modalities": 419,
+      "pricing.inputPerMTok": 348,
+      "pricing.outputPerMTok": 346
     },
     "bySource": {
       "contextWindow": {
-        "openrouter": 128,
+        "openrouter": 127,
         "vercel-gateway": 36
       },
       "maxOutput": {
-        "openrouter": 129,
-        "vercel-gateway": 36
-      },
-      "modalities": {
         "openrouter": 128,
         "vercel-gateway": 36
       },
+      "modalities": {
+        "openrouter": 127,
+        "vercel-gateway": 36
+      },
       "pricing.cachedInputPerMTok": {
-        "litellm": 99,
-        "openrouter": 10,
-        "vercel-gateway": 12
+        "litellm": 100,
+        "openrouter": 12,
+        "vercel-gateway": 10
       },
       "pricing.inputPerMTok": {
         "litellm": 129,
         "openrouter": 33,
-        "vercel-gateway": 14
+        "vercel-gateway": 13
       },
       "pricing.outputPerMTok": {
         "litellm": 129,
         "openrouter": 33,
-        "vercel-gateway": 14
+        "vercel-gateway": 13
       }
     },
-    "liveModels": 577
+    "liveModels": 582
   },
-  "generatedAt": "2026-09-21T07:05:52.035Z",
+  "generatedAt": "2026-09-21T18:53:46.354Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 120,
@@ -1944,13 +1945,18 @@
       "google/gemini-3-flash",
       "inclusionai/ling-3.0-flash-sante",
       "sakana/namazu",
-      "stepfun/step-5-preview",
       "tencent/hy-mt2-lite",
       "tencent/hy-mt2-plus",
       "tencent/hy-mt2-pro"
     ]
   },
-  "releaseDateConflicts": [],
+  "releaseDateConflicts": [
+    {
+      "from": "2026-09-20",
+      "id": "stepfun/step-5-preview",
+      "to": "2026-09-16"
+    }
+  ],
   "sources": {
     "derived": {
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
@@ -1961,11 +1967,11 @@
       "ok": true
     },
     "huggingface": {
-      "note": "请求 158 个开源模型，成功 154，失败 4",
+      "note": "请求 160 个开源模型，成功 156，失败 4",
       "ok": true
     },
     "litellm": {
-      "note": "4325 条（对话类 3539 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4464 条（对话类 3551 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -1973,11 +1979,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 413 条；api.json 222 provider / 7864 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "note": "models.json 419 条；api.json 223 provider / 7942 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "note": "446 条；已剔除 artificial_analysis 187 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "440 条；已剔除 artificial_analysis 181 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -1985,7 +1991,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "376 条（language 253 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "377 条（language 254 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -2085,10 +2091,12 @@
         "xai/grok-4.6"
       ]
     },
-    "liveModels": 577,
+    "liveModels": 582,
     "upstreamRows": 309,
     "withFlop": 83
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
-  "warnings": []
+  "warnings": [
+    "1 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
+  ]
 }
