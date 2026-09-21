@@ -1861,24 +1861,24 @@
         "vercel-gateway": 36
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 98,
-        "openrouter": 11,
+        "litellm": 99,
+        "openrouter": 10,
         "vercel-gateway": 12
       },
       "pricing.inputPerMTok": {
-        "litellm": 128,
-        "openrouter": 34,
+        "litellm": 129,
+        "openrouter": 33,
         "vercel-gateway": 14
       },
       "pricing.outputPerMTok": {
-        "litellm": 128,
-        "openrouter": 34,
+        "litellm": 129,
+        "openrouter": 33,
         "vercel-gateway": 14
       }
     },
     "liveModels": 577
   },
-  "generatedAt": "2026-09-20T16:57:41.647Z",
+  "generatedAt": "2026-09-21T07:05:52.035Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 120,
@@ -1965,7 +1965,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4319 条（对话类 3539 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4325 条（对话类 3539 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -1973,7 +1973,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 413 条；api.json 222 provider / 7865 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "note": "models.json 413 条；api.json 222 provider / 7864 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
