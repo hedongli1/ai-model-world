@@ -8,16 +8,16 @@
     },
     "byLeague": {
       "aider_polyglot": 61,
-      "ale_bench": 139,
+      "ale_bench": 142,
       "algotune": 29,
       "claw_eval": 4,
-      "cursorbench": 21,
+      "cursorbench": 10,
       "deepswe": 29,
-      "frontier_code": 33,
+      "frontier_code": 37,
       "frontier_swe": 3,
       "gso": 35,
-      "livebench_agentic_coding": 101,
-      "livebench_coding": 120,
+      "livebench_agentic_coding": 102,
+      "livebench_coding": 121,
       "livecodebench": 3,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -37,16 +37,16 @@
       "terminal_bench": 33,
       "terminal_bench_2_0": 66,
       "terminal_bench_2_1": 5,
-      "webdev_arena_elo": 122
+      "webdev_arena_elo": 124
     },
     "byUnit": {
-      "elo": 122,
-      "index": 168,
-      "pct": 720
+      "elo": 124,
+      "index": 171,
+      "pct": 715
     },
     "flagship": {
       "total": 40,
-      "withAnyCoding": 14,
+      "withAnyCoding": 15,
       "withPercentCoding": 12,
       "without": [
         "ai21/jamba-mini",
@@ -73,13 +73,12 @@
         "tencent/hy-mt2-plus",
         "trendyol/asure-12b",
         "upstage/solar-pro4",
-        "xai/grok-4.7",
-        "xiaomi/mimo-v2.5-pro-ultraspeed"
+        "xiaomi/mimo-v2.6-pro-ultraspeed"
       ]
     },
-    "liveModels": 582,
-    "modelsOnlyElo": 33,
-    "modelsWithAny": 240
+    "liveModels": 587,
+    "modelsOnlyElo": 34,
+    "modelsWithAny": 242
   },
   "codingLeaguesBlocked": {
     "_note": "通过了合规过滤、但因为口径不是「写代码 / 软件工程」而没有进入 coding[] 的榜单，以及因为血缘指向 Artificial Analysis / LMArena 而被拦掉的条数。逐条理由写在 scripts/sync/sources/models-dev.ts 的 CODING_LEAGUES 与 sources/epoch.ts 的 CODING_BENCHMARKS 上方。",
@@ -110,10 +109,10 @@
   },
   "counts": {
     "epochParamStrippedMatches": 3,
-    "fromModelsDev": 419,
-    "models": 594,
+    "fromModelsDev": 422,
+    "models": 599,
     "pendingDiscoveries": 23,
-    "promotedDiscoveries": 163,
+    "promotedDiscoveries": 165,
     "quickPromotedDiscoveries": 8,
     "releaseDateOutliersDropped": 22,
     "resurrected": 0,
@@ -124,228 +123,228 @@
   "coverage": {
     "benchmarks.aime": {
       "filled": 192,
-      "pct": 32.3,
-      "total": 594
+      "pct": 32.1,
+      "total": 599
     },
     "benchmarks.arc_agi_2": {
       "filled": 108,
-      "pct": 18.2,
-      "total": 594
+      "pct": 18,
+      "total": 599
     },
     "benchmarks.eci": {
-      "filled": 208,
-      "pct": 35,
-      "total": 594
+      "filled": 210,
+      "pct": 35.1,
+      "total": 599
     },
     "benchmarks.fiction_live": {
       "filled": 41,
-      "pct": 6.9,
-      "total": 594
+      "pct": 6.8,
+      "total": 599
     },
     "benchmarks.gpqa_diamond": {
       "filled": 197,
-      "pct": 33.2,
-      "total": 594
+      "pct": 32.9,
+      "total": 599
     },
     "benchmarks.swe_bench_pro": {
       "filled": 51,
-      "pct": 8.6,
-      "total": 594
+      "pct": 8.5,
+      "total": 599
     },
     "benchmarks.swe_bench_vendor": {
       "filled": 40,
       "pct": 6.7,
-      "total": 594
+      "total": 599
     },
     "benchmarks.swe_bench_verified": {
       "filled": 48,
-      "pct": 8.1,
-      "total": 594
+      "pct": 8,
+      "total": 599
     },
     "benchmarks.webdev_arena_elo": {
-      "filled": 124,
-      "pct": 20.9,
-      "total": 594
+      "filled": 126,
+      "pct": 21,
+      "total": 599
     },
     "benchmarks.任一编程信号": {
       "filled": 105,
-      "pct": 17.7,
-      "total": 594
+      "pct": 17.5,
+      "total": 599
     },
     "benchmarks.任一编程信号(含 WebDev Arena)": {
-      "filled": 161,
-      "pct": 27.1,
-      "total": 594
+      "filled": 163,
+      "pct": 27.2,
+      "total": 599
     },
     "capabilities.promptCaching": {
-      "filled": 534,
-      "pct": 89.9,
-      "total": 594
+      "filled": 539,
+      "pct": 90,
+      "total": 599
     },
     "capabilities.reasoning": {
-      "filled": 420,
-      "pct": 70.7,
-      "total": 594
+      "filled": 423,
+      "pct": 70.6,
+      "total": 599
     },
     "capabilities.structuredOutput": {
       "filled": 175,
-      "pct": 29.5,
-      "total": 594
+      "pct": 29.2,
+      "total": 599
     },
     "capabilities.toolCall": {
-      "filled": 420,
-      "pct": 70.7,
-      "total": 594
+      "filled": 423,
+      "pct": 70.6,
+      "total": 599
     },
     "coding.两条以上赛制": {
-      "filled": 197,
+      "filled": 199,
       "pct": 33.2,
-      "total": 594
+      "total": 599
     },
     "coding.任一百分数成绩": {
-      "filled": 210,
-      "pct": 35.4,
-      "total": 594
+      "filled": 211,
+      "pct": 35.2,
+      "total": 599
     },
     "coding.任一编程成绩": {
-      "filled": 243,
+      "filled": 245,
       "pct": 40.9,
-      "total": 594
+      "total": 599
     },
     "coding.有第三方复核成绩": {
-      "filled": 225,
+      "filled": 227,
       "pct": 37.9,
-      "total": 594
+      "total": 599
     },
     "contextWindow": {
-      "filled": 586,
+      "filled": 591,
       "pct": 98.7,
-      "total": 594
+      "total": 599
     },
     "id": {
-      "filled": 594,
+      "filled": 599,
       "pct": 100,
-      "total": 594
+      "total": 599
     },
     "knowledgeCutoff": {
-      "filled": 232,
+      "filled": 234,
       "pct": 39.1,
-      "total": 594
+      "total": 599
     },
     "license": {
       "filled": 125,
-      "pct": 21,
-      "total": 594
+      "pct": 20.9,
+      "total": 599
     },
     "maxOutput": {
-      "filled": 571,
-      "pct": 96.1,
-      "total": 594
+      "filled": 576,
+      "pct": 96.2,
+      "total": 599
     },
     "modalities.input": {
-      "filled": 594,
+      "filled": 599,
       "pct": 100,
-      "total": 594
+      "total": 599
     },
     "modalities.output": {
-      "filled": 594,
+      "filled": 599,
       "pct": 100,
-      "total": 594
+      "total": 599
     },
     "name": {
-      "filled": 594,
+      "filled": 599,
       "pct": 100,
-      "total": 594
+      "total": 599
     },
     "openWeights": {
-      "filled": 420,
-      "pct": 70.7,
-      "total": 594
+      "filled": 423,
+      "pct": 70.6,
+      "total": 599
     },
     "params.activeB": {
       "filled": 31,
       "pct": 5.2,
-      "total": 594
+      "total": 599
     },
     "params.confidence!=unknown": {
-      "filled": 547,
-      "pct": 92.1,
-      "total": 594
+      "filled": 552,
+      "pct": 92.2,
+      "total": 599
     },
     "params.sizeTier": {
-      "filled": 318,
-      "pct": 53.5,
-      "total": 594
+      "filled": 323,
+      "pct": 53.9,
+      "total": 599
     },
     "params.totalB": {
       "filled": 229,
-      "pct": 38.6,
-      "total": 594
+      "pct": 38.2,
+      "total": 599
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 357,
-      "pct": 60.1,
-      "total": 594
+      "filled": 362,
+      "pct": 60.4,
+      "total": 599
     },
     "pricing.inputPerMTok": {
-      "filled": 534,
-      "pct": 89.9,
-      "total": 594
+      "filled": 539,
+      "pct": 90,
+      "total": 599
     },
     "pricing.outputPerMTok": {
-      "filled": 531,
-      "pct": 89.4,
-      "total": 594
+      "filled": 536,
+      "pct": 89.5,
+      "total": 599
     },
     "releaseDate": {
-      "filled": 594,
+      "filled": 599,
       "pct": 100,
-      "total": 594
+      "total": 599
     },
     "releaseDatePrecision.day": {
-      "filled": 585,
+      "filled": 590,
       "pct": 98.5,
-      "total": 594
+      "total": 599
     },
     "scores.三条以上榜单": {
-      "filled": 267,
+      "filled": 269,
       "pct": 44.9,
-      "total": 594
+      "total": 599
     },
     "scores.任一成绩": {
-      "filled": 318,
-      "pct": 53.5,
-      "total": 594
+      "filled": 322,
+      "pct": 53.8,
+      "total": 599
     },
     "trainingComputeFlop": {
-      "filled": 83,
+      "filled": 84,
       "pct": 14,
-      "total": 594
+      "total": 599
     },
     "vendorId": {
-      "filled": 594,
+      "filled": 599,
       "pct": 100,
-      "total": 594
+      "total": 599
     }
   },
   "epochBenchmarkRows": {
     "_note": "有分数的 CSV 行数，仅用于确认解析器读到了东西。**不是模型数，不要当覆盖率分母用**，见 epochMatch。",
     "aime": 283,
     "arc_agi_2": 225,
-    "eci": 240,
+    "eci": 242,
     "fiction_live": 40,
     "gpqa_diamond": 303,
     "swe_bench_verified": 35,
-    "webdev_arena_elo": 115
+    "webdev_arena_elo": 119
   },
   "epochCodingRows": {
     "_note": "Epoch zip 里各编程 CSV 有分数的行数。同样是行数不是模型数——同一个模型会因为不同 reasoning effort / 不同 agent 占多行，聚合时取最好成绩。每个榜选了哪一列、量纲怎么判的，逐条写在 scripts/sync/sources/epoch.ts 的 CODING_BENCHMARKS 上。",
     "aider_polyglot": 71,
-    "ale_bench": 104,
+    "ale_bench": 107,
     "algotune": 18,
-    "cursorbench": 73,
+    "cursorbench": 46,
     "deepswe": 69,
-    "frontier_code": 27,
+    "frontier_code": 32,
     "gso": 27,
     "mirrorcode": 8,
     "terminal_bench_2_0": 198
@@ -423,12 +422,12 @@
         "curated": true,
         "file": "ale_bench_external.csv",
         "inEci": false,
-        "landed": 141,
+        "landed": 144,
         "multiplier": 1,
         "outOfRange": 0,
-        "rows": 112,
+        "rows": 116,
         "scoreColumn": "Performance",
-        "scored": 104,
+        "scored": 107,
         "selfRun": false,
         "supersededBy": null,
         "unit": "index",
@@ -453,12 +452,12 @@
         "curated": false,
         "file": "apex_agents_external.csv",
         "inEci": true,
-        "landed": 77,
+        "landed": 35,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 65,
+        "rows": 33,
         "scoreColumn": "Pass@1 score",
-        "scored": 65,
+        "scored": 33,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -513,12 +512,12 @@
         "curated": false,
         "file": "balrog_external.csv",
         "inEci": true,
-        "landed": 41,
+        "landed": 46,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 36,
+        "rows": 41,
         "scoreColumn": "Average progress",
-        "scored": 34,
+        "scored": 39,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -543,12 +542,12 @@
         "curated": false,
         "file": "blueprint_bench_2_external.csv",
         "inEci": false,
-        "landed": 29,
+        "landed": 31,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 24,
+        "rows": 26,
         "scoreColumn": "Score",
-        "scored": 24,
+        "scored": 26,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -648,12 +647,12 @@
         "curated": false,
         "file": "critpt_external.csv",
         "inEci": false,
-        "landed": 163,
+        "landed": 167,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 177,
+        "rows": 182,
         "scoreColumn": "Accuracy",
-        "scored": 170,
+        "scored": 175,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -663,12 +662,12 @@
         "curated": true,
         "file": "cursorbench_external.csv",
         "inEci": false,
-        "landed": 21,
+        "landed": 10,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 74,
+        "rows": 47,
         "scoreColumn": "Score",
-        "scored": 73,
+        "scored": 46,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -723,12 +722,12 @@
         "curated": false,
         "file": "dtbench_external.csv",
         "inEci": true,
-        "landed": 198,
+        "landed": 205,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 161,
+        "rows": 210,
         "scoreColumn": "Accuracy",
-        "scored": 158,
+        "scored": 207,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -753,12 +752,12 @@
         "curated": true,
         "file": "epoch_capabilities_index/eci_scores.csv",
         "inEci": false,
-        "landed": 208,
+        "landed": 210,
         "multiplier": 1,
         "outOfRange": 0,
-        "rows": 266,
+        "rows": 268,
         "scoreColumn": "eci",
-        "scored": 240,
+        "scored": 242,
         "selfRun": true,
         "supersededBy": null,
         "unit": "index",
@@ -813,12 +812,12 @@
         "curated": true,
         "file": "frontiercode_external.csv",
         "inEci": true,
-        "landed": 34,
+        "landed": 38,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 35,
+        "rows": 41,
         "scoreColumn": "Main score",
-        "scored": 27,
+        "scored": 32,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -828,12 +827,12 @@
         "curated": false,
         "file": "frontierswe_external.csv",
         "inEci": false,
-        "landed": 12,
+        "landed": 16,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 9,
+        "rows": 13,
         "scoreColumn": "Score",
-        "scored": 9,
+        "scored": 13,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -1023,12 +1022,12 @@
         "curated": false,
         "file": "hle_external.csv",
         "inEci": true,
-        "landed": 58,
+        "landed": 60,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 51,
+        "rows": 54,
         "scoreColumn": "Accuracy",
-        "scored": 51,
+        "scored": 54,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -1068,12 +1067,12 @@
         "curated": false,
         "file": "lmca_external.csv",
         "inEci": true,
-        "landed": 183,
+        "landed": 190,
         "multiplier": 1,
         "outOfRange": 0,
-        "rows": 123,
+        "rows": 172,
         "scoreColumn": "Score",
-        "scored": 121,
+        "scored": 170,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -1248,12 +1247,12 @@
         "curated": false,
         "file": "proofbench_external.csv",
         "inEci": true,
-        "landed": 79,
+        "landed": 82,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 64,
+        "rows": 68,
         "scoreColumn": "Accuracy",
-        "scored": 62,
+        "scored": 65,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -1263,12 +1262,12 @@
         "curated": false,
         "file": "rli_external.csv",
         "inEci": true,
-        "landed": 18,
+        "landed": 20,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 13,
+        "rows": 15,
         "scoreColumn": "Score",
-        "scored": 13,
+        "scored": 15,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -1353,12 +1352,12 @@
         "curated": false,
         "file": "surface_evolver_bench_external.csv",
         "inEci": true,
-        "landed": 30,
+        "landed": 32,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 26,
+        "rows": 28,
         "scoreColumn": "Mean score",
-        "scored": 26,
+        "scored": 28,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -1428,12 +1427,12 @@
         "curated": false,
         "file": "vending_bench_2_external.csv",
         "inEci": false,
-        "landed": 89,
+        "landed": 91,
         "multiplier": 1,
         "outOfRange": 0,
-        "rows": 60,
+        "rows": 62,
         "scoreColumn": "Score",
-        "scored": 60,
+        "scored": 62,
         "selfRun": false,
         "supersededBy": null,
         "unit": "usd",
@@ -1473,12 +1472,12 @@
         "curated": true,
         "file": "webdev_arena_external.csv",
         "inEci": false,
-        "landed": 124,
+        "landed": 126,
         "multiplier": 1,
         "outOfRange": 0,
-        "rows": 127,
+        "rows": 131,
         "scoreColumn": "Arena Score",
-        "scored": 115,
+        "scored": 119,
         "selfRun": false,
         "supersededBy": null,
         "unit": "elo",
@@ -1491,9 +1490,9 @@
         "landed": 146,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 171,
+        "rows": 173,
         "scoreColumn": "Accuracy",
-        "scored": 167,
+        "scored": 169,
         "selfRun": false,
         "supersededBy": null,
         "unit": "pct",
@@ -1517,8 +1516,8 @@
     },
     "nonEpochLeagues": {
       "claw_eval": 4,
-      "livebench_agentic_coding": 102,
-      "livebench_coding": 122,
+      "livebench_agentic_coding": 103,
+      "livebench_coding": 123,
       "livecodebench": 3,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -1553,10 +1552,10 @@
         "upstreamRows": 225
       },
       "eci": {
-        "landedModels": 208,
-        "matchedModels": 140,
-        "upstreamModels": 220,
-        "upstreamRows": 240
+        "landedModels": 210,
+        "matchedModels": 142,
+        "upstreamModels": 222,
+        "upstreamRows": 242
       },
       "fiction_live": {
         "landedModels": 41,
@@ -1577,18 +1576,18 @@
         "upstreamRows": 35
       },
       "webdev_arena_elo": {
-        "landedModels": 124,
-        "matchedModels": 84,
-        "upstreamModels": 88,
-        "upstreamRows": 115
+        "landedModels": 126,
+        "matchedModels": 86,
+        "upstreamModels": 90,
+        "upstreamRows": 119
       }
     },
     "matchTiers": {
       "loose": 36,
       "param-stripped": 3,
-      "strict": 203
+      "strict": 204
     },
-    "matchedEntities": 267,
+    "matchedEntities": 268,
     "unmatchedSamples": [
       {
         "benchmarks": [
@@ -1829,60 +1828,60 @@
         "organization": "Google DeepMind"
       }
     ],
-    "upstreamEntities": 408
+    "upstreamEntities": 409
   },
   "failures": [],
   "fallbackCoverage": {
     "_note": "models.dev 缺项时的兜底源贡献（存活模型口径）。before 是只认 models.dev 时的覆盖数，after 是兜底之后。仲裁顺序：定价 models.dev → LiteLLM → OpenRouter → Vercel；上下文 / 最大输出 / 模态 models.dev → OpenRouter → Vercel → LiteLLM。LiteLLM 只在第一方 provider 有条目、或所有托管商条目一致时才采信；图像/语音按张按分钟的价一律不折算。OpenRouter 的 benchmarks.* 已整段剔除，兜底只读 pricing / context_length / architecture。",
     "after": {
-      "contextWindow": 574,
-      "maxOutput": 560,
-      "modalities": 582,
-      "pricing.inputPerMTok": 523,
-      "pricing.outputPerMTok": 521
+      "contextWindow": 579,
+      "maxOutput": 565,
+      "modalities": 587,
+      "pricing.inputPerMTok": 528,
+      "pricing.outputPerMTok": 526
     },
     "before": {
-      "contextWindow": 411,
-      "maxOutput": 396,
-      "modalities": 419,
-      "pricing.inputPerMTok": 348,
-      "pricing.outputPerMTok": 346
+      "contextWindow": 414,
+      "maxOutput": 399,
+      "modalities": 422,
+      "pricing.inputPerMTok": 351,
+      "pricing.outputPerMTok": 349
     },
     "bySource": {
       "contextWindow": {
-        "openrouter": 127,
+        "openrouter": 129,
         "vercel-gateway": 36
       },
       "maxOutput": {
-        "openrouter": 128,
+        "openrouter": 130,
         "vercel-gateway": 36
       },
       "modalities": {
-        "openrouter": 127,
+        "openrouter": 129,
         "vercel-gateway": 36
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 100,
+        "litellm": 102,
         "openrouter": 12,
         "vercel-gateway": 10
       },
       "pricing.inputPerMTok": {
-        "litellm": 129,
+        "litellm": 131,
         "openrouter": 33,
         "vercel-gateway": 13
       },
       "pricing.outputPerMTok": {
-        "litellm": 129,
+        "litellm": 131,
         "openrouter": 33,
         "vercel-gateway": 13
       }
     },
-    "liveModels": 582
+    "liveModels": 587
   },
-  "generatedAt": "2026-09-21T18:53:46.354Z",
+  "generatedAt": "2026-09-22T06:45:47.941Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
-    "matchedModels": 120,
+    "matchedModels": 121,
     "releaseSource": "LIVE_BENCH_RELEASES",
     "releasesSkipped": [
       "2024-06-24",
@@ -1900,8 +1899,8 @@
       "2025-04-25"
     ],
     "rowsByLeague": {
-      "livebench_agentic_coding": 126,
-      "livebench_coding": 172
+      "livebench_agentic_coding": 127,
+      "livebench_coding": 173
     },
     "unmatchedSamples": [
       "amazon.nova-lite-v1:0",
@@ -1935,7 +1934,7 @@
       "grok-code-fast-1-0825",
       "hunyuan-turbos-20250313"
     ],
-    "upstreamModelNames": 172
+    "upstreamModelNames": 173
   },
   "quickPromoted": {
     "_note": "走「注册厂商单源快速晋升」进入快照的模型：厂商在 src/data/vendor-registry.ts 里登记过，且被 openrouter 或 vercel-gateway 任一源收录（litellm 单源不算）。目的是大厂新模型上线当天就能进站，不必等第二个网关跟上。",
@@ -1950,20 +1949,14 @@
       "tencent/hy-mt2-pro"
     ]
   },
-  "releaseDateConflicts": [
-    {
-      "from": "2026-09-20",
-      "id": "stepfun/step-5-preview",
-      "to": "2026-09-16"
-    }
-  ],
+  "releaseDateConflicts": [],
   "sources": {
     "derived": {
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "note": "ZIP 87 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 76 个；训练算力 309 行；去重后 408 个模型实体；合规拦截 1 个文件",
+      "note": "ZIP 87 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 76 个；训练算力 312 行；去重后 409 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
@@ -1971,7 +1964,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4464 条（对话类 3551 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4499 条（对话类 3580 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -1979,11 +1972,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 419 条；api.json 223 provider / 7942 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "note": "models.json 422 条；api.json 223 provider / 7992 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "note": "440 条；已剔除 artificial_analysis 181 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "445 条；已剔除 artificial_analysis 183 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -1991,7 +1984,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "377 条（language 254 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "380 条（language 257 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -2091,12 +2084,10 @@
         "xai/grok-4.6"
       ]
     },
-    "liveModels": 582,
-    "upstreamRows": 309,
-    "withFlop": 83
+    "liveModels": 587,
+    "upstreamRows": 312,
+    "withFlop": 84
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
-  "warnings": [
-    "1 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
-  ]
+  "warnings": []
 }
