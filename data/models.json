@@ -303,7 +303,7 @@
     {
       "id": "ebr_bench",
       "inEci": true,
-      "models": 27,
+      "models": 28,
       "randomBaseline": 0,
       "releaseDate": "2026-07-01",
       "scoreCeiling": 100,
@@ -441,6 +441,18 @@
       "scoreCeiling": 100,
       "scoreColumn": "Best score (across scorers)",
       "sourceFile": "frontiermath_tiers_1_3_v2.csv",
+      "supersededBy": null,
+      "unit": "pct"
+    },
+    {
+      "id": "furniture_assembly",
+      "inEci": false,
+      "models": 26,
+      "randomBaseline": 0,
+      "releaseDate": "2026-09-23",
+      "scoreCeiling": 100,
+      "scoreColumn": "Best score (across scorers)",
+      "sourceFile": "furniture_assembly.csv",
       "supersededBy": null,
       "unit": "pct"
     },
@@ -1117,7 +1129,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-23T06:37:42.343Z",
+  "generatedAt": "2026-09-23T17:57:20.859Z",
   "models": [
     {
       "benchmarks": {
@@ -1465,6 +1477,144 @@
       "retiredAt": null,
       "scores": [],
       "slug": "aion-labs-aion-3-0-mini",
+      "trainingComputeFlop": null,
+      "vendorId": "aion-labs"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-09-23T17:57:20.859Z",
+      "id": "aion-labs/aion-3.5",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Aion 3.5",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 3,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.75,
+        "inputPerMTok": 3,
+        "outputPerMTok": 6
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "aion-labs-aion-3-5",
+      "trainingComputeFlop": null,
+      "vendorId": "aion-labs"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-09-23T17:57:20.859Z",
+      "id": "aion-labs/aion-3.5-mini",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Aion 3.5 Mini",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.18,
+        "inputPerMTok": 0.7,
+        "outputPerMTok": 1.4
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "aion-labs-aion-3-5-mini",
       "trainingComputeFlop": null,
       "vendorId": "aion-labs"
     },
@@ -11902,6 +12052,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 20,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gpqa_diamond",
           "score": 92.68,
           "source": "epoch.ai",
@@ -12131,6 +12289,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 65.61,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 20,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -12382,6 +12548,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 74.74,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 20,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -15102,6 +15276,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 35.83,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gbaeval",
           "score": 74.47,
           "source": "epoch.ai",
@@ -15523,6 +15705,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 90.18,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 70,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -18012,6 +18202,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 28.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gdpval",
           "score": 45.5,
           "source": "epoch.ai",
@@ -18460,6 +18658,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 34.39,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 28.33,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -18992,6 +19198,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 28.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gbaeval",
           "score": 44.12,
           "source": "epoch.ai",
@@ -19480,6 +19694,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 70.18,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 33.33,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -19980,6 +20202,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 42.5,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gbaeval",
           "score": 70.9,
           "source": "epoch.ai",
@@ -20452,6 +20682,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 85.61,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 60.83,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -25216,9 +25454,9 @@
         "modalities": "openrouter",
         "name": "derived",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
         "vendorId": "derived"
@@ -38307,6 +38545,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 26.67,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gbaeval",
           "score": 0.85,
           "source": "epoch.ai",
@@ -39735,6 +39981,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 23.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gpqa_diamond",
           "score": 94.13,
           "source": "epoch.ai",
@@ -40086,6 +40340,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 26.67,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gpqa_diamond",
           "score": 94.82,
           "source": "epoch.ai",
@@ -40413,6 +40675,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 68.42,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 31.67,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -43561,7 +43831,7 @@
         "toolCall": null
       },
       "coding": [],
-      "contextWindow": 131072,
+      "contextWindow": 262144,
       "firstSeenAt": "2026-09-16T08:50:16.705Z",
       "id": "inclusionai/ling-3.0-flash-vl",
       "knowledgeCutoff": null,
@@ -43670,11 +43940,12 @@
         "params.sizeTier": "derived",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-08",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-09-23",
       "scores": [],
       "slug": "inclusionai-ling-3-0-flash-vl-free",
       "trainingComputeFlop": null,
@@ -51070,8 +51341,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.34389,
-        "outputPerMTok": 0.45852
+        "inputPerMTok": 0.34233,
+        "outputPerMTok": 0.45644
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -57369,6 +57640,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 21.67,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gbaeval",
           "score": 0.86,
           "source": "epoch.ai",
@@ -58203,6 +58482,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 72.18,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 34.17,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -60348,7 +60635,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.01,
-        "inputPerMTok": 0.07,
+        "inputPerMTok": 0.08,
         "outputPerMTok": 0.2
       },
       "provenance": {
@@ -68818,6 +69105,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 38.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gdpval",
           "score": 49.7,
           "source": "epoch.ai",
@@ -69235,6 +69530,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 38.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gdpval",
           "score": 49.7,
           "source": "epoch.ai",
@@ -69626,6 +69929,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 67.4,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 38.33,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -70851,6 +71162,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 78.6,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 37.5,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -72321,6 +72640,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 44.17,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gbaeval",
           "score": 53.22,
           "source": "epoch.ai",
@@ -73114,6 +73441,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 42.5,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gpqa_diamond",
           "score": 91.6,
           "source": "epoch.ai",
@@ -73585,6 +73920,14 @@
           "attribution": "third-party",
           "league": "frontiermath_tiers_1_3_v2",
           "score": 89.12,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 56.67,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -74078,6 +74421,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 54.17,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gpqa_diamond",
           "score": 93.31,
           "source": "epoch.ai",
@@ -74370,6 +74721,7 @@
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
         "scores": "derived",
+        "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-03",
@@ -74522,6 +74874,14 @@
         },
         {
           "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 80,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "gpqa_diamond",
           "score": 95.77,
           "source": "epoch.ai",
@@ -74618,7 +74978,7 @@
         }
       ],
       "slug": "openai-gpt-6-astra",
-      "trainingComputeFlop": null,
+      "trainingComputeFlop": 1.0001e+27,
       "vendorId": "openai"
     },
     {
@@ -74980,12 +75340,22 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-22",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "ebr_bench",
+          "score": 53.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        }
+      ],
       "slug": "openai-gpt-6-sol",
       "trainingComputeFlop": null,
       "vendorId": "openai"
@@ -80695,6 +81065,70 @@
         "structuredOutput": null,
         "toolCall": null
       },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-23T17:57:20.859Z",
+      "id": "stealth/space-bunny-alpha",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 524288,
+      "modalities": {
+        "input": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Space Bunny Alpha",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "unknown",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "stealth-space-bunny-alpha",
+      "trainingComputeFlop": null,
+      "vendorId": "stealth"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
       "coding": [
         {
           "attribution": "third-party",
@@ -83034,6 +83468,75 @@
       "slug": "undi95-remm-slerp-l2-13b",
       "trainingComputeFlop": null,
       "vendorId": "undi95"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 524288,
+      "firstSeenAt": "2026-09-23T17:57:20.859Z",
+      "id": "upstage/solar-mini4",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Solar Mini4",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.005,
+        "inputPerMTok": 0.05,
+        "outputPerMTok": 0.2
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "upstage-solar-mini4",
+      "trainingComputeFlop": null,
+      "vendorId": "upstage"
     },
     {
       "benchmarks": {
@@ -87673,7 +88176,7 @@
       "params": {
         "activeB": null,
         "confidence": "exact",
-        "totalB": 531.35
+        "totalB": 1000.19
       },
       "pricing": {
         "cachedInputPerMTok": 0.0108,
@@ -87748,7 +88251,7 @@
       "params": {
         "activeB": null,
         "confidence": "exact",
-        "totalB": 151.4
+        "totalB": 302.8
       },
       "pricing": {
         "cachedInputPerMTok": 0.0028,
@@ -91314,38 +91817,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
-      "note": "ZIP 87 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 76 个；训练算力 312 行；去重后 409 个模型实体；合规拦截 1 个文件",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "note": "ZIP 88 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 77 个；训练算力 320 行；去重后 409 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
       "note": "请求 163 个开源模型，成功 159，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
-      "note": "4182 条（对话类 3318 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "note": "4213 条（对话类 3347 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
-      "note": "models.json 425 条；api.json 223 provider / 8114 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "note": "models.json 425 条；api.json 223 provider / 8126 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
-      "note": "454 条；已剔除 artificial_analysis 188 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "note": "456 条；已剔除 artificial_analysis 186 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -91354,8 +91857,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-23T06:37:42.343Z",
-      "note": "386 条（language 263 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "note": "388 条（language 262 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
