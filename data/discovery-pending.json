@@ -1,6 +1,6 @@
 {
   "_note": "只有单一上游源收录、尚未达到多源佐证门槛的模型。等到第二个独立源也收录它，下一次同步就会自动晋升进 data/models.json。例外：厂商已在 src/data/vendor-registry.ts 登记的，openrouter 或 vercel-gateway 单源即晋升，不会出现在这里。",
-  "generatedAt": "2026-09-22T17:44:58.359Z",
+  "generatedAt": "2026-09-23T06:37:42.343Z",
   "pending": [
     {
       "id": "anthropic/claude-opus-4.8-fast",
@@ -123,6 +123,18 @@
       ]
     },
     {
+      "id": "openai/gpt-6-luna-fast",
+      "sources": [
+        "vercel-gateway"
+      ]
+    },
+    {
+      "id": "openai/gpt-6-sol-fast",
+      "sources": [
+        "vercel-gateway"
+      ]
+    },
+    {
       "id": "openai/o3-fast",
       "sources": [
         "vercel-gateway"
@@ -130,12 +142,6 @@
     },
     {
       "id": "openai/o4-mini-fast",
-      "sources": [
-        "vercel-gateway"
-      ]
-    },
-    {
-      "id": "zhipuai/glm-5.2-fast",
       "sources": [
         "vercel-gateway"
       ]
