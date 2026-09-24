@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-09-23T17:57:20.859Z",
+  "generatedAt": "2026-09-24T06:42:50.798Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -147,6 +147,10 @@
       "tier": 4
     },
     "alibaba/qwen3.8-max-preview": {
+      "basis": "price+naming",
+      "tier": 4
+    },
+    "alibaba/qwen3.8-max-prime": {
       "basis": "price+naming",
       "tier": 4
     },
@@ -377,6 +381,10 @@
     "deepseek/deepseek-v3.2-thinking": {
       "basis": "price",
       "tier": 1
+    },
+    "fireworks/ember-1": {
+      "basis": "price",
+      "tier": 3
     },
     "google/deep-research-max-preview-04-2026": {
       "basis": "price+naming",
@@ -737,14 +745,6 @@
     "morph/morph-v3-large": {
       "basis": "price+naming",
       "tier": 4
-    },
-    "nex-agi/nex-n2.5-mini": {
-      "basis": "price+naming",
-      "tier": 1
-    },
-    "nex-agi/nex-n2.5-pro": {
-      "basis": "price+naming",
-      "tier": 3
     },
     "openai/gpt-3.5-turbo": {
       "basis": "price+naming",
@@ -1274,9 +1274,17 @@
       "basis": "price+naming",
       "tier": 2
     },
+    "zhipuai/glm-5.3-fast": {
+      "basis": "price+naming",
+      "tier": 2
+    },
     "zhipuai/glm-5.3-flashx": {
       "basis": "price",
       "tier": 2
+    },
+    "zhipuai/glm-5.3-prime": {
+      "basis": "price",
+      "tier": 3
     },
     "zhipuai/glm-5v-turbo": {
       "basis": "price+naming",

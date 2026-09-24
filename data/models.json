@@ -447,7 +447,7 @@
     {
       "id": "furniture_assembly",
       "inEci": false,
-      "models": 26,
+      "models": 29,
       "randomBaseline": 0,
       "releaseDate": "2026-09-23",
       "scoreCeiling": 100,
@@ -1129,7 +1129,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-23T17:57:20.859Z",
+  "generatedAt": "2026-09-24T06:42:50.798Z",
   "models": [
     {
       "benchmarks": {
@@ -5020,7 +5020,7 @@
       "id": "alibaba/qwen3-30b-a3b-instruct-2507",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 32000,
+      "maxOutput": 235929,
       "modalities": {
         "input": [
           "text"
@@ -5038,8 +5038,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.04815,
-        "outputPerMTok": 0.19305
+        "inputPerMTok": 0.1,
+        "outputPerMTok": 0.3
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -12634,6 +12634,81 @@
         }
       ],
       "slug": "alibaba-qwen3-8-max-preview",
+      "trainingComputeFlop": null,
+      "vendorId": "alibaba"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-24T06:42:50.798Z",
+      "id": "alibaba/qwen3.8-max-prime",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Qwen 3.8 Max Prime",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 4,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.5,
+        "inputPerMTok": 4,
+        "outputPerMTok": 12
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "alibaba-qwen3-8-max-prime",
       "trainingComputeFlop": null,
       "vendorId": "alibaba"
     },
@@ -20933,6 +21008,14 @@
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 83.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "livebench_agentic_coding",
@@ -33339,6 +33422,76 @@
       },
       "capabilities": {
         "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-09-24T06:42:50.798Z",
+      "id": "fireworks/ember-1",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 943718,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Ember 1",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 3,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.3,
+        "inputPerMTok": 3,
+        "outputPerMTok": 15
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-24",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "fireworks-ember-1",
+      "trainingComputeFlop": null,
+      "vendorId": "fireworks"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -41290,8 +41443,8 @@
         "modalities": "openrouter",
         "name": "derived",
         "params.totalB": "derived",
-        "pricing.inputPerMTok": "litellm",
-        "pricing.outputPerMTok": "litellm",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
         "scores": "derived",
@@ -52031,6 +52184,73 @@
     },
     {
       "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": false,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 8000,
+      "firstSeenAt": "2026-09-24T06:42:50.798Z",
+      "id": "mistral/mistral-embed",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 3072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Mistral Embed",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "unknown",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.1,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2023-12-11",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "mistral-mistral-embed",
+      "trainingComputeFlop": null,
+      "vendorId": "mistral"
+    },
+    {
+      "benchmarks": {
         "aime": 8.47,
         "arc_agi_2": null,
         "eci": 122,
@@ -59047,11 +59267,12 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-08",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-09-24",
       "scores": [],
       "slug": "nex-agi-nex-n2-5-mini",
       "trainingComputeFlop": null,
@@ -59117,11 +59338,12 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-08",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-09-24",
       "scores": [],
       "slug": "nex-agi-nex-n2-5-pro",
       "trainingComputeFlop": null,
@@ -69388,9 +69610,9 @@
         "modalities": "openrouter",
         "name": "derived",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "litellm",
-        "pricing.inputPerMTok": "litellm",
-        "pricing.outputPerMTok": "litellm",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
         "scores": "derived",
@@ -75193,12 +75415,22 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-22",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 28.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        }
+      ],
       "slug": "openai-gpt-6-luna",
       "trainingComputeFlop": null,
       "vendorId": "openai"
@@ -75351,6 +75583,14 @@
           "attribution": "third-party",
           "league": "ebr_bench",
           "score": 53.33,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 58.33,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -76709,12 +76949,12 @@
         "toolCall": false
       },
       "coding": [],
-      "contextWindow": null,
+      "contextWindow": 16000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "openai/gpt-realtime-whisper",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": null,
+      "maxOutput": 2000,
       "modalities": {
         "input": [
           "audio"
@@ -76738,6 +76978,8 @@
       "provenance": {
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
@@ -81921,7 +82163,7 @@
         "toolCall": null
       },
       "coding": [],
-      "contextWindow": 8192,
+      "contextWindow": 32768,
       "firstSeenAt": "2026-09-02T09:52:35.668Z",
       "id": "tencent/hy-mt2-30b-a3b",
       "knowledgeCutoff": null,
@@ -91231,6 +91473,75 @@
     },
     {
       "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-09-24T06:42:50.798Z",
+      "id": "zhipuai/glm-5.3-fast",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 262144,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "GLM 5.3 Fast",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.21,
+        "inputPerMTok": 2.1,
+        "outputPerMTok": 6.6
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-02",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "zhipuai-glm-5-3-fast",
+      "trainingComputeFlop": null,
+      "vendorId": "zhipuai"
+    },
+    {
+      "benchmarks": {
         "aime": 93.89,
         "arc_agi_2": null,
         "eci": 151.9,
@@ -91540,7 +91851,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.075,
+        "cachedInputPerMTok": 0.09,
         "inputPerMTok": 0.37,
         "outputPerMTok": 1.25
       },
@@ -91563,6 +91874,75 @@
       "retiredAt": null,
       "scores": [],
       "slug": "zhipuai-glm-5-3-flashx",
+      "trainingComputeFlop": null,
+      "vendorId": "zhipuai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-24T06:42:50.798Z",
+      "id": "zhipuai/glm-5.3-prime",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "GLM 5.3 Prime",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 3,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.56,
+        "inputPerMTok": 2.8,
+        "outputPerMTok": 8.8
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-23",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "zhipuai-glm-5-3-prime",
       "trainingComputeFlop": null,
       "vendorId": "zhipuai"
     },
@@ -91817,38 +92197,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
       "note": "ZIP 88 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 77 个；训练算力 320 行；去重后 409 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
       "note": "请求 163 个开源模型，成功 159，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
-      "note": "4213 条（对话类 3347 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "note": "4319 条（对话类 3444 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
-      "note": "models.json 425 条；api.json 223 provider / 8126 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "note": "models.json 427 条；api.json 223 provider / 8171 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
-      "note": "456 条；已剔除 artificial_analysis 186 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "note": "458 条；已剔除 artificial_analysis 187 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -91857,8 +92237,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-23T17:57:20.859Z",
-      "note": "388 条（language 262 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "note": "389 条（language 263 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -92002,6 +92382,16 @@
       "motif": "whale",
       "name": "DeepSeek",
       "nameZh": "深度求索"
+    },
+    {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": null,
+      "id": "fireworks",
+      "motif": "wanderer",
+      "name": "Fireworks",
+      "nameZh": "Fireworks"
     },
     {
       "accentColor": "#4285f4",
