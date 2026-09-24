@@ -207,7 +207,7 @@
     {
       "id": "claw_eval",
       "inEci": false,
-      "models": 4,
+      "models": 6,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -279,7 +279,7 @@
     {
       "id": "deepswe",
       "inEci": true,
-      "models": 29,
+      "models": 42,
       "randomBaseline": 0,
       "releaseDate": "2026-05-26",
       "scoreCeiling": 100,
@@ -363,7 +363,7 @@
     {
       "id": "frontier_code",
       "inEci": true,
-      "models": 38,
+      "models": 39,
       "randomBaseline": 0,
       "releaseDate": "2026-06-08",
       "scoreCeiling": 100,
@@ -447,7 +447,7 @@
     {
       "id": "furniture_assembly",
       "inEci": false,
-      "models": 29,
+      "models": 30,
       "randomBaseline": 0,
       "releaseDate": "2026-09-23",
       "scoreCeiling": 100,
@@ -591,7 +591,7 @@
     {
       "id": "livecodebench",
       "inEci": false,
-      "models": 3,
+      "models": 7,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -723,7 +723,7 @@
     {
       "id": "nl2repo",
       "inEci": false,
-      "models": 7,
+      "models": 15,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -891,7 +891,7 @@
     {
       "id": "swe_atlas_codebase_qna",
       "inEci": false,
-      "models": 10,
+      "models": 12,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -927,7 +927,7 @@
     {
       "id": "swe_bench_multilingual",
       "inEci": false,
-      "models": 10,
+      "models": 15,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -951,7 +951,7 @@
     {
       "id": "swe_bench_pro",
       "inEci": false,
-      "models": 51,
+      "models": 57,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -963,7 +963,7 @@
     {
       "id": "swe_bench_vendor",
       "inEci": false,
-      "models": 40,
+      "models": 41,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -987,7 +987,7 @@
     {
       "id": "swe_marathon",
       "inEci": false,
-      "models": 3,
+      "models": 4,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -999,7 +999,7 @@
     {
       "id": "terminal_bench",
       "inEci": false,
-      "models": 33,
+      "models": 55,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1129,7 +1129,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-24T06:42:50.798Z",
+  "generatedAt": "2026-09-24T17:56:31.490Z",
   "models": [
     {
       "benchmarks": {
@@ -11518,6 +11518,22 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 73,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 42.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_coding",
           "score": 75.69,
@@ -11531,6 +11547,22 @@
           "score": 61.36,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 42.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 90.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
           "unit": "pct"
         },
         {
@@ -11607,6 +11639,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 42.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "dtbench",
           "score": 88,
@@ -11639,11 +11679,27 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 90.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "lmca",
           "score": 41.36,
           "source": "epoch.ai",
           "sourceUrl": "https://conceptualreasoning.ai/lmca",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 42.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
           "unit": "pct"
         },
         {
@@ -11666,6 +11722,14 @@
           "attribution": "vendor-self-reported",
           "league": "swe_bench_pro",
           "score": 61.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 73,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B",
           "unit": "pct"
@@ -11765,7 +11829,7 @@
         "eci": null,
         "fiction_live": null,
         "gpqa_diamond": null,
-        "swe_bench_pro": null,
+        "swe_bench_pro": 62.5,
         "swe_bench_vendor": null,
         "swe_bench_verified": null,
         "webdev_arena_elo": null
@@ -11777,6 +11841,30 @@
         "toolCall": true
       },
       "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 62.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 81,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 58.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "livebench_coding",
@@ -11791,6 +11879,22 @@
           "score": 61.62,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 48.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 91.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
           "unit": "pct"
         }
       ],
@@ -11823,6 +11927,7 @@
         "outputPerMTok": 0.5
       },
       "provenance": {
+        "benchmarks.swe_bench_pro": "models.dev",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.structuredOutput": "models.dev",
@@ -11848,6 +11953,14 @@
       "retiredAt": null,
       "scores": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 58.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_agentic_coding",
           "score": 61.62,
@@ -11862,6 +11975,38 @@
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 91.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 48.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 81,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 62.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+          "unit": "pct"
         }
       ],
       "slug": "alibaba-qwen3-8-flash-next",
@@ -11875,7 +12020,7 @@
         "eci": 156.69,
         "fiction_live": null,
         "gpqa_diamond": 92.68,
-        "swe_bench_pro": null,
+        "swe_bench_pro": 67.7,
         "swe_bench_vendor": null,
         "swe_bench_verified": null,
         "webdev_arena_elo": 1670.58
@@ -11887,6 +12032,22 @@
         "toolCall": true
       },
       "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 67.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 86.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "deepswe",
@@ -11909,6 +12070,22 @@
           "score": 64.65,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 55.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "frontier_swe",
+          "score": 73.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
           "unit": "pct"
         },
         {
@@ -11955,6 +12132,7 @@
         "benchmarks.aime": "epoch.ai",
         "benchmarks.eci": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
+        "benchmarks.swe_bench_pro": "models.dev",
         "benchmarks.webdev_arena_elo": "epoch.ai",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
@@ -12099,6 +12277,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 55.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "proofbench",
           "score": 58,
@@ -12112,6 +12298,22 @@
           "score": 45.8,
           "source": "epoch.ai",
           "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 67.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 86.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
           "unit": "pct"
         },
         {
@@ -15534,6 +15736,14 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 55.8,
+          "source": "models.dev",
+          "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_coding",
           "score": 86.38,
@@ -15862,6 +16072,14 @@
           "score": 70.8,
           "source": "epoch.ai",
           "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 55.8,
+          "source": "models.dev",
+          "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
           "unit": "pct"
         },
         {
@@ -20938,6 +21156,14 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 66.4,
+          "source": "models.dev",
+          "sourceUrl": "https://www.anthropic.com/claude-opus-5-5",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_coding",
           "score": 89.25,
@@ -20951,6 +21177,14 @@
           "score": 71.72,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "frontier_code",
+          "score": 54.4,
+          "source": "models.dev",
+          "sourceUrl": "https://www.anthropic.com/claude-opus-5-5",
           "unit": "pct"
         }
       ],
@@ -21009,6 +21243,14 @@
       "retiredAt": null,
       "scores": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "frontier_code",
+          "score": 54.4,
+          "source": "models.dev",
+          "sourceUrl": "https://www.anthropic.com/claude-opus-5-5",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "furniture_assembly",
           "score": 83.33,
@@ -21030,6 +21272,14 @@
           "score": 89.25,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 66.4,
+          "source": "models.dev",
+          "sourceUrl": "https://www.anthropic.com/claude-opus-5-5",
           "unit": "pct"
         }
       ],
@@ -31261,7 +31511,7 @@
         "eci": 146.1,
         "fiction_live": null,
         "gpqa_diamond": 91.04,
-        "swe_bench_pro": null,
+        "swe_bench_pro": 52.6,
         "swe_bench_vendor": 79,
         "swe_bench_verified": null,
         "webdev_arena_elo": 1430.93
@@ -31277,6 +31527,30 @@
           "attribution": "vendor-self-reported",
           "league": "swe_bench_vendor",
           "score": 79,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 52.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 56.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 73.3,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
           "unit": "pct"
@@ -31303,6 +31577,14 @@
           "score": 18.8,
           "source": "epoch.ai",
           "sourceUrl": "https://cognition.com/frontiercode",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 91.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
           "unit": "pct"
         },
         {
@@ -31353,6 +31635,7 @@
         "benchmarks.arc_agi_2": "epoch.ai",
         "benchmarks.eci": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
+        "benchmarks.swe_bench_pro": "models.dev",
         "benchmarks.swe_bench_vendor": "models.dev",
         "benchmarks.webdev_arena_elo": "epoch.ai",
         "capabilities.promptCaching": "derived",
@@ -31494,6 +31777,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 91.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "lmca",
           "score": 35.88,
@@ -31535,8 +31826,32 @@
         },
         {
           "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 73.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 52.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
           "league": "swe_bench_vendor",
           "score": 79,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 56.9,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash",
           "unit": "pct"
@@ -32180,6 +32495,22 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 83.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 59.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_coding",
           "score": 68.2,
@@ -32193,6 +32524,14 @@
           "score": 65.1,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 57.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
           "unit": "pct"
         }
       ],
@@ -32249,6 +32588,14 @@
       "retiredAt": null,
       "scores": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 59.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_agentic_coding",
           "score": 65.1,
@@ -32263,6 +32610,22 @@
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
           "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 57.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 83.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+          "unit": "pct"
         }
       ],
       "slug": "deepseek-deepseek-v4-flash-vision-exp",
@@ -32276,7 +32639,7 @@
         "eci": 149.14,
         "fiction_live": null,
         "gpqa_diamond": 90.91,
-        "swe_bench_pro": null,
+        "swe_bench_pro": 55.4,
         "swe_bench_vendor": 80.6,
         "swe_bench_verified": 77.64,
         "webdev_arena_elo": 1463.63
@@ -32305,6 +32668,30 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 55.4,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 67.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 76.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_coding",
           "score": 69.99,
@@ -32326,6 +32713,14 @@
           "score": 17.64,
           "source": "epoch.ai",
           "sourceUrl": "https://cognition.com/frontiercode",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 93.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
           "unit": "pct"
         },
         {
@@ -32376,6 +32771,7 @@
         "benchmarks.arc_agi_2": "epoch.ai",
         "benchmarks.eci": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
+        "benchmarks.swe_bench_pro": "models.dev",
         "benchmarks.swe_bench_vendor": "models.dev",
         "benchmarks.swe_bench_verified": "epoch.ai",
         "benchmarks.webdev_arena_elo": "epoch.ai",
@@ -32534,6 +32930,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 93.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "lmca",
           "score": 41.2,
@@ -32575,6 +32979,22 @@
         },
         {
           "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 76.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 55.4,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
           "league": "swe_bench_vendor",
           "score": 80.6,
           "source": "models.dev",
@@ -32587,6 +33007,14 @@
           "score": 77.64,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 67.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro",
           "unit": "pct"
         },
         {
@@ -32944,6 +33372,22 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 87.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 62.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_coding",
           "score": 77.16,
@@ -32957,6 +33401,14 @@
           "score": 54.95,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 61.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
           "unit": "pct"
         },
         {
@@ -33107,6 +33559,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 62.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "dtbench",
           "score": 93.87,
@@ -33187,6 +33647,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 61.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "proofbench",
           "score": 50,
@@ -33216,6 +33684,14 @@
           "score": 77.64,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 87.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
           "unit": "pct"
         },
         {
@@ -33266,6 +33742,30 @@
         "toolCall": true
       },
       "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 90.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 74.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 64,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "ale_bench",
@@ -33356,6 +33856,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 74.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "dtbench",
           "score": 89.87,
@@ -33380,6 +33888,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 64,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "proofbench",
           "score": 54,
@@ -33393,6 +33909,14 @@
           "score": 46.25,
           "source": "epoch.ai",
           "sourceUrl": "https://yhenon.github.io/surface-evolver-llm-eval/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 90.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
           "unit": "pct"
         },
         {
@@ -33466,11 +33990,11 @@
         "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "litellm",
         "pricing.outputPerMTok": "litellm",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
         "vendorId": "derived"
       },
-      "releaseDate": "2026-09-24",
+      "releaseDate": "2026-09-23",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [],
@@ -40604,6 +41128,14 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 89.4,
+          "source": "models.dev",
+          "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "deepswe",
           "score": 73.83,
@@ -40910,6 +41442,14 @@
           "score": 76.88,
           "source": "epoch.ai",
           "sourceUrl": "https://yhenon.github.io/surface-evolver-llm-eval/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 89.4,
+          "source": "models.dev",
+          "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
           "unit": "pct"
         },
         {
@@ -47215,6 +47755,14 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 82.9,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "deepswe",
           "score": 54.87,
@@ -47236,6 +47784,14 @@
           "score": 57.58,
           "source": "livebench",
           "sourceUrl": "https://livebench.ai/#/?release=2026-06-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_atlas_codebase_qna",
+          "score": 46.2,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
           "unit": "pct"
         },
         {
@@ -47402,6 +47958,22 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "swe_atlas_codebase_qna",
+          "score": 46.2,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 82.9,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "webdev_arena_elo",
           "score": 1534.38,
@@ -47515,6 +48087,22 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 88.8,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 75.4,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_coding",
           "score": 81.06,
@@ -47536,6 +48124,14 @@
           "score": 41.6,
           "source": "epoch.ai",
           "sourceUrl": "https://cursor.com/cursorbench",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_atlas_codebase_qna",
+          "score": 59.4,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
           "unit": "pct"
         },
         {
@@ -47647,6 +48243,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 75.4,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "dtbench",
           "score": 96.53,
@@ -47708,6 +48312,22 @@
           "score": 25,
           "source": "epoch.ai",
           "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_atlas_codebase_qna",
+          "score": 59.4,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 88.8,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3",
           "unit": "pct"
         },
         {
@@ -51494,8 +52114,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.34233,
-        "outputPerMTok": 0.45644
+        "inputPerMTok": 0.34101,
+        "outputPerMTok": 0.45468
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -60823,7 +61443,7 @@
         "fiction_live": null,
         "gpqa_diamond": null,
         "swe_bench_pro": null,
-        "swe_bench_vendor": null,
+        "swe_bench_vendor": 51.56,
         "swe_bench_verified": null,
         "webdev_arena_elo": null
       },
@@ -60833,7 +61453,32 @@
         "structuredOutput": true,
         "toolCall": true
       },
-      "coding": [],
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 51.56,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 24.58,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 39.33,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+          "unit": "pct"
+        }
+      ],
       "contextWindow": 262144,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "nvidia/nemotron-3.5-lightning",
@@ -60861,10 +61506,12 @@
         "outputPerMTok": 0.2
       },
       "provenance": {
+        "benchmarks.swe_bench_vendor": "models.dev",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.structuredOutput": "models.dev",
         "capabilities.toolCall": "models.dev",
+        "coding": "derived",
         "contextWindow": "models.dev",
         "maxOutput": "models.dev",
         "modalities": "models.dev",
@@ -60875,12 +61522,38 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-08-11",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 39.33,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 51.56,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 24.58,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+          "unit": "pct"
+        }
+      ],
       "slug": "nvidia-nemotron-3-5-lightning",
       "trainingComputeFlop": null,
       "vendorId": "nvidia"
@@ -75367,7 +76040,16 @@
         "structuredOutput": true,
         "toolCall": true
       },
-      "coding": [],
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 66.6,
+          "source": "models.dev",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "unit": "pct"
+        }
+      ],
       "contextWindow": 1050000,
       "firstSeenAt": "2026-09-23T06:37:42.343Z",
       "id": "openai/gpt-6-luna",
@@ -75403,6 +76085,7 @@
         "capabilities.reasoning": "models.dev",
         "capabilities.structuredOutput": "models.dev",
         "capabilities.toolCall": "models.dev",
+        "coding": "derived",
         "contextWindow": "models.dev",
         "knowledgeCutoff": "models.dev",
         "maxOutput": "models.dev",
@@ -75422,6 +76105,14 @@
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 66.6,
+          "source": "models.dev",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "furniture_assembly",
@@ -75524,7 +76215,16 @@
         "structuredOutput": true,
         "toolCall": true
       },
-      "coding": [],
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 68.8,
+          "source": "models.dev",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "unit": "pct"
+        }
+      ],
       "contextWindow": 1050000,
       "firstSeenAt": "2026-09-23T06:37:42.343Z",
       "id": "openai/gpt-6-sol",
@@ -75560,6 +76260,7 @@
         "capabilities.reasoning": "models.dev",
         "capabilities.structuredOutput": "models.dev",
         "capabilities.toolCall": "models.dev",
+        "coding": "derived",
         "contextWindow": "models.dev",
         "knowledgeCutoff": "models.dev",
         "maxOutput": "models.dev",
@@ -75579,6 +76280,14 @@
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 68.8,
+          "source": "models.dev",
+          "sourceUrl": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "ebr_bench",
@@ -82163,7 +82872,7 @@
         "toolCall": null
       },
       "coding": [],
-      "contextWindow": 32768,
+      "contextWindow": 8192,
       "firstSeenAt": "2026-09-02T09:52:35.668Z",
       "id": "tencent/hy-mt2-30b-a3b",
       "knowledgeCutoff": null,
@@ -82488,7 +83197,7 @@
         "eci": null,
         "fiction_live": null,
         "gpqa_diamond": null,
-        "swe_bench_pro": null,
+        "swe_bench_pro": 57.9,
         "swe_bench_vendor": 78,
         "swe_bench_verified": null,
         "webdev_arena_elo": null
@@ -82504,6 +83213,54 @@
           "attribution": "vendor-self-reported",
           "league": "swe_bench_vendor",
           "score": 78,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 57.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 71.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 75.8,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 28,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 45.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "claw_eval",
+          "score": 68.5,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/tencent/Hy3",
           "unit": "pct"
@@ -82536,6 +83293,7 @@
         "outputPerMTok": 0.58
       },
       "provenance": {
+        "benchmarks.swe_bench_pro": "models.dev",
         "benchmarks.swe_bench_vendor": "models.dev",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
@@ -82562,8 +83320,56 @@
       "scores": [
         {
           "attribution": "vendor-self-reported",
+          "league": "claw_eval",
+          "score": 68.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 28,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 45.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 75.8,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 57.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
           "league": "swe_bench_vendor",
           "score": 78,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/tencent/Hy3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 71.7,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/tencent/Hy3",
           "unit": "pct"
@@ -86996,6 +87802,14 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 20.3,
+          "source": "models.dev",
+          "sourceUrl": "https://x.ai/news/grok-4-7",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "deepswe",
           "score": 67.48,
@@ -87312,6 +88126,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 20.3,
+          "source": "models.dev",
+          "sourceUrl": "https://x.ai/news/grok-4-7",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "vending_bench_2",
           "score": 9047.03,
@@ -87359,6 +88181,22 @@
         "toolCall": true
       },
       "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 37.6,
+          "source": "models.dev",
+          "sourceUrl": "https://x.ai/news/grok-4-7",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 71,
+          "source": "models.dev",
+          "sourceUrl": "https://x.ai/news/grok-4-7",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "livebench_coding",
@@ -87456,6 +88294,22 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 71,
+          "source": "models.dev",
+          "sourceUrl": "https://x.ai/news/grok-4-7",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 20.83,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "livebench_agentic_coding",
           "score": 53.99,
@@ -87477,6 +88331,14 @@
           "score": 34,
           "source": "epoch.ai",
           "sourceUrl": "https://www.vals.ai/benchmarks/proof_bench",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 37.6,
+          "source": "models.dev",
+          "sourceUrl": "https://x.ai/news/grok-4-7",
           "unit": "pct"
         }
       ],
@@ -88202,7 +89064,7 @@
         "eci": null,
         "fiction_live": null,
         "gpqa_diamond": null,
-        "swe_bench_pro": null,
+        "swe_bench_pro": 56.1,
         "swe_bench_vendor": null,
         "swe_bench_verified": null,
         "webdev_arena_elo": null
@@ -88213,7 +89075,32 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [],
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 56.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 65.8,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "claw_eval",
+          "score": 62.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+          "unit": "pct"
+        }
+      ],
       "contextWindow": 1048576,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "xiaomi/mimo-v2.5",
@@ -88244,9 +89131,11 @@
         "outputPerMTok": 0.28
       },
       "provenance": {
+        "benchmarks.swe_bench_pro": "models.dev",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
+        "coding": "derived",
         "contextWindow": "models.dev",
         "knowledgeCutoff": "models.dev",
         "license": "huggingface",
@@ -88260,12 +89149,38 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-04-22",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "claw_eval",
+          "score": 62.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 56.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 65.8,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5",
+          "unit": "pct"
+        }
+      ],
       "slug": "xiaomi-mimo-v2-5",
       "trainingComputeFlop": null,
       "vendorId": "xiaomi"
@@ -88303,6 +89218,22 @@
           "score": 57.2,
           "source": "models.dev",
           "sourceUrl": "https://mimo.xiaomi.com/mimo-v2-5-pro/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 65.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 19,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
           "unit": "pct"
         }
       ],
@@ -88361,6 +89292,14 @@
       "scores": [
         {
           "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 19,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
           "league": "swe_bench_pro",
           "score": 57.2,
           "source": "models.dev",
@@ -88373,6 +89312,14 @@
           "score": 78.9,
           "source": "models.dev",
           "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 65.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
           "unit": "pct"
         }
       ],
@@ -88470,7 +89417,24 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [],
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 87.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 67.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        }
+      ],
       "contextWindow": 1048576,
       "firstSeenAt": "2026-09-22T06:45:47.941Z",
       "id": "xiaomi/mimo-v2.6-flash",
@@ -88504,6 +89468,7 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
+        "coding": "derived",
         "contextWindow": "models.dev",
         "license": "huggingface",
         "maxOutput": "models.dev",
@@ -88516,12 +89481,30 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-21",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 67.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 87.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        }
+      ],
       "slug": "xiaomi-mimo-v2-6-flash",
       "trainingComputeFlop": null,
       "vendorId": "xiaomi"
@@ -88544,7 +89527,24 @@
         "structuredOutput": null,
         "toolCall": true
       },
-      "coding": [],
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 89.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 71.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        }
+      ],
       "contextWindow": 1048576,
       "firstSeenAt": "2026-09-22T06:45:47.941Z",
       "id": "xiaomi/mimo-v2.6-pro",
@@ -88578,6 +89578,7 @@
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
+        "coding": "derived",
         "contextWindow": "models.dev",
         "license": "huggingface",
         "maxOutput": "models.dev",
@@ -88590,12 +89591,30 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-21",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 71.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 89.9,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+          "unit": "pct"
+        }
+      ],
       "slug": "xiaomi-mimo-v2-6-pro",
       "trainingComputeFlop": null,
       "vendorId": "xiaomi"
@@ -91189,6 +92208,14 @@
       },
       "coding": [
         {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 88.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "deepswe",
           "score": 68.96,
@@ -91213,11 +92240,35 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 58,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "frontier_code",
           "score": 40.14,
           "source": "epoch.ai",
           "sourceUrl": "https://cognition.com/frontiercode",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "frontier_swe",
+          "score": 78.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_marathon",
+          "score": 42.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
           "unit": "pct"
         },
         {
@@ -91427,6 +92478,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 58,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "proofbench",
           "score": 49,
@@ -91440,6 +92499,22 @@
           "score": 41,
           "source": "epoch.ai",
           "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_marathon",
+          "score": 42.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 88.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3",
           "unit": "pct"
         },
         {
@@ -91559,6 +92634,14 @@
         "toolCall": true
       },
       "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 84.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "deepswe",
@@ -91791,6 +92874,14 @@
           "score": 52.5,
           "source": "epoch.ai",
           "sourceUrl": "https://yhenon.github.io/surface-evolver-llm-eval/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 84.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash",
           "unit": "pct"
         },
         {
@@ -92197,37 +93288,37 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
       "note": "ZIP 88 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 77 个；训练算力 320 行；去重后 409 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
       "note": "请求 163 个开源模型，成功 159，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
-      "note": "4319 条（对话类 3444 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
+      "note": "4347 条（对话类 3461 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
-      "note": "models.json 427 条；api.json 223 provider / 8171 条；benchmarks[] 674 条，已拦截 AA 血缘 156 条，非编程口径跳过 257 条",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
+      "note": "models.json 427 条；api.json 223 provider / 8173 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
       "note": "458 条；已剔除 artificial_analysis 187 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -92237,8 +93328,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-24T06:42:50.798Z",
-      "note": "389 条（language 263 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-24T17:56:31.490Z",
+      "note": "390 条（language 264 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },

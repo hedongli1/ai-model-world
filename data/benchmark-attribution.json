@@ -172,6 +172,36 @@
       }
     },
     "alibaba/qwen3.8-27b": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 42.2,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B"
+      },
+      "livecodebench": {
+        "attributionType": "vendor-self-reported",
+        "key": "livecodebench",
+        "league": "livecodebench",
+        "metric": "score",
+        "rawName": "LiveCodeBench",
+        "score": 90.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 42.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B"
+      },
       "swe_bench_pro": {
         "attributionType": "vendor-self-reported",
         "key": "swe_bench_pro",
@@ -181,6 +211,120 @@
         "score": 61.7,
         "sourceHost": "huggingface.co",
         "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 73,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-27B"
+      }
+    },
+    "alibaba/qwen3.8-flash-next": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 58.7,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      },
+      "livecodebench": {
+        "attributionType": "vendor-self-reported",
+        "key": "livecodebench",
+        "league": "livecodebench",
+        "metric": "score",
+        "rawName": "LiveCodeBench",
+        "score": 91.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 48.1,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      },
+      "swe_bench_multilingual": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_multilingual",
+        "league": "swe_bench_multilingual",
+        "metric": "score",
+        "rawName": "SWE-Bench Multilingual",
+        "score": 81,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      },
+      "swe_bench_pro": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_pro",
+        "league": "swe_bench_pro",
+        "metric": "score",
+        "rawName": "SWE-Bench Pro",
+        "score": 62.5,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+      }
+    },
+    "alibaba/qwen3.8-max": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 56.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+      },
+      "frontier_swe": {
+        "attributionType": "vendor-self-reported",
+        "key": "frontier_swe",
+        "league": "frontier_swe",
+        "metric": "dominance score",
+        "rawName": "FrontierSWE",
+        "score": 73.5,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 55.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+      },
+      "swe_bench_pro": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_pro",
+        "league": "swe_bench_pro",
+        "metric": "resolved",
+        "rawName": "SWE-Bench Pro",
+        "score": 67.7,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "avg@10",
+        "rawName": "Terminal-Bench",
+        "score": 86.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
       }
     },
     "alibaba/qwen3.8-max-preview": {
@@ -311,6 +455,18 @@
         "score": 88,
         "sourceHost": "anthropic.com",
         "sourceUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+      }
+    },
+    "anthropic/claude-fable-5-1": {
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 55.8,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
       }
     },
     "anthropic/claude-haiku-4-5": {
@@ -537,6 +693,28 @@
         "score": 96,
         "sourceHost": "anthropic.com",
         "sourceUrl": "https://www.anthropic.com/claude-opus-5-system-card"
+      }
+    },
+    "anthropic/claude-opus-5-5": {
+      "frontier_code": {
+        "attributionType": "vendor-self-reported",
+        "key": "frontier_code",
+        "league": "frontier_code",
+        "metric": "score",
+        "rawName": "FrontierCode",
+        "score": 54.4,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-opus-5-5"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 66.4,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-opus-5-5"
       }
     },
     "anthropic/claude-sonnet-4-0": {
@@ -936,6 +1114,36 @@
       }
     },
     "deepseek/deepseek-v4-flash": {
+      "livecodebench": {
+        "attributionType": "vendor-self-reported",
+        "key": "livecodebench",
+        "league": "livecodebench",
+        "metric": "pass@1",
+        "rawName": "LiveCodeBench",
+        "score": 91.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
+      },
+      "swe_bench_multilingual": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_multilingual",
+        "league": "swe_bench_multilingual",
+        "metric": "resolved",
+        "rawName": "SWE-Bench Multilingual",
+        "score": 73.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
+      },
+      "swe_bench_pro": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_pro",
+        "league": "swe_bench_pro",
+        "metric": "resolved",
+        "rawName": "SWE-Bench Pro",
+        "score": 52.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
+      },
       "swe_bench_verified": {
         "attributionType": "vendor-self-reported",
         "key": "swe_bench_verified",
@@ -943,6 +1151,16 @@
         "metric": "resolved",
         "rawName": "SWE-Bench Verified",
         "score": 79,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "accuracy",
+        "rawName": "Terminal-Bench",
+        "score": 56.9,
         "sourceHost": "huggingface.co",
         "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
       }
@@ -979,7 +1197,69 @@
         "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
       }
     },
+    "deepseek/deepseek-v4-flash-vision-exp": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 59.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 57.7,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 83.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+      }
+    },
     "deepseek/deepseek-v4-pro": {
+      "livecodebench": {
+        "attributionType": "vendor-self-reported",
+        "key": "livecodebench",
+        "league": "livecodebench",
+        "metric": "pass@1",
+        "rawName": "LiveCodeBench",
+        "score": 93.5,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+      },
+      "swe_bench_multilingual": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_multilingual",
+        "league": "swe_bench_multilingual",
+        "metric": "resolved",
+        "rawName": "SWE-Bench Multilingual",
+        "score": 76.2,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+      },
+      "swe_bench_pro": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_pro",
+        "league": "swe_bench_pro",
+        "metric": "resolved",
+        "rawName": "SWE-Bench Pro",
+        "score": 55.4,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+      },
       "swe_bench_verified": {
         "attributionType": "vendor-self-reported",
         "key": "swe_bench_verified",
@@ -989,6 +1269,80 @@
         "score": 80.6,
         "sourceHost": "huggingface.co",
         "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "accuracy",
+        "rawName": "Terminal-Bench",
+        "score": 67.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
+      }
+    },
+    "deepseek/deepseek-v4-pro-0813": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 62.7,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 61.5,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 87.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+      }
+    },
+    "deepseek/deepseek-v4.1-flash": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "resolved",
+        "rawName": "DeepSWE",
+        "score": 74.2,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 64,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "pass@1",
+        "rawName": "Terminal-Bench",
+        "score": 90.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
       }
     },
     "google/gemini-2.5-flash": {
@@ -1249,6 +1603,28 @@
         "sourceUrl": "https://deepmind.google/models/model-cards/gemini-3-7-flash/"
       }
     },
+    "google/gemini-3.8-flash": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "pass@1",
+        "rawName": "DeepSWE",
+        "score": 73.7,
+        "sourceHost": "blog.google",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "pass@1",
+        "rawName": "Terminal-Bench",
+        "score": 89.4,
+        "sourceHost": "blog.google",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+      }
+    },
     "meituan/longcat-2.0": {
       "swe_bench_multilingual": {
         "attributionType": "vendor-self-reported",
@@ -1365,6 +1741,70 @@
         "score": 80,
         "sourceHost": "ai.meta.com",
         "sourceUrl": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+      }
+    },
+    "meta/muse-spark-1.2": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "pass@1",
+        "rawName": "DeepSWE",
+        "score": 59.3,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2"
+      },
+      "swe_atlas_codebase_qna": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_atlas_codebase_qna",
+        "league": "swe_atlas_codebase_qna",
+        "metric": "pass@1",
+        "rawName": "SWE-Atlas Codebase QnA",
+        "score": 46.2,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "pass@1",
+        "rawName": "Terminal-Bench",
+        "score": 82.9,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+      }
+    },
+    "meta/muse-spark-1.3": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "pass@1",
+        "rawName": "DeepSWE",
+        "score": 75.4,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+      },
+      "swe_atlas_codebase_qna": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_atlas_codebase_qna",
+        "league": "swe_atlas_codebase_qna",
+        "metric": "pass@1",
+        "rawName": "SWE-Atlas Codebase QnA",
+        "score": 59.4,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "pass@1",
+        "rawName": "Terminal-Bench",
+        "score": 88.8,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
       }
     },
     "microsoft/mai-code-1-flash": {
@@ -1769,6 +2209,38 @@
         "score": 56.4,
         "sourceHost": "huggingface.co",
         "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+      }
+    },
+    "nvidia/nemotron-3.5-lightning": {
+      "swe_bench_multilingual": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_multilingual",
+        "league": "swe_bench_multilingual",
+        "metric": "accuracy",
+        "rawName": "SWE-Bench Multilingual",
+        "score": 39.33,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+      },
+      "swe_bench_verified": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_verified",
+        "league": "swe_bench_vendor",
+        "metric": "accuracy",
+        "rawName": "SWE-Bench Verified",
+        "score": 51.56,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "accuracy",
+        "rawName": "Terminal-Bench",
+        "score": 24.58,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       }
     },
     "openai/gpt-4.1": {
@@ -2209,6 +2681,30 @@
         "sourceUrl": "https://openai.com/index/gpt-6-astra/"
       }
     },
+    "openai/gpt-6-luna": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 66.6,
+        "sourceHost": "openai.com",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+      }
+    },
+    "openai/gpt-6-sol": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 68.8,
+        "sourceHost": "openai.com",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+      }
+    },
     "openai/o1": {
       "aider_polyglot": {
         "attributionType": "third-party",
@@ -2462,6 +2958,56 @@
       }
     },
     "tencent/hy3": {
+      "claw_eval": {
+        "attributionType": "vendor-self-reported",
+        "key": "claw_eval",
+        "league": "claw_eval",
+        "metric": "pass@3",
+        "rawName": "ClawEval",
+        "score": 68.5,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/tencent/Hy3"
+      },
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 28,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/tencent/Hy3"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 45.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/tencent/Hy3"
+      },
+      "swe_bench_multilingual": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_multilingual",
+        "league": "swe_bench_multilingual",
+        "metric": "score",
+        "rawName": "SWE-Bench Multilingual",
+        "score": 75.8,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/tencent/Hy3"
+      },
+      "swe_bench_pro": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_pro",
+        "league": "swe_bench_pro",
+        "metric": "score",
+        "rawName": "SWE-Bench Pro",
+        "score": 57.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/tencent/Hy3"
+      },
       "swe_bench_verified": {
         "attributionType": "vendor-self-reported",
         "key": "swe_bench_verified",
@@ -2469,6 +3015,16 @@
         "metric": "resolved",
         "rawName": "SWE-Bench Verified",
         "score": 78,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/tencent/Hy3"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 71.7,
         "sourceHost": "huggingface.co",
         "sourceUrl": "https://huggingface.co/tencent/Hy3"
       }
@@ -2537,7 +3093,93 @@
         "sourceUrl": "https://x.ai/news/grok-4-5"
       }
     },
+    "xai/grok-4.6": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 65.2,
+        "sourceHost": "x.ai",
+        "sourceUrl": "https://x.ai/news/grok-4-7"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 20.3,
+        "sourceHost": "x.ai",
+        "sourceUrl": "https://x.ai/news/grok-4-7"
+      }
+    },
+    "xai/grok-4.7": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 71,
+        "sourceHost": "x.ai",
+        "sourceUrl": "https://x.ai/news/grok-4-7"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 37.6,
+        "sourceHost": "x.ai",
+        "sourceUrl": "https://x.ai/news/grok-4-7"
+      }
+    },
+    "xiaomi/mimo-v2.5": {
+      "claw_eval": {
+        "attributionType": "vendor-self-reported",
+        "key": "claw_eval",
+        "league": "claw_eval",
+        "metric": "score",
+        "rawName": "Claw-Eval",
+        "score": 62.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5"
+      },
+      "swe_bench_pro": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_pro",
+        "league": "swe_bench_pro",
+        "metric": "score",
+        "rawName": "SWE-Bench Pro",
+        "score": 56.1,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 65.8,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5"
+      }
+    },
     "xiaomi/mimo-v2.5-pro": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 19,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
+      },
       "swe_bench_pro": {
         "attributionType": "vendor-self-reported",
         "key": "swe_bench_pro",
@@ -2557,6 +3199,60 @@
         "score": 78.9,
         "sourceHost": "huggingface.co",
         "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.5-Pro"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 65.2,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
+      }
+    },
+    "xiaomi/mimo-v2.6-flash": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 67.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 87.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
+      }
+    },
+    "xiaomi/mimo-v2.6-pro": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "score",
+        "rawName": "DeepSWE",
+        "score": 71.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 89.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
       }
     },
     "zhipuai/glm-4.6": {
@@ -2718,7 +3414,81 @@
         "sourceHost": "z.ai",
         "sourceUrl": "https://z.ai/blog/glm-5.2"
       }
+    },
+    "zhipuai/glm-5.3": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "resolved",
+        "rawName": "DeepSWE",
+        "score": 66.9,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3"
+      },
+      "frontier_swe": {
+        "attributionType": "vendor-self-reported",
+        "key": "frontier_swe",
+        "league": "frontier_swe",
+        "metric": "dominance score",
+        "rawName": "FrontierSWE",
+        "score": 78.1,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": "score",
+        "rawName": "NL2Repo",
+        "score": 58,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3"
+      },
+      "swe_marathon": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_marathon",
+        "league": "swe_marathon",
+        "metric": "score",
+        "rawName": "SWE-Marathon",
+        "score": 42.5,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "pass@1",
+        "rawName": "Terminal-Bench",
+        "score": 88.2,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3"
+      }
+    },
+    "zhipuai/glm-5.3-flash": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "resolved",
+        "rawName": "DeepSWE",
+        "score": 63.4,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "pass@1",
+        "rawName": "Terminal-Bench",
+        "score": 84.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/zai-org/GLM-5.3-Flash"
+      }
     }
   },
-  "generatedAt": "2026-09-24T06:42:50.798Z"
+  "generatedAt": "2026-09-24T17:56:31.490Z"
 }
