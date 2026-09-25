@@ -739,12 +739,12 @@
         "curated": false,
         "file": "ebr_bench.csv",
         "inEci": true,
-        "landed": 28,
+        "landed": 29,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 22,
+        "rows": 23,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 22,
+        "scored": 23,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -919,12 +919,12 @@
         "curated": false,
         "file": "furniture_assembly.csv",
         "inEci": false,
-        "landed": 30,
+        "landed": 32,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 25,
+        "rows": 27,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 25,
+        "scored": 27,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1895,7 +1895,7 @@
     },
     "liveModels": 599
   },
-  "generatedAt": "2026-09-24T17:56:31.490Z",
+  "generatedAt": "2026-09-25T06:34:06.997Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 122,
@@ -1968,9 +1968,9 @@
   },
   "releaseDateConflicts": [
     {
-      "from": "2026-09-24",
-      "id": "fireworks/ember-1",
-      "to": "2026-09-23"
+      "from": "2025-12-02",
+      "id": "mistral/mistral-large-2512",
+      "to": "2025-12-01"
     }
   ],
   "sources": {
@@ -1987,7 +1987,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4347 条（对话类 3461 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4356 条（对话类 3468 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -1995,11 +1995,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 427 条；api.json 223 provider / 8173 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
+      "note": "models.json 427 条；api.json 223 provider / 8177 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
       "ok": true
     },
     "openrouter": {
-      "note": "458 条；已剔除 artificial_analysis 187 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "460 条；已剔除 artificial_analysis 190 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
