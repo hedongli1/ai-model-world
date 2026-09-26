@@ -1129,7 +1129,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-26T06:35:54.441Z",
+  "generatedAt": "2026-09-26T17:22:43.218Z",
   "models": [
     {
       "benchmarks": {
@@ -32254,7 +32254,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.028,
         "inputPerMTok": 0.14,
-        "outputPerMTok": 0.284
+        "outputPerMTok": 0.28
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -33468,7 +33468,7 @@
         "totalB": 1623.5
       },
       "pricing": {
-        "cachedInputPerMTok": 0.044,
+        "cachedInputPerMTok": 0.047907,
         "inputPerMTok": 1.32,
         "outputPerMTok": 3.96
       },
@@ -33817,8 +33817,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.24,
-        "outputPerMTok": 1.08
+        "inputPerMTok": 0.255552,
+        "outputPerMTok": 1.1592
       },
       "provenance": {
         "benchmarks.eci": "epoch.ai",
@@ -45263,6 +45263,72 @@
         }
       ],
       "slug": "meituan-longcat-2-0",
+      "trainingComputeFlop": null,
+      "vendorId": "meituan"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-26T17:22:43.218Z",
+      "id": "meituan/longcat-2.5-preview",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "LongCat-2.5-Preview",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "unknown",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-25",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "meituan-longcat-2-5-preview",
       "trainingComputeFlop": null,
       "vendorId": "meituan"
     },
@@ -93452,37 +93518,37 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
-      "note": "ZIP 88 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 77 个；训练算力 320 行；去重后 409 个模型实体；合规拦截 1 个文件",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
+      "note": "ZIP 88 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 77 个；训练算力 326 行；去重后 409 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
       "note": "请求 163 个开源模型，成功 159，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
-      "note": "4376 条（对话类 3487 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
+      "note": "4377 条（对话类 3488 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
-      "note": "models.json 427 条；api.json 223 provider / 8181 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
+      "note": "models.json 428 条；api.json 223 provider / 8173 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
       "note": "458 条；已剔除 artificial_analysis 189 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -93492,7 +93558,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "fetchedAt": "2026-09-26T17:22:43.218Z",
       "note": "390 条（language 264 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
