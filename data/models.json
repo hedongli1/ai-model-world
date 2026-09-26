@@ -446,9 +446,9 @@
     },
     {
       "id": "furniture_assembly",
-      "inEci": false,
+      "inEci": true,
       "models": 32,
-      "randomBaseline": 0,
+      "randomBaseline": 30,
       "releaseDate": "2026-09-23",
       "scoreCeiling": 100,
       "scoreColumn": "Best score (across scorers)",
@@ -1129,7 +1129,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-09-25T18:03:33.600Z",
+  "generatedAt": "2026-09-26T06:35:54.441Z",
   "models": [
     {
       "benchmarks": {
@@ -9627,7 +9627,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": true,
         "structuredOutput": true,
         "toolCall": true
@@ -9683,7 +9683,7 @@
         "totalB": 27.78
       },
       "pricing": {
-        "cachedInputPerMTok": 0.15,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.6,
         "outputPerMTok": 3.6
       },
@@ -9704,7 +9704,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -14968,9 +14967,9 @@
         "benchmarks.eci": "epoch.ai",
         "benchmarks.gpqa_diamond": "epoch.ai",
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "litellm",
@@ -25274,7 +25273,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": null,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
@@ -25303,10 +25302,11 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": null,
-        "outputPerMTok": null
+        "inputPerMTok": 0.5,
+        "outputPerMTok": 1.5
       },
       "provenance": {
+        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -25316,6 +25316,8 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -44373,11 +44375,12 @@
         "params.sizeTier": "derived",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-08-27",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-09-26",
       "scores": [],
       "slug": "inclusionai-ling-3-0-flash-fin-free",
       "trainingComputeFlop": null,
@@ -44558,9 +44561,9 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.012,
-        "inputPerMTok": 0.06,
-        "outputPerMTok": 0.18
+        "cachedInputPerMTok": 0.0042,
+        "inputPerMTok": 0.021,
+        "outputPerMTok": 0.0616
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -61510,7 +61513,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.01,
-        "inputPerMTok": 0.07,
+        "inputPerMTok": 0.08,
         "outputPerMTok": 0.2
       },
       "provenance": {
@@ -79701,6 +79704,77 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
+        "promptCaching": false,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 36864,
+      "firstSeenAt": "2026-09-26T06:35:54.441Z",
+      "id": "perceptron/perceptron-mk1.5",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Perceptron Mk1.5",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.15,
+        "outputPerMTok": 1.5
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-25",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "perceptron-perceptron-mk1-5",
+      "trainingComputeFlop": null,
+      "vendorId": "perceptron"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
         "promptCaching": true,
         "reasoning": false,
         "structuredOutput": null,
@@ -84382,6 +84456,72 @@
       "retiredAt": "2026-09-20",
       "scores": [],
       "slug": "typesafe-jev-latest",
+      "trainingComputeFlop": null,
+      "vendorId": "typesafe"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-09-26T06:35:54.441Z",
+      "id": "typesafe/jev-router",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 1000000,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "pdf",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "JEV Router",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "unknown",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "contextWindow": "openrouter",
+        "maxOutput": "litellm",
+        "modalities": "openrouter",
+        "name": "derived",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-25",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "typesafe-jev-router",
       "trainingComputeFlop": null,
       "vendorId": "typesafe"
     },
@@ -93312,38 +93452,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
       "note": "ZIP 88 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 77 个；训练算力 320 行；去重后 409 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
       "note": "请求 163 个开源模型，成功 159，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
-      "note": "4356 条（对话类 3468 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "note": "4376 条（对话类 3487 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
-      "note": "models.json 427 条；api.json 223 provider / 8180 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "note": "models.json 427 条；api.json 223 provider / 8181 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
-      "note": "459 条；已剔除 artificial_analysis 190 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
+      "note": "458 条；已剔除 artificial_analysis 189 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -93352,7 +93492,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-09-25T18:03:33.600Z",
+      "fetchedAt": "2026-09-26T06:35:54.441Z",
       "note": "390 条（language 264 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
