@@ -180,8 +180,8 @@
       "total": 618
     },
     "capabilities.promptCaching": {
-      "filled": 556,
-      "pct": 90,
+      "filled": 557,
+      "pct": 90.1,
       "total": 618
     },
     "capabilities.reasoning": {
@@ -270,13 +270,13 @@
       "total": 618
     },
     "params.confidence!=unknown": {
-      "filled": 567,
-      "pct": 91.7,
+      "filled": 568,
+      "pct": 91.9,
       "total": 618
     },
     "params.sizeTier": {
-      "filled": 335,
-      "pct": 54.2,
+      "filled": 336,
+      "pct": 54.4,
       "total": 618
     },
     "params.totalB": {
@@ -285,18 +285,18 @@
       "total": 618
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 373,
-      "pct": 60.4,
+      "filled": 374,
+      "pct": 60.5,
       "total": 618
     },
     "pricing.inputPerMTok": {
-      "filled": 556,
-      "pct": 90,
+      "filled": 557,
+      "pct": 90.1,
       "total": 618
     },
     "pricing.outputPerMTok": {
-      "filled": 552,
-      "pct": 89.3,
+      "filled": 553,
+      "pct": 89.5,
       "total": 618
     },
     "releaseDate": {
@@ -1855,8 +1855,8 @@
       "contextWindow": 594,
       "maxOutput": 580,
       "modalities": 601,
-      "pricing.inputPerMTok": 542,
-      "pricing.outputPerMTok": 539
+      "pricing.inputPerMTok": 543,
+      "pricing.outputPerMTok": 540
     },
     "before": {
       "contextWindow": 421,
@@ -1880,24 +1880,24 @@
         "vercel-gateway": 37
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 107,
-        "openrouter": 11,
-        "vercel-gateway": 10
+        "litellm": 106,
+        "openrouter": 12,
+        "vercel-gateway": 11
       },
       "pricing.inputPerMTok": {
         "litellm": 140,
         "openrouter": 32,
-        "vercel-gateway": 13
+        "vercel-gateway": 14
       },
       "pricing.outputPerMTok": {
         "litellm": 140,
         "openrouter": 32,
-        "vercel-gateway": 13
+        "vercel-gateway": 14
       }
     },
     "liveModels": 601
   },
-  "generatedAt": "2026-09-26T17:22:43.218Z",
+  "generatedAt": "2026-09-27T07:04:07.303Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 122,
@@ -1983,7 +1983,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4377 条（对话类 3488 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4391 条（对话类 3501 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -1991,7 +1991,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 428 条；api.json 223 provider / 8173 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
+      "note": "models.json 428 条；api.json 223 provider / 8174 条；benchmarks[] 1076 条，已拦截 AA 血缘 173 条，非编程口径跳过 546 条",
       "ok": true
     },
     "openrouter": {
@@ -2003,7 +2003,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "390 条（language 264 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "391 条（language 265 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
