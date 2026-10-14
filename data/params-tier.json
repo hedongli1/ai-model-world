@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-09-27T17:55:51.593Z",
+  "generatedAt": "2026-10-14T09:26:46.727Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -14,19 +14,15 @@
       "basis": "price+naming",
       "tier": 2
     },
-    "aion-labs/aion-3.5": {
-      "basis": "price",
-      "tier": 3
-    },
-    "aion-labs/aion-3.5-mini": {
-      "basis": "price+naming",
-      "tier": 2
-    },
     "alibaba/qwen-flash": {
       "basis": "price+naming",
       "tier": 1
     },
     "alibaba/qwen-max": {
+      "basis": "price+naming",
+      "tier": 4
+    },
+    "alibaba/qwen-mt-plus": {
       "basis": "price+naming",
       "tier": 4
     },
@@ -37,10 +33,6 @@
     "alibaba/qwen-plus": {
       "basis": "price+naming",
       "tier": 4
-    },
-    "alibaba/qwen-plus-2025-07-28": {
-      "basis": "price+naming",
-      "tier": 3
     },
     "alibaba/qwen-turbo": {
       "basis": "price+naming",
@@ -56,7 +48,7 @@
     },
     "alibaba/qwen3-coder": {
       "basis": "price",
-      "tier": 1
+      "tier": 2
     },
     "alibaba/qwen3-coder-flash": {
       "basis": "price+naming",
@@ -78,17 +70,17 @@
       "basis": "price+naming",
       "tier": 4
     },
+    "alibaba/qwen3-vl-flash": {
+      "basis": "price+naming",
+      "tier": 1
+    },
     "alibaba/qwen3-vl-instruct": {
       "basis": "price",
-      "tier": 2
+      "tier": 1
     },
     "alibaba/qwen3-vl-plus": {
       "basis": "price+naming",
       "tier": 4
-    },
-    "alibaba/qwen3-vl-thinking": {
-      "basis": "price",
-      "tier": 2
     },
     "alibaba/qwen3.5-flash": {
       "basis": "price+naming",
@@ -214,10 +206,6 @@
       "basis": "price",
       "tier": 3
     },
-    "anthropic/claude-3-haiku": {
-      "basis": "price+naming",
-      "tier": 2
-    },
     "anthropic/claude-3-haiku-20240307": {
       "basis": "price+naming",
       "tier": 2
@@ -238,12 +226,12 @@
       "basis": "price+naming",
       "tier": 2
     },
+    "anthropic/claude-haiku-5-5": {
+      "basis": "price+naming",
+      "tier": 1
+    },
     "anthropic/claude-mythos-5": {
       "basis": "price",
-      "tier": 5
-    },
-    "anthropic/claude-opus-4": {
-      "basis": "price+naming",
       "tier": 5
     },
     "anthropic/claude-opus-4-0": {
@@ -282,6 +270,10 @@
       "basis": "price+naming",
       "tier": 5
     },
+    "anthropic/claude-opus-4.8-fast": {
+      "basis": "price+naming",
+      "tier": 4
+    },
     "anthropic/claude-opus-5": {
       "basis": "price+naming",
       "tier": 5
@@ -313,6 +305,14 @@
     "anthropic/claude-sonnet-5": {
       "basis": "price",
       "tier": 3
+    },
+    "anthropic/claude-sonnet-5-5": {
+      "basis": "price",
+      "tier": 3
+    },
+    "baidu/cobuddy": {
+      "basis": "price",
+      "tier": 2
     },
     "bytedance-seed/seed-1-6": {
       "basis": "price",
@@ -350,25 +350,9 @@
       "basis": "price+naming",
       "tier": 2
     },
-    "cohere/command-a": {
-      "basis": "price",
-      "tier": 3
-    },
     "cohere/command-a-plus": {
       "basis": "price+naming",
       "tier": 4
-    },
-    "deepseek/deepseek-chat-v3-0324": {
-      "basis": "price",
-      "tier": 1
-    },
-    "deepseek/deepseek-chat-v3.1": {
-      "basis": "price",
-      "tier": 1
-    },
-    "deepseek/deepseek-r1-0528": {
-      "basis": "price",
-      "tier": 2
     },
     "deepseek/deepseek-v3.1-terminus": {
       "basis": "price",
@@ -381,6 +365,10 @@
     "deepseek/deepseek-v3.2-thinking": {
       "basis": "price",
       "tier": 1
+    },
+    "deepseek/deepseek-v4.1-flash-fast": {
+      "basis": "price+naming",
+      "tier": 2
     },
     "fireworks/ember-1": {
       "basis": "price",
@@ -514,11 +502,19 @@
       "basis": "price+naming",
       "tier": 2
     },
+    "google/gemini-4-argon": {
+      "basis": "price",
+      "tier": 3
+    },
     "google/gemini-flash-latest": {
       "basis": "price+naming",
       "tier": 2
     },
     "google/gemini-flash-lite-latest": {
+      "basis": "price+naming",
+      "tier": 2
+    },
+    "google/gemini-nano-banana-2.1": {
       "basis": "price+naming",
       "tier": 2
     },
@@ -558,37 +554,13 @@
       "basis": "price+naming",
       "tier": 1
     },
-    "inclusionai/ling-3.0-flash": {
-      "basis": "price+naming",
-      "tier": 1
-    },
-    "inclusionai/ling-3.0-flash-fin": {
-      "basis": "price+naming",
-      "tier": 1
-    },
     "inclusionai/ling-3.0-flash-sante": {
-      "basis": "naming",
-      "tier": 1
-    },
-    "inclusionai/ling-3.0-flash-sante-free": {
-      "basis": "naming",
-      "tier": 1
-    },
-    "inclusionai/ling-3.0-flash-vl": {
       "basis": "price+naming",
       "tier": 1
     },
-    "inference-net/schematron-v2-small": {
+    "inclusionai/ling-3.1-flash": {
       "basis": "price+naming",
       "tier": 1
-    },
-    "inference-net/schematron-v2-turbo": {
-      "basis": "price+naming",
-      "tier": 1
-    },
-    "kwaipilot/kat-coder-pro-v2.5": {
-      "basis": "price+naming",
-      "tier": 4
     },
     "mancer/weaver": {
       "basis": "price",
@@ -630,19 +602,23 @@
       "basis": "price",
       "tier": 1
     },
+    "meta/muse-wonder": {
+      "basis": "price",
+      "tier": 4
+    },
+    "meta/muse-wonder-1.0": {
+      "basis": "price",
+      "tier": 4
+    },
     "microsoft/mai-code-1-flash": {
-      "basis": "price+naming",
-      "tier": 2
+      "basis": "naming",
+      "tier": 1
     },
     "microsoft/mai-code-1.1-flash": {
       "basis": "price+naming",
       "tier": 2
     },
     "microsoft/phi-4": {
-      "basis": "price",
-      "tier": 1
-    },
-    "microsoft/wizardlm-2-8x22b": {
       "basis": "price",
       "tier": 1
     },
@@ -659,6 +635,14 @@
       "tier": 2
     },
     "minimax/minimax-m2.1-lightning": {
+      "basis": "price",
+      "tier": 2
+    },
+    "minimax/minimax-m3.1-flash-preview": {
+      "basis": "naming",
+      "tier": 1
+    },
+    "minimax/minimax-text-01": {
       "basis": "price",
       "tier": 2
     },
@@ -690,13 +674,21 @@
       "basis": "price+naming",
       "tier": 4
     },
+    "mistral/mistral-large-4": {
+      "basis": "price+naming",
+      "tier": 4
+    },
+    "mistral/mistral-large-4-0": {
+      "basis": "price+naming",
+      "tier": 4
+    },
     "mistral/mistral-medium-2505": {
       "basis": "price",
       "tier": 2
     },
     "mistral/mistral-medium-3": {
       "basis": "price",
-      "tier": 3
+      "tier": 2
     },
     "mistral/mistral-medium-3-5": {
       "basis": "price",
@@ -714,10 +706,6 @@
       "basis": "price+naming",
       "tier": 1
     },
-    "mistral/mixtral-8x22b-instruct": {
-      "basis": "price",
-      "tier": 3
-    },
     "mistral/pixtral-large-2502": {
       "basis": "price+naming",
       "tier": 4
@@ -726,11 +714,7 @@
       "basis": "price",
       "tier": 1
     },
-    "moonshotai/kimi-k2": {
-      "basis": "price",
-      "tier": 2
-    },
-    "moonshotai/kimi-k2-0905": {
+    "moonshotai/kimi-k2.8-preview": {
       "basis": "price",
       "tier": 2
     },
@@ -926,6 +910,10 @@
       "basis": "price+naming",
       "tier": 5
     },
+    "openai/gpt-5.6-cyber": {
+      "basis": "price",
+      "tier": 5
+    },
     "openai/gpt-5.6-luna": {
       "basis": "price",
       "tier": 2
@@ -975,6 +963,14 @@
       "tier": 3
     },
     "openai/gpt-6-sol-pro": {
+      "basis": "price+naming",
+      "tier": 4
+    },
+    "openai/gpt-6.1-sol": {
+      "basis": "price",
+      "tier": 3
+    },
+    "openai/gpt-6.1-sol-pro": {
       "basis": "price+naming",
       "tier": 4
     },
@@ -1034,10 +1030,6 @@
       "basis": "price+naming",
       "tier": 2
     },
-    "openai/o3-mini-high": {
-      "basis": "price+naming",
-      "tier": 2
-    },
     "openai/o3-pro": {
       "basis": "price+naming",
       "tier": 5
@@ -1050,15 +1042,7 @@
       "basis": "price+naming",
       "tier": 2
     },
-    "openai/o4-mini-high": {
-      "basis": "price+naming",
-      "tier": 2
-    },
     "perceptron/perceptron-mk1": {
-      "basis": "price",
-      "tier": 2
-    },
-    "perceptron/perceptron-mk1.5": {
       "basis": "price",
       "tier": 2
     },
@@ -1089,14 +1073,6 @@
     "quiverai/arrow-2-telos": {
       "basis": "price",
       "tier": 4
-    },
-    "rekaai/reka-edge": {
-      "basis": "price+naming",
-      "tier": 1
-    },
-    "rekaai/reka-flash-3": {
-      "basis": "price+naming",
-      "tier": 1
     },
     "relace/relace-apply-3": {
       "basis": "price",
@@ -1190,6 +1166,14 @@
       "basis": "price",
       "tier": 3
     },
+    "xai/grok-4-fast-non-reasoning": {
+      "basis": "price+naming",
+      "tier": 1
+    },
+    "xai/grok-4-fast-reasoning": {
+      "basis": "price+naming",
+      "tier": 1
+    },
     "xai/grok-4.1-fast": {
       "basis": "price+naming",
       "tier": 1
@@ -1257,6 +1241,14 @@
     "xai/grok-build-0.1": {
       "basis": "price",
       "tier": 2
+    },
+    "xai/grok-code-fast-1": {
+      "basis": "price+naming",
+      "tier": 2
+    },
+    "xai/grok-imagine-video-1.5-lite": {
+      "basis": "naming",
+      "tier": 1
     },
     "xiaomi/mimo-v2-omni": {
       "basis": "price",

@@ -481,6 +481,28 @@
         "sourceUrl": "https://labs.scale.com/leaderboard/swe_bench_pro_public"
       }
     },
+    "anthropic/claude-haiku-5-5": {
+      "frontier_code": {
+        "attributionType": "vendor-self-reported",
+        "key": "frontier_code",
+        "league": "frontier_code",
+        "metric": "score",
+        "rawName": "FrontierCode",
+        "score": 46.4,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 39.2,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5"
+      }
+    },
     "anthropic/claude-opus-4-0": {
       "aider_polyglot": {
         "attributionType": "third-party",
@@ -855,6 +877,28 @@
         "score": 80.4,
         "sourceHost": "anthropic.com",
         "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-5"
+      }
+    },
+    "anthropic/claude-sonnet-5-5": {
+      "frontier_code": {
+        "attributionType": "vendor-self-reported",
+        "key": "frontier_code",
+        "league": "frontier_code",
+        "metric": "score",
+        "rawName": "FrontierCode",
+        "score": 46.2,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "score",
+        "rawName": "Terminal-Bench",
+        "score": 70.6,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-sonnet-5-5"
       }
     },
     "cohere/command-a-03-2025": {
@@ -1805,6 +1849,70 @@
         "score": 88.8,
         "sourceHost": "research.meta.ai",
         "sourceUrl": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+      }
+    },
+    "meta/muse-wonder-1.0": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "pass@1",
+        "rawName": "DeepSWE",
+        "score": 78.8,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/static/muse-wonder-model-card"
+      },
+      "swe_marathon": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_marathon",
+        "league": "swe_marathon",
+        "metric": "pass@1",
+        "rawName": "SWE-Marathon",
+        "score": 53.1,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/static/muse-wonder-model-card"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "accuracy",
+        "rawName": "Terminal-Bench",
+        "score": 52,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/static/muse-wonder-model-card"
+      }
+    },
+    "meta/muse-wonder-full": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": "pass@1",
+        "rawName": "DeepSWE",
+        "score": 79,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/static/muse-wonder-model-card"
+      },
+      "swe_marathon": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_marathon",
+        "league": "swe_marathon",
+        "metric": "pass@1",
+        "rawName": "SWE-Marathon",
+        "score": 57.5,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/static/muse-wonder-model-card"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": "accuracy",
+        "rawName": "Terminal-Bench",
+        "score": 57.1,
+        "sourceHost": "research.meta.ai",
+        "sourceUrl": "https://research.meta.ai/static/muse-wonder-model-card"
       }
     },
     "microsoft/mai-code-1-flash": {
@@ -3490,5 +3598,5 @@
       }
     }
   },
-  "generatedAt": "2026-09-27T17:55:51.593Z"
+  "generatedAt": "2026-10-14T09:26:46.727Z"
 }
