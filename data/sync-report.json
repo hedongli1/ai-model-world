@@ -591,12 +591,12 @@
         "curated": false,
         "file": "chess_puzzles.csv",
         "inEci": true,
-        "landed": 161,
+        "landed": 170,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 227,
+        "rows": 242,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 219,
+        "scored": 234,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -921,12 +921,12 @@
         "curated": false,
         "file": "furniture_assembly.csv",
         "inEci": true,
-        "landed": 37,
+        "landed": 38,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 32,
+        "rows": 33,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 32,
+        "scored": 33,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1914,7 +1914,7 @@
     },
     "liveModels": 636
   },
-  "generatedAt": "2026-10-14T09:26:46.727Z",
+  "generatedAt": "2026-10-14T18:10:02.767Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 129,
@@ -2001,53 +2001,7 @@
       "zhipuai/glm-5.3-prime"
     ]
   },
-  "releaseDateConflicts": [
-    {
-      "from": "2025-10-06",
-      "id": "alibaba/qwen3-vl-30b-a3b-instruct",
-      "to": "2025-10-04"
-    },
-    {
-      "from": "2025-12-01",
-      "id": "deepseek/deepseek-chat-v3-0324",
-      "to": "2025-03-24"
-    },
-    {
-      "from": "2025-12-01",
-      "id": "deepseek/deepseek-chat-v3.1",
-      "to": "2025-08-21"
-    },
-    {
-      "from": "2025-03-31",
-      "id": "google/gemini-2.5-pro-preview",
-      "to": "2025-06-05"
-    },
-    {
-      "from": "2025-08-01",
-      "id": "mistral/codestral-2508",
-      "to": "2025-07-30"
-    },
-    {
-      "from": "2024-10-16",
-      "id": "mistral/ministral-3b-2512",
-      "to": "2025-12-02"
-    },
-    {
-      "from": "2024-10-16",
-      "id": "mistral/ministral-8b-2512",
-      "to": "2025-12-02"
-    },
-    {
-      "from": "2024-07-24",
-      "id": "mistral/mistral-large-2407",
-      "to": "2024-11-19"
-    },
-    {
-      "from": "2025-07-12",
-      "id": "moonshotai/kimi-k2-0905",
-      "to": "2025-09-04"
-    }
-  ],
+  "releaseDateConflicts": [],
   "sources": {
     "derived": {
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
@@ -2062,7 +2016,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4083 条（对话类 3154 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4115 条（对话类 3153 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2070,11 +2024,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 547 条；api.json 229 provider / 8834 条；benchmarks[] 1116 条，已拦截 AA 血缘 178 条，非编程口径跳过 571 条",
+      "note": "models.json 547 条；api.json 229 provider / 8819 条；benchmarks[] 1116 条，已拦截 AA 血缘 178 条，非编程口径跳过 571 条",
       "ok": true
     },
     "openrouter": {
-      "note": "462 条；已剔除 artificial_analysis 285 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "462 条；已剔除 artificial_analysis 284 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -2191,7 +2145,5 @@
     "withFlop": 86
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
-  "warnings": [
-    "9 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
-  ]
+  "warnings": []
 }
