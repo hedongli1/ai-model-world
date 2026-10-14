@@ -104,6 +104,13 @@ export function SiteFooter() {
           >
             {dict.footer.credits}
           </Link>
+          <span className="mx-1 opacity-50">·</span>
+          <Link
+            href="/data/"
+            className="text-[var(--color-parchment)] underline decoration-dotted underline-offset-2 hover:text-[var(--color-gold)]"
+          >
+            开放数据 / 订阅
+          </Link>
         </div>
         <div className="mt-1 flex flex-wrap gap-x-1.5 gap-y-1" title={dict.footer.sourceCodeHint}>
           <span>{dict.footer.sourceCode}</span>
