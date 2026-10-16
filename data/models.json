@@ -171,7 +171,7 @@
     {
       "id": "chess_puzzles",
       "inEci": true,
-      "models": 173,
+      "models": 107,
       "randomBaseline": 4.96,
       "releaseDate": "2025-12-10",
       "scoreCeiling": 100,
@@ -279,7 +279,7 @@
     {
       "id": "deepswe",
       "inEci": true,
-      "models": 45,
+      "models": 46,
       "randomBaseline": 0,
       "releaseDate": "2026-05-26",
       "scoreCeiling": 100,
@@ -591,7 +591,7 @@
     {
       "id": "livecodebench",
       "inEci": false,
-      "models": 7,
+      "models": 8,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -927,7 +927,7 @@
     {
       "id": "swe_atlas_codebase_qna",
       "inEci": false,
-      "models": 13,
+      "models": 14,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -963,7 +963,7 @@
     {
       "id": "swe_bench_multilingual",
       "inEci": false,
-      "models": 15,
+      "models": 16,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -987,7 +987,7 @@
     {
       "id": "swe_bench_pro",
       "inEci": false,
-      "models": 57,
+      "models": 58,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -999,7 +999,7 @@
     {
       "id": "swe_bench_vendor",
       "inEci": false,
-      "models": 41,
+      "models": 42,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1035,7 +1035,7 @@
     {
       "id": "terminal_bench",
       "inEci": false,
-      "models": 60,
+      "models": 61,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-16T06:19:23.956Z",
+  "generatedAt": "2026-10-16T17:40:49.158Z",
   "models": [
     {
       "benchmarks": {
@@ -1971,14 +1971,6 @@
           "score": 7.8,
           "source": "epoch.ai",
           "sourceUrl": "https://balrogai.com/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -3469,14 +3461,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 4,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -3668,14 +3652,6 @@
           "score": 1.25,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 12,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -3941,14 +3917,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 12,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -4203,14 +4171,6 @@
           "score": 1.25,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 12,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -4732,14 +4692,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 12,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -4980,14 +4932,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 4,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0.29,
           "source": "epoch.ai",
@@ -5137,14 +5081,6 @@
           "score": 62.22,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 2,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -5466,14 +5402,6 @@
           "score": 66.94,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 5,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -6241,7 +6169,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.07,
         "inputPerMTok": 0.2,
-        "outputPerMTok": 0.89664
+        "outputPerMTok": 0.90024
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -6530,14 +6458,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 4,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 14.5,
           "source": "epoch.ai",
@@ -6738,14 +6658,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 4,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 14.5,
           "source": "epoch.ai",
@@ -6924,14 +6836,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 4,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -8516,14 +8420,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 10,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0.57,
           "source": "epoch.ai",
@@ -8696,14 +8592,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 13,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "dtbench",
           "score": 87.47,
           "source": "epoch.ai",
@@ -8853,14 +8741,6 @@
           "score": 61.67,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 12,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -10092,14 +9972,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 22,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0.86,
           "source": "epoch.ai",
@@ -10293,14 +10165,6 @@
           "score": 86.67,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 26,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -10728,14 +10592,6 @@
           "score": 91.11,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 20,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -11196,14 +11052,6 @@
           "score": 86.67,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 23,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -11697,14 +11545,6 @@
           "score": 93.33,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 24,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -13509,14 +13349,6 @@
           "score": 59.17,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 5,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -18178,14 +18010,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 7,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cybench",
           "score": 42,
           "source": "epoch.ai",
@@ -18515,14 +18339,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 7,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -29789,7 +29605,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.02,
-        "inputPerMTok": 0.2574,
+        "inputPerMTok": 0.28,
         "outputPerMTok": 0.6
       },
       "provenance": {
@@ -29878,14 +29694,6 @@
           "score": 87.5,
           "source": "epoch.ai",
           "sourceUrl": "http://arxiv.org/abs/2412.19437",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -30236,14 +30044,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 13.2,
           "source": "epoch.ai",
@@ -30586,14 +30386,6 @@
           "score": 87.5,
           "source": "epoch.ai",
           "sourceUrl": "http://arxiv.org/abs/2412.19437",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -31668,14 +31460,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "eci",
           "score": 137.42,
           "source": "epoch.ai",
@@ -31799,14 +31583,6 @@
           "score": 87.82,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 14,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -31985,14 +31761,6 @@
           "score": 87.5,
           "source": "epoch.ai",
           "sourceUrl": "http://arxiv.org/abs/2412.19437",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -32351,14 +32119,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 13.2,
           "source": "epoch.ai",
@@ -32701,14 +32461,6 @@
           "score": 87.5,
           "source": "epoch.ai",
           "sourceUrl": "http://arxiv.org/abs/2412.19437",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -33222,14 +32974,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 12.4,
           "source": "epoch.ai",
@@ -33605,14 +33349,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 13.2,
           "source": "epoch.ai",
@@ -33969,14 +33705,6 @@
           "score": 87.5,
           "source": "epoch.ai",
           "sourceUrl": "http://arxiv.org/abs/2412.19437",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -36479,8 +36207,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.24,
-        "outputPerMTok": 0.96
+        "inputPerMTok": 0.246,
+        "outputPerMTok": 1
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -38309,14 +38037,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 20,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 2,
           "source": "epoch.ai",
@@ -38777,14 +38497,6 @@
           "score": 64,
           "source": "epoch.ai",
           "sourceUrl": "https://willpatrick.xyz/cadevalresults_20250422_095709/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 20,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -40723,14 +40435,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 31,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 15.8,
           "source": "epoch.ai",
@@ -41202,14 +40906,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 25,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 1.14,
           "source": "epoch.ai",
@@ -41505,14 +41201,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 25,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -42034,7 +41722,7 @@
         {
           "attribution": "third-party",
           "league": "chess_puzzles",
-          "score": 55,
+          "score": 51,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -45536,14 +45224,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -45705,14 +45385,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -45868,14 +45540,6 @@
           "score": 7.5,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -46047,7 +45711,7 @@
         "totalB": 25.81
       },
       "pricing": {
-        "cachedInputPerMTok": 0.049,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.111,
         "outputPerMTok": 0.38
       },
@@ -46096,14 +45760,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 6,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -46289,14 +45945,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 5,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -49301,14 +48949,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -49434,8 +49074,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.0272,
-        "inputPerMTok": 0.0544,
-        "outputPerMTok": 0.08
+        "inputPerMTok": 0.05,
+        "outputPerMTok": 0.06
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -49486,14 +49126,6 @@
           "score": 82.8,
           "source": "epoch.ai",
           "sourceUrl": "http://arxiv.org/abs/2404.14219",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -49762,14 +49394,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "eci",
           "score": 102.04,
           "source": "epoch.ai",
@@ -49875,14 +49499,6 @@
           "score": 6.6,
           "source": "epoch.ai",
           "sourceUrl": "https://balrogai.com/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -50267,9 +49883,9 @@
         "totalB": 70.55
       },
       "pricing": {
-        "cachedInputPerMTok": 0.13,
+        "cachedInputPerMTok": 0.11,
         "inputPerMTok": 0.6,
-        "outputPerMTok": 0.724
+        "outputPerMTok": 0.71
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -50690,7 +50306,7 @@
       "id": "meta/llama-4-scout",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 117964,
+      "maxOutput": 16384,
       "modalities": {
         "input": [
           "image",
@@ -52964,14 +52580,6 @@
           "score": 11.6,
           "source": "epoch.ai",
           "sourceUrl": "https://balrogai.com/",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -56459,14 +56067,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 3,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0.29,
           "source": "epoch.ai",
@@ -56588,14 +56188,6 @@
           "score": 0,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 3,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -56822,8 +56414,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.33624,
-        "outputPerMTok": 0.44832
+        "inputPerMTok": 0.33759,
+        "outputPerMTok": 0.45012
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -60855,14 +60447,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -61013,14 +60597,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -61435,14 +61011,6 @@
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 1,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
         {
           "attribution": "third-party",
           "league": "critpt",
@@ -63275,14 +62843,6 @@
           "score": 83.06,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 20,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -66696,14 +66256,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 12,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 3.14,
           "source": "epoch.ai",
@@ -67740,14 +67292,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "common_sense_qa_2",
           "score": 57,
           "source": "epoch.ai",
@@ -67977,14 +67521,6 @@
           "score": 87,
           "source": "epoch.ai",
           "sourceUrl": "https://crfm.stanford.edu/helm/classic/latest/#/groups/boolq",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -68290,14 +67826,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 0,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "common_sense_qa_2",
           "score": 57,
           "source": "epoch.ai",
@@ -68513,14 +68041,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 4,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "dtbench",
           "score": 62.67,
           "source": "epoch.ai",
@@ -68708,14 +68228,6 @@
           "score": 6.67,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 6,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -79528,14 +79040,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 12,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 0,
           "source": "epoch.ai",
@@ -81501,7 +81005,7 @@
         {
           "attribution": "third-party",
           "league": "chess_puzzles",
-          "score": 74,
+          "score": 76,
           "source": "epoch.ai",
           "sourceUrl": null,
           "unit": "pct"
@@ -83793,14 +83297,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 20,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "critpt",
           "score": 1.14,
           "source": "epoch.ai",
@@ -84030,14 +83526,6 @@
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "index"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 4,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
         },
         {
           "attribution": "third-party",
@@ -87099,6 +86587,197 @@
       "slug": "quiverai-arrow-2-telos",
       "trainingComputeFlop": null,
       "vendorId": "quiverai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": 76.5,
+        "swe_bench_vendor": 81.6,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": false,
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
+      },
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 81.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 76.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 80.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 78.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 43.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_atlas_codebase_qna",
+          "score": 31.8,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 88.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        }
+      ],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-10-16T17:40:49.158Z",
+      "id": "reflection/beam-1.0-501b-a23b",
+      "knowledgeCutoff": "2026-06-30",
+      "license": "Apache-2.0",
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Beam 1.0 501B A23B",
+      "openWeights": true,
+      "params": {
+        "activeB": 23,
+        "confidence": "exact",
+        "totalB": 501.2
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.25,
+        "outputPerMTok": 1
+      },
+      "provenance": {
+        "benchmarks.swe_bench_pro": "models.dev",
+        "benchmarks.swe_bench_vendor": "models.dev",
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "coding": "derived",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.activeB": "derived",
+        "params.totalB": "huggingface",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "scores": "derived",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-10-05",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 43.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench",
+          "score": 88.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_atlas_codebase_qna",
+          "score": 31.8,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_multilingual",
+          "score": 78.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_pro",
+          "score": 76.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 81.6,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 80.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B",
+          "unit": "pct"
+        }
+      ],
+      "slug": "reflection-beam-1-0-501b-a23b",
+      "trainingComputeFlop": null,
+      "vendorId": "reflection"
     },
     {
       "benchmarks": {
@@ -90752,14 +90431,6 @@
           "score": 40.14,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 18,
-          "source": "epoch.ai",
-          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -98558,14 +98229,6 @@
         },
         {
           "attribution": "third-party",
-          "league": "chess_puzzles",
-          "score": 10,
-          "source": "epoch.ai",
-          "sourceUrl": null,
-          "unit": "pct"
-        },
-        {
-          "attribution": "third-party",
           "league": "cl_bench",
           "score": 18.7,
           "source": "epoch.ai",
@@ -100760,38 +100423,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 422 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
-      "note": "请求 198 个开源模型，成功 194，失败 4",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
+      "note": "请求 199 个开源模型，成功 195，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
-      "note": "4189 条（对话类 3208 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
+      "note": "4193 条（对话类 3208 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
-      "note": "models.json 551 条；api.json 230 provider / 8892 条；benchmarks[] 1136 条，已拦截 AA 血缘 181 条，非编程口径跳过 585 条",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
+      "note": "models.json 552 条；api.json 232 provider / 8983 条；benchmarks[] 1159 条，已拦截 AA 血缘 183 条，非编程口径跳过 598 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
-      "note": "465 条；已剔除 artificial_analysis 287 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
+      "note": "466 条；已剔除 artificial_analysis 287 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -100800,8 +100463,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-16T06:19:23.956Z",
-      "note": "470 条（language 315 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-16T17:40:49.158Z",
+      "note": "471 条（language 317 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -101275,6 +100938,16 @@
       "motif": "wanderer",
       "name": "Quiverai",
       "nameZh": "Quiverai"
+    },
+    {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": "https://developers.reflection.ai",
+      "id": "reflection",
+      "motif": "wanderer",
+      "name": "Reflection",
+      "nameZh": "Reflection"
     },
     {
       "accentColor": "#5b5bd6",

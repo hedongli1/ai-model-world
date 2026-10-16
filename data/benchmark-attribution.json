@@ -2947,6 +2947,78 @@
         "sourceUrl": "https://poolside.ai/blog/introducing-laguna-xs-2-1"
       }
     },
+    "reflection/beam-1.0-501b-a23b": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": null,
+        "rawName": "DeepSWE",
+        "score": 43.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      },
+      "livecodebench": {
+        "attributionType": "vendor-self-reported",
+        "key": "livecodebench",
+        "league": "livecodebench",
+        "metric": null,
+        "rawName": "LiveCodeBench",
+        "score": 88.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      },
+      "swe_atlas_codebase_qna": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_atlas_codebase_qna",
+        "league": "swe_atlas_codebase_qna",
+        "metric": null,
+        "rawName": "SWE-Atlas Codebase QnA",
+        "score": 31.8,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      },
+      "swe_bench_multilingual": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_multilingual",
+        "league": "swe_bench_multilingual",
+        "metric": null,
+        "rawName": "SWE-Bench Multilingual",
+        "score": 78.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      },
+      "swe_bench_pro": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_pro",
+        "league": "swe_bench_pro",
+        "metric": null,
+        "rawName": "SWE-Bench Pro",
+        "score": 76.5,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      },
+      "swe_bench_verified": {
+        "attributionType": "vendor-self-reported",
+        "key": "swe_bench_verified",
+        "league": "swe_bench_vendor",
+        "metric": null,
+        "rawName": "SWE-Bench Verified",
+        "score": 81.6,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": null,
+        "rawName": "Terminal-Bench",
+        "score": 80.1,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/reflection/Beam-1.0-501B-A23B"
+      }
+    },
     "sakana/fugu": {
       "livecodebench": {
         "attributionType": "vendor-self-reported",
@@ -3630,5 +3702,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-16T06:19:23.956Z"
+  "generatedAt": "2026-10-16T17:40:49.158Z"
 }
