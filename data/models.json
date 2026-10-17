@@ -27,7 +27,7 @@
     {
       "id": "aime",
       "inEci": true,
-      "models": 204,
+      "models": 205,
       "randomBaseline": 0.1,
       "releaseDate": "2024-12-19",
       "scoreCeiling": 100,
@@ -39,7 +39,7 @@
     {
       "id": "ale_bench",
       "inEci": false,
-      "models": 152,
+      "models": 153,
       "randomBaseline": null,
       "releaseDate": "2025-06-10",
       "scoreCeiling": null,
@@ -63,7 +63,7 @@
     {
       "id": "apex_agents",
       "inEci": true,
-      "models": 62,
+      "models": 63,
       "randomBaseline": 0,
       "releaseDate": "2026-01-21",
       "scoreCeiling": 100,
@@ -75,7 +75,7 @@
     {
       "id": "arc_agi",
       "inEci": true,
-      "models": 115,
+      "models": 116,
       "randomBaseline": 0,
       "releaseDate": "2019-11-05",
       "scoreCeiling": 100,
@@ -87,7 +87,7 @@
     {
       "id": "arc_agi_2",
       "inEci": true,
-      "models": 116,
+      "models": 117,
       "randomBaseline": 0,
       "releaseDate": "2025-03-24",
       "scoreCeiling": 100,
@@ -171,7 +171,7 @@
     {
       "id": "chess_puzzles",
       "inEci": true,
-      "models": 107,
+      "models": 108,
       "randomBaseline": 4.96,
       "releaseDate": "2025-12-10",
       "scoreCeiling": 100,
@@ -231,7 +231,7 @@
     {
       "id": "critpt",
       "inEci": false,
-      "models": 177,
+      "models": 178,
       "randomBaseline": 0,
       "releaseDate": "2025-09-30",
       "scoreCeiling": 100,
@@ -291,7 +291,7 @@
     {
       "id": "dtbench",
       "inEci": true,
-      "models": 210,
+      "models": 211,
       "randomBaseline": 40,
       "releaseDate": "2026-08-12",
       "scoreCeiling": 100,
@@ -315,7 +315,7 @@
     {
       "id": "eci",
       "inEci": false,
-      "models": 222,
+      "models": 223,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -363,7 +363,7 @@
     {
       "id": "frontier_code",
       "inEci": true,
-      "models": 49,
+      "models": 50,
       "randomBaseline": 0,
       "releaseDate": "2026-06-08",
       "scoreCeiling": 100,
@@ -423,7 +423,7 @@
     {
       "id": "frontiermath_tier_4_v2",
       "inEci": true,
-      "models": 83,
+      "models": 84,
       "randomBaseline": 0,
       "releaseDate": "2026-06-12",
       "scoreCeiling": 100,
@@ -435,7 +435,7 @@
     {
       "id": "frontiermath_tiers_1_3_v2",
       "inEci": true,
-      "models": 111,
+      "models": 112,
       "randomBaseline": 0,
       "releaseDate": "2026-06-12",
       "scoreCeiling": 100,
@@ -447,7 +447,7 @@
     {
       "id": "furniture_assembly",
       "inEci": true,
-      "models": 39,
+      "models": 40,
       "randomBaseline": 30,
       "releaseDate": "2026-09-23",
       "scoreCeiling": 100,
@@ -495,7 +495,7 @@
     {
       "id": "gpqa_diamond",
       "inEci": true,
-      "models": 208,
+      "models": 209,
       "randomBaseline": 25,
       "releaseDate": "2023-11-20",
       "scoreCeiling": 100,
@@ -627,7 +627,7 @@
     {
       "id": "lmca",
       "inEci": true,
-      "models": 194,
+      "models": 195,
       "randomBaseline": 0,
       "releaseDate": "2026-08-12",
       "scoreCeiling": 85,
@@ -711,7 +711,7 @@
     {
       "id": "mystery_game_puzzles",
       "inEci": true,
-      "models": 103,
+      "models": 104,
       "randomBaseline": 9.22,
       "releaseDate": "2026-07-30",
       "scoreCeiling": 100,
@@ -807,7 +807,7 @@
     {
       "id": "proofbench",
       "inEci": true,
-      "models": 95,
+      "models": 96,
       "randomBaseline": 0,
       "releaseDate": "2026-01-30",
       "scoreCeiling": 100,
@@ -855,7 +855,7 @@
     {
       "id": "simpleqa_verified",
       "inEci": true,
-      "models": 107,
+      "models": 108,
       "randomBaseline": 0,
       "releaseDate": "2025-09-09",
       "scoreCeiling": 100,
@@ -915,7 +915,7 @@
     {
       "id": "surface_evolver_bench",
       "inEci": true,
-      "models": 33,
+      "models": 34,
       "randomBaseline": 0,
       "releaseDate": "2026-06-19",
       "scoreCeiling": 100,
@@ -1131,7 +1131,7 @@
     {
       "id": "webdev_arena_elo",
       "inEci": false,
-      "models": 135,
+      "models": 136,
       "randomBaseline": null,
       "releaseDate": "2024-12-10",
       "scoreCeiling": null,
@@ -1155,7 +1155,7 @@
     {
       "id": "weirdml_v3",
       "inEci": false,
-      "models": 18,
+      "models": 19,
       "randomBaseline": 0,
       "releaseDate": "2026-09-18",
       "scoreCeiling": 100,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-17T06:06:15.190Z",
+  "generatedAt": "2026-10-17T16:38:20.918Z",
   "models": [
     {
       "benchmarks": {
@@ -36436,6 +36436,278 @@
         }
       ],
       "slug": "deepseek-deepseek-v4-1-flash",
+      "trainingComputeFlop": 4.32e+24,
+      "vendorId": "deepseek"
+    },
+    {
+      "benchmarks": {
+        "aime": 98.33,
+        "arc_agi_2": 72.92,
+        "eci": 155.57,
+        "fiction_live": null,
+        "gpqa_diamond": 89.84,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": 1613.95
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [
+        {
+          "attribution": "third-party",
+          "league": "frontier_code",
+          "score": 43.87,
+          "source": "epoch.ai",
+          "sourceUrl": "https://cognition.com/frontiercode",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "ale_bench",
+          "score": 1092.35,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "index"
+        },
+        {
+          "attribution": "third-party",
+          "league": "webdev_arena_elo",
+          "score": 1613.95,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "elo"
+        }
+      ],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-10-17T16:38:20.918Z",
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 393216,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Deepseek V4.1 Flash 1017",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.003,
+        "inputPerMTok": 0.15,
+        "outputPerMTok": 0.6
+      },
+      "provenance": {
+        "benchmarks.aime": "epoch.ai",
+        "benchmarks.arc_agi_2": "epoch.ai",
+        "benchmarks.eci": "epoch.ai",
+        "benchmarks.gpqa_diamond": "epoch.ai",
+        "benchmarks.webdev_arena_elo": "epoch.ai",
+        "capabilities.promptCaching": "derived",
+        "coding": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "epoch.ai",
+        "releaseDatePrecision": "epoch.ai",
+        "scores": "derived",
+        "trainingComputeFlop": "epoch.ai",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-09",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "aime",
+          "score": 98.33,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "ale_bench",
+          "score": 1092.35,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "index"
+        },
+        {
+          "attribution": "third-party",
+          "league": "apex_agents",
+          "score": 39.5,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arc_agi",
+          "score": 94.5,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "arc_agi_2",
+          "score": 72.92,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "chess_puzzles",
+          "score": 48,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "critpt",
+          "score": 14.29,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "dtbench",
+          "score": 89.87,
+          "source": "epoch.ai",
+          "sourceUrl": "https://conceptualreasoning.ai/dtbench",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "eci",
+          "score": 155.57,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "index"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontier_code",
+          "score": 43.87,
+          "source": "epoch.ai",
+          "sourceUrl": "https://cognition.com/frontiercode",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontiermath_tier_4_v2",
+          "score": 26.83,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontiermath_tiers_1_3_v2",
+          "score": 67.37,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "furniture_assembly",
+          "score": 34.17,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "gpqa_diamond",
+          "score": 89.84,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "lmca",
+          "score": 46.97,
+          "source": "epoch.ai",
+          "sourceUrl": "https://conceptualreasoning.ai/lmca",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "mystery_game_puzzles",
+          "score": 43,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "proofbench",
+          "score": 54,
+          "source": "epoch.ai",
+          "sourceUrl": "https://www.vals.ai/benchmarks/proof_bench",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "simpleqa_verified",
+          "score": 42.9,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "surface_evolver_bench",
+          "score": 46.25,
+          "source": "epoch.ai",
+          "sourceUrl": "https://yhenon.github.io/surface-evolver-llm-eval/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "webdev_arena_elo",
+          "score": 1613.95,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "elo"
+        },
+        {
+          "attribution": "third-party",
+          "league": "weirdml_v3",
+          "score": 5.95,
+          "source": "epoch.ai",
+          "sourceUrl": "https://htihle.github.io/weirdml.html",
+          "unit": "pct"
+        }
+      ],
+      "slug": "deepseek-deepseek-v4-1-flash-1017",
       "trainingComputeFlop": 4.32e+24,
       "vendorId": "deepseek"
     },
@@ -100563,38 +100835,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 422 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
       "note": "请求 199 个开源模型，成功 195，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
       "note": "4200 条（对话类 3211 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
-      "note": "models.json 552 条；api.json 232 provider / 8987 条；benchmarks[] 1159 条，已拦截 AA 血缘 183 条，非编程口径跳过 598 条",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
+      "note": "models.json 552 条；api.json 232 provider / 8994 条；benchmarks[] 1159 条，已拦截 AA 血缘 183 条，非编程口径跳过 598 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
-      "note": "469 条；已剔除 artificial_analysis 288 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
+      "note": "470 条；已剔除 artificial_analysis 289 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -100603,8 +100875,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-17T06:06:15.190Z",
-      "note": "474 条（language 318 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-17T16:38:20.918Z",
+      "note": "474 条（language 319 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
