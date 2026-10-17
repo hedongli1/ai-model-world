@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-10-16T17:40:49.158Z",
+  "generatedAt": "2026-10-17T06:06:15.190Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -368,6 +368,10 @@
     },
     "deepseek/deepseek-v4.1-flash-fast": {
       "basis": "price+naming",
+      "tier": 2
+    },
+    "elorian/glimpse": {
+      "basis": "price",
       "tier": 2
     },
     "fireworks/ember-1": {
@@ -1081,6 +1085,10 @@
     "quiverai/arrow-2-telos": {
       "basis": "price",
       "tier": 4
+    },
+    "reflection/beam": {
+      "basis": "price",
+      "tier": 1
     },
     "relace/relace-apply-3": {
       "basis": "price",
