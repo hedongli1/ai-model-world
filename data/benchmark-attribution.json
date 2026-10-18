@@ -1389,6 +1389,38 @@
         "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
       }
     },
+    "deepseek/deepseek-v4.1-flash-1017": {
+      "deepswe": {
+        "attributionType": "vendor-self-reported",
+        "key": "deepswe",
+        "league": "deepswe",
+        "metric": null,
+        "rawName": "DeepSWE",
+        "score": 77,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      },
+      "nl2repo": {
+        "attributionType": "vendor-self-reported",
+        "key": "nl2repo",
+        "league": "nl2repo",
+        "metric": null,
+        "rawName": "NL2Repo",
+        "score": 68.2,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      },
+      "terminal_bench": {
+        "attributionType": "vendor-self-reported",
+        "key": "terminal_bench",
+        "league": "terminal_bench",
+        "metric": null,
+        "rawName": "Terminal-Bench",
+        "score": 42.3,
+        "sourceHost": "huggingface.co",
+        "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      }
+    },
     "google/gemini-2.5-flash": {
       "aider_polyglot": {
         "attributionType": "third-party",
@@ -3702,5 +3734,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-17T16:38:20.918Z"
+  "generatedAt": "2026-10-18T06:33:20.495Z"
 }

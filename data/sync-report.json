@@ -4,7 +4,7 @@
     "_note": "ModelRecord.coding[] 的落地情况。一个赛制一条成绩，跨赛制永不混算。byLeague 是「该赛制覆盖了几个模型」，各赛制之间会重叠（一个模型可以有多条成绩）。flagship 是广场首屏当家门面的命中率——全站覆盖率会被长尾微调模型稀释，首屏才是用户真正看到的东西；without 如实列出仍然没有任何编程成绩的门面。modelsOnlyElo 是只有 WebDev Arena Elo、没有任何百分数成绩的模型：它们能排名，但读不出「解决了几成任务」，前端别把 Elo 塞进百分数的分位池。",
     "byAttribution": {
       "third-party": 918,
-      "vendor-self-reported": 229
+      "vendor-self-reported": 232
     },
     "byLeague": {
       "aider_polyglot": 59,
@@ -12,7 +12,7 @@
       "algotune": 27,
       "claw_eval": 6,
       "cursorbench": 16,
-      "deepswe": 46,
+      "deepswe": 47,
       "frontier_code": 49,
       "frontier_swe": 5,
       "gso": 38,
@@ -23,7 +23,7 @@
       "livecodebench_v6": 1,
       "mirrorcode": 9,
       "mle_bench": 2,
-      "nl2repo": 15,
+      "nl2repo": 16,
       "program_bench": 3,
       "swe_atlas_codebase_qna": 14,
       "swe_atlas_refactoring": 11,
@@ -34,7 +34,7 @@
       "swe_bench_vendor": 42,
       "swe_bench_verified": 46,
       "swe_marathon": 6,
-      "terminal_bench": 61,
+      "terminal_bench": 62,
       "terminal_bench_2_0": 67,
       "terminal_bench_2_1": 5,
       "webdev_arena_elo": 134
@@ -42,7 +42,7 @@
     "byUnit": {
       "elo": 134,
       "index": 177,
-      "pct": 836
+      "pct": 839
     },
     "flagship": {
       "total": 40,
@@ -85,7 +85,7 @@
   "codingLeaguesBlocked": {
     "_note": "通过了合规过滤、但因为口径不是「写代码 / 软件工程」而没有进入 coding[] 的榜单，以及因为血缘指向 Artificial Analysis / LMArena 而被拦掉的条数。逐条理由写在 scripts/sync/sources/models-dev.ts 的 CODING_LEAGUES 与 sources/epoch.ts 的 CODING_BENCHMARKS 上方。",
     "entriesBlockedByCompliance": 183,
-    "entriesSkippedOffTopic": 598,
+    "entriesSkippedOffTopic": 607,
     "epochFilesBlocked": [
       {
         "file": "scicode_external.csv",
@@ -111,10 +111,10 @@
   },
   "counts": {
     "epochParamStrippedMatches": 3,
-    "fromModelsDev": 552,
+    "fromModelsDev": 553,
     "models": 673,
-    "pendingDiscoveries": 91,
-    "promotedDiscoveries": 92,
+    "pendingDiscoveries": 93,
+    "promotedDiscoveries": 91,
     "quickPromotedDiscoveries": 23,
     "releaseDateOutliersDropped": 23,
     "resurrected": 0,
@@ -184,18 +184,18 @@
       "total": 673
     },
     "capabilities.reasoning": {
-      "filled": 553,
-      "pct": 82.2,
+      "filled": 554,
+      "pct": 82.3,
       "total": 673
     },
     "capabilities.structuredOutput": {
-      "filled": 257,
-      "pct": 38.2,
+      "filled": 258,
+      "pct": 38.3,
       "total": 673
     },
     "capabilities.toolCall": {
-      "filled": 553,
-      "pct": 82.2,
+      "filled": 554,
+      "pct": 82.3,
       "total": 673
     },
     "coding.两条以上赛制": {
@@ -229,13 +229,13 @@
       "total": 673
     },
     "knowledgeCutoff": {
-      "filled": 280,
-      "pct": 41.6,
+      "filled": 281,
+      "pct": 41.8,
       "total": 673
     },
     "license": {
-      "filled": 161,
-      "pct": 23.9,
+      "filled": 162,
+      "pct": 24.1,
       "total": 673
     },
     "maxOutput": {
@@ -259,8 +259,8 @@
       "total": 673
     },
     "openWeights": {
-      "filled": 553,
-      "pct": 82.2,
+      "filled": 554,
+      "pct": 82.3,
       "total": 673
     },
     "params.activeB": {
@@ -274,13 +274,13 @@
       "total": 673
     },
     "params.sizeTier": {
-      "filled": 344,
-      "pct": 51.1,
+      "filled": 343,
+      "pct": 51,
       "total": 673
     },
     "params.totalB": {
-      "filled": 265,
-      "pct": 39.4,
+      "filled": 266,
+      "pct": 39.5,
       "total": 673
     },
     "pricing.cachedInputPerMTok": {
@@ -709,7 +709,7 @@
         "curated": true,
         "file": "deepswe_external.csv",
         "inEci": true,
-        "landed": 46,
+        "landed": 47,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 69,
@@ -1599,7 +1599,7 @@
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
       "mle_bench": 2,
-      "nl2repo": 15,
+      "nl2repo": 16,
       "program_bench": 3,
       "swe_atlas_codebase_qna": 14,
       "swe_atlas_refactoring": 11,
@@ -1609,7 +1609,7 @@
       "swe_bench_pro": 58,
       "swe_bench_vendor": 42,
       "swe_marathon": 6,
-      "terminal_bench": 61,
+      "terminal_bench": 62,
       "terminal_bench_2_1": 5
     }
   },
@@ -1919,45 +1919,45 @@
       "pricing.outputPerMTok": 565
     },
     "before": {
-      "contextWindow": 542,
-      "maxOutput": 519,
-      "modalities": 552,
-      "pricing.inputPerMTok": 462,
-      "pricing.outputPerMTok": 456
+      "contextWindow": 543,
+      "maxOutput": 520,
+      "modalities": 553,
+      "pricing.inputPerMTok": 463,
+      "pricing.outputPerMTok": 457
     },
     "bySource": {
       "contextWindow": {
-        "openrouter": 58,
+        "openrouter": 57,
         "vercel-gateway": 34
       },
       "maxOutput": {
         "litellm": 1,
-        "openrouter": 58,
+        "openrouter": 57,
         "vercel-gateway": 34
       },
       "modalities": {
-        "openrouter": 58,
+        "openrouter": 57,
         "vercel-gateway": 34
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 46,
-        "openrouter": 32,
+        "litellm": 44,
+        "openrouter": 31,
         "vercel-gateway": 11
       },
       "pricing.inputPerMTok": {
         "litellm": 55,
-        "openrouter": 44,
+        "openrouter": 43,
         "vercel-gateway": 12
       },
       "pricing.outputPerMTok": {
         "litellm": 54,
-        "openrouter": 43,
+        "openrouter": 42,
         "vercel-gateway": 12
       }
     },
     "liveModels": 644
   },
-  "generatedAt": "2026-10-17T16:38:20.918Z",
+  "generatedAt": "2026-10-18T06:33:20.495Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 129,
@@ -2043,7 +2043,13 @@
       "zhipuai/glm-5.3-prime"
     ]
   },
-  "releaseDateConflicts": [],
+  "releaseDateConflicts": [
+    {
+      "from": "2026-09-09",
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "to": "2026-09-08"
+    }
+  ],
   "sources": {
     "derived": {
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
@@ -2054,11 +2060,11 @@
       "ok": true
     },
     "huggingface": {
-      "note": "请求 199 个开源模型，成功 195，失败 4",
+      "note": "请求 200 个开源模型，成功 196，失败 4",
       "ok": true
     },
     "litellm": {
-      "note": "4200 条（对话类 3211 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4211 条（对话类 3218 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2066,11 +2072,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 552 条；api.json 232 provider / 8994 条；benchmarks[] 1159 条，已拦截 AA 血缘 183 条，非编程口径跳过 598 条",
+      "note": "models.json 553 条；api.json 232 provider / 9054 条；benchmarks[] 1171 条，已拦截 AA 血缘 183 条，非编程口径跳过 607 条",
       "ok": true
     },
     "openrouter": {
-      "note": "470 条；已剔除 artificial_analysis 289 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "471 条；已剔除 artificial_analysis 289 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -2078,7 +2084,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "474 条（language 319 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "476 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -2188,5 +2194,7 @@
     "withFlop": 87
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
-  "warnings": []
+  "warnings": [
+    "1 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
+  ]
 }

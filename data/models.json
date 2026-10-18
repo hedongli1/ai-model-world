@@ -279,7 +279,7 @@
     {
       "id": "deepswe",
       "inEci": true,
-      "models": 46,
+      "models": 47,
       "randomBaseline": 0,
       "releaseDate": "2026-05-26",
       "scoreCeiling": 100,
@@ -723,7 +723,7 @@
     {
       "id": "nl2repo",
       "inEci": false,
-      "models": 15,
+      "models": 16,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1035,7 +1035,7 @@
     {
       "id": "terminal_bench",
       "inEci": false,
-      "models": 61,
+      "models": 62,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-17T16:38:20.918Z",
+  "generatedAt": "2026-10-18T06:33:20.495Z",
   "models": [
     {
       "benchmarks": {
@@ -5049,7 +5049,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.1,
+        "inputPerMTok": 0.09,
         "outputPerMTok": 0.3
       },
       "provenance": {
@@ -36207,8 +36207,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.246,
-        "outputPerMTok": 1
+        "inputPerMTok": 0.23184,
+        "outputPerMTok": 0.944
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -36453,11 +36453,35 @@
       },
       "capabilities": {
         "promptCaching": true,
-        "reasoning": null,
-        "structuredOutput": null,
-        "toolCall": null
+        "reasoning": true,
+        "structuredOutput": true,
+        "toolCall": true
       },
       "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 42.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 77,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 68.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "unit": "pct"
+        },
         {
           "attribution": "third-party",
           "league": "frontier_code",
@@ -36483,12 +36507,12 @@
           "unit": "elo"
         }
       ],
-      "contextWindow": 1048576,
+      "contextWindow": 1000000,
       "firstSeenAt": "2026-10-17T16:38:20.918Z",
       "id": "deepseek/deepseek-v4.1-flash-1017",
-      "knowledgeCutoff": null,
-      "license": null,
-      "maxOutput": 393216,
+      "knowledgeCutoff": "2025-05",
+      "license": "MIT",
+      "maxOutput": 384000,
       "modalities": {
         "input": [
           "image",
@@ -36498,17 +36522,15 @@
           "text"
         ]
       },
-      "name": "Deepseek V4.1 Flash 1017",
-      "openWeights": null,
+      "name": "DeepSeek V4.1 Flash 1017",
+      "openWeights": true,
       "params": {
         "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 1,
-        "sizeTierBasis": "price+naming",
-        "totalB": null
+        "confidence": "exact",
+        "totalB": 557.17
       },
       "pricing": {
-        "cachedInputPerMTok": 0.003,
+        "cachedInputPerMTok": 0.006,
         "inputPerMTok": 0.15,
         "outputPerMTok": 0.6
       },
@@ -36519,22 +36541,28 @@
         "benchmarks.gpqa_diamond": "epoch.ai",
         "benchmarks.webdev_arena_elo": "epoch.ai",
         "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.structuredOutput": "models.dev",
+        "capabilities.toolCall": "models.dev",
         "coding": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
-        "name": "derived",
-        "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
-        "releaseDate": "epoch.ai",
-        "releaseDatePrecision": "epoch.ai",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
-      "releaseDate": "2026-09-09",
+      "releaseDate": "2026-09-08",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -36592,6 +36620,14 @@
           "score": 14.29,
           "source": "epoch.ai",
           "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "deepswe",
+          "score": 77,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
           "unit": "pct"
         },
         {
@@ -36667,6 +36703,14 @@
           "unit": "pct"
         },
         {
+          "attribution": "vendor-self-reported",
+          "league": "nl2repo",
+          "score": 68.2,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+          "unit": "pct"
+        },
+        {
           "attribution": "third-party",
           "league": "proofbench",
           "score": 54,
@@ -36688,6 +36732,14 @@
           "score": 46.25,
           "source": "epoch.ai",
           "sourceUrl": "https://yhenon.github.io/surface-evolver-llm-eval/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 42.3,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
           "unit": "pct"
         },
         {
@@ -66394,8 +66446,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.025,
-        "inputPerMTok": 0.15,
-        "outputPerMTok": 0.65
+        "inputPerMTok": 0.085,
+        "outputPerMTok": 0.45
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -97609,7 +97661,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -97883,7 +97935,7 @@
         "totalB": 107.71
       },
       "pricing": {
-        "cachedInputPerMTok": 0.055,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.3,
         "outputPerMTok": 0.9
       },
@@ -97900,7 +97952,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -100835,38 +100887,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 422 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
-      "note": "请求 199 个开源模型，成功 195，失败 4",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
+      "note": "请求 200 个开源模型，成功 196，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
-      "note": "4200 条（对话类 3211 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
+      "note": "4211 条（对话类 3218 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
-      "note": "models.json 552 条；api.json 232 provider / 8994 条；benchmarks[] 1159 条，已拦截 AA 血缘 183 条，非编程口径跳过 598 条",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
+      "note": "models.json 553 条；api.json 232 provider / 9054 条；benchmarks[] 1171 条，已拦截 AA 血缘 183 条，非编程口径跳过 607 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
-      "note": "470 条；已剔除 artificial_analysis 289 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
+      "note": "471 条；已剔除 artificial_analysis 289 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -100875,8 +100927,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-17T16:38:20.918Z",
-      "note": "474 条（language 319 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-18T06:33:20.495Z",
+      "note": "476 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
