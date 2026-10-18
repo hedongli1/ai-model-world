@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-10-18T06:33:20.495Z",
+  "generatedAt": "2026-10-18T16:50:12.951Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -365,6 +365,10 @@
     "deepseek/deepseek-v3.2-thinking": {
       "basis": "price",
       "tier": 1
+    },
+    "deepseek/deepseek-v4.1-flash-1017-fast": {
+      "basis": "price+naming",
+      "tier": 2
     },
     "deepseek/deepseek-v4.1-flash-fast": {
       "basis": "price+naming",
