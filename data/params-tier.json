@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-10-19T06:45:01.780Z",
+  "generatedAt": "2026-10-19T19:27:43.272Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -559,6 +559,10 @@
       "tier": 1
     },
     "inception/mercury-2.5": {
+      "basis": "price",
+      "tier": 1
+    },
+    "inception/mercury-3": {
       "basis": "price",
       "tier": 1
     },
