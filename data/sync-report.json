@@ -46,8 +46,8 @@
     },
     "flagship": {
       "total": 40,
-      "withAnyCoding": 13,
-      "withPercentCoding": 10,
+      "withAnyCoding": 12,
+      "withPercentCoding": 9,
       "without": [
         "ai21/jamba-mini",
         "aisingapore/gemma-sea-lion-v4-27b-it",
@@ -62,6 +62,7 @@
         "inclusionai/ling-3.1-flash",
         "liquid/lfm-2.5-24b-a2b",
         "meituan/longcat-2.5-preview",
+        "meta/muse-wonder",
         "microsoft/mai-code-1.1-flash",
         "morph/morph-v3-large",
         "nousresearch/hermes-2-pro-llama-3-8b",
@@ -110,13 +111,13 @@
     }
   },
   "counts": {
-    "epochParamStrippedMatches": 3,
+    "epochParamStrippedMatches": 4,
     "fromModelsDev": 555,
     "models": 678,
-    "pendingDiscoveries": 91,
+    "pendingDiscoveries": 93,
     "promotedDiscoveries": 92,
     "quickPromotedDiscoveries": 22,
-    "releaseDateOutliersDropped": 20,
+    "releaseDateOutliersDropped": 21,
     "resurrected": 0,
     "retiredThisRun": 31,
     "retiredTotal": 31,
@@ -124,8 +125,8 @@
   },
   "coverage": {
     "benchmarks.aime": {
-      "filled": 205,
-      "pct": 30.2,
+      "filled": 206,
+      "pct": 30.4,
       "total": 678
     },
     "benchmarks.arc_agi_2": {
@@ -134,8 +135,8 @@
       "total": 678
     },
     "benchmarks.eci": {
-      "filled": 223,
-      "pct": 32.9,
+      "filled": 220,
+      "pct": 32.4,
       "total": 678
     },
     "benchmarks.fiction_live": {
@@ -144,8 +145,8 @@
       "total": 678
     },
     "benchmarks.gpqa_diamond": {
-      "filled": 209,
-      "pct": 30.8,
+      "filled": 210,
+      "pct": 31,
       "total": 678
     },
     "benchmarks.swe_bench_pro": {
@@ -284,8 +285,8 @@
       "total": 678
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 419,
-      "pct": 61.8,
+      "filled": 420,
+      "pct": 61.9,
       "total": 678
     },
     "pricing.inputPerMTok": {
@@ -309,8 +310,8 @@
       "total": 678
     },
     "scores.三条以上榜单": {
-      "filled": 290,
-      "pct": 42.8,
+      "filled": 291,
+      "pct": 42.9,
       "total": 678
     },
     "scores.任一成绩": {
@@ -333,7 +334,7 @@
     "_note": "有分数的 CSV 行数，仅用于确认解析器读到了东西。**不是模型数，不要当覆盖率分母用**，见 epochMatch。",
     "aime": 296,
     "arc_agi_2": 272,
-    "eci": 251,
+    "eci": 244,
     "fiction_live": 40,
     "gpqa_diamond": 314,
     "swe_bench_verified": 35,
@@ -409,7 +410,7 @@
         "curated": true,
         "file": "otis_mock_aime_2024_2025.csv",
         "inEci": true,
-        "landed": 205,
+        "landed": 206,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 304,
@@ -708,7 +709,7 @@
       "deepswe": {
         "curated": true,
         "file": "deepswe_external.csv",
-        "inEci": true,
+        "inEci": false,
         "landed": 47,
         "multiplier": 100,
         "outOfRange": 0,
@@ -754,12 +755,12 @@
         "curated": true,
         "file": "epoch_capabilities_index/eci_scores.csv",
         "inEci": false,
-        "landed": 223,
+        "landed": 220,
         "multiplier": 1,
         "outOfRange": 0,
-        "rows": 277,
+        "rows": 270,
         "scoreColumn": "eci",
-        "scored": 251,
+        "scored": 244,
         "selfRun": true,
         "supersededBy": null,
         "unit": "index",
@@ -859,12 +860,12 @@
         "curated": false,
         "file": "frontiermath_erdos.csv",
         "inEci": false,
-        "landed": 7,
+        "landed": 13,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 7,
+        "rows": 13,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 7,
+        "scored": 13,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -979,7 +980,7 @@
         "curated": true,
         "file": "gpqa_diamond.csv",
         "inEci": true,
-        "landed": 209,
+        "landed": 210,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 324,
@@ -1038,7 +1039,7 @@
       "hle": {
         "curated": false,
         "file": "hle_external.csv",
-        "inEci": true,
+        "inEci": false,
         "landed": 61,
         "multiplier": 100,
         "outOfRange": 0,
@@ -1293,7 +1294,7 @@
       "science_qa": {
         "curated": false,
         "file": "science_qa_external.csv",
-        "inEci": true,
+        "inEci": false,
         "landed": 6,
         "multiplier": 100,
         "outOfRange": 0,
@@ -1563,12 +1564,12 @@
       "weirdml_v3": {
         "curated": false,
         "file": "weirdml_v3_external.csv",
-        "inEci": false,
+        "inEci": true,
         "landed": 29,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 23,
-        "scoreColumn": "Score",
+        "scoreColumn": "Max performance",
         "scored": 23,
         "selfRun": false,
         "supersededBy": null,
@@ -1617,7 +1618,7 @@
     "_note": "「上游有多少 / 我们接住多少」。**分母必须用去重后的模型实体，不是 CSV 行数。**Epoch 的一个模型会占很多行（每个 reasoning effort 一行、带日期的快照版本各占一行），拿行数当分母算出来的 ECI「丢了 69%」是假告警，真实情况见 upstreamModels/matchedModels。剩下的未匹配绝大多数是压根不在 models.dev 收录范围里的历史模型（Claude 2、Gemini 1.5、Llama 3-70B 这类），不是名称归一化的问题——unmatchedSamples 可以逐条核对。另外 matchedModels 与 landedModels 数的是两个不同的群体，两边不相等不是矛盾：前者数「上游有多少个模型被我们接住了」，后者数「我们有多少个模型这一列拿到了值」。grok-4.20 与 grok-4.20-reasoning 在我们这边是两个模型、在 Epoch 那边是同一个实体，于是 landed 会大于 matched；反过来某个实体是靠别的别名键接住的、那个键上恰好没有这一项成绩时，matched 又会大于 landed。",
     "byBenchmark": {
       "aime": {
-        "landedModels": 205,
+        "landedModels": 206,
         "matchedModels": 151,
         "upstreamModels": 196,
         "upstreamRows": 296
@@ -1629,10 +1630,10 @@
         "upstreamRows": 272
       },
       "eci": {
-        "landedModels": 223,
-        "matchedModels": 151,
-        "upstreamModels": 231,
-        "upstreamRows": 251
+        "landedModels": 220,
+        "matchedModels": 149,
+        "upstreamModels": 224,
+        "upstreamRows": 244
       },
       "fiction_live": {
         "landedModels": 44,
@@ -1641,7 +1642,7 @@
         "upstreamRows": 40
       },
       "gpqa_diamond": {
-        "landedModels": 209,
+        "landedModels": 210,
         "matchedModels": 158,
         "upstreamModels": 215,
         "upstreamRows": 314
@@ -1661,10 +1662,10 @@
     },
     "matchTiers": {
       "loose": 37,
-      "param-stripped": 3,
-      "strict": 210
+      "param-stripped": 4,
+      "strict": 212
     },
-    "matchedEntities": 280,
+    "matchedEntities": 279,
     "unmatchedSamples": [
       {
         "benchmarks": [
@@ -1707,16 +1708,6 @@
         "key": "anthropic|claude21",
         "label": "Claude 2.1",
         "organization": "Anthropic"
-      },
-      {
-        "benchmarks": [
-          "aime",
-          "eci",
-          "gpqa_diamond"
-        ],
-        "key": "deepseek|deepseekr1distillqwen14b",
-        "label": "DeepSeek-R1-Distill-Qwen-14B",
-        "organization": "DeepSeek"
       },
       {
         "benchmarks": [
@@ -1874,6 +1865,15 @@
           "aime",
           "gpqa_diamond"
         ],
+        "key": "deepseek|deepseekr1distillqwen14b",
+        "label": "DeepSeek-R1-Distill-Qwen-14B",
+        "organization": "DeepSeek"
+      },
+      {
+        "benchmarks": [
+          "aime",
+          "gpqa_diamond"
+        ],
         "key": "deepseek|deepseekr1distillqwen15b",
         "label": "DeepSeek-R1-Distill-Qwen-1.5B",
         "organization": "DeepSeek"
@@ -1906,7 +1906,7 @@
         "organization": "Google DeepMind"
       }
     ],
-    "upstreamEntities": 422
+    "upstreamEntities": 417
   },
   "failures": [],
   "fallbackCoverage": {
@@ -1940,8 +1940,8 @@
         "vercel-gateway": 35
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 46,
-        "openrouter": 31,
+        "litellm": 47,
+        "openrouter": 32,
         "vercel-gateway": 10
       },
       "pricing.inputPerMTok": {
@@ -1957,7 +1957,7 @@
     },
     "liveModels": 647
   },
-  "generatedAt": "2026-10-20T06:32:20.253Z",
+  "generatedAt": "2026-10-20T18:06:16.934Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 129,
@@ -2042,185 +2042,14 @@
       "zhipuai/glm-5.3-prime"
     ]
   },
-  "releaseDateConflicts": [
-    {
-      "from": "2025-07-01",
-      "id": "ai21/jamba-large",
-      "to": "2025-07-03"
-    },
-    {
-      "from": "2026-01-01",
-      "id": "ai21/jamba-mini",
-      "to": "2026-01-08"
-    },
-    {
-      "from": "2026-02-23",
-      "id": "aion-labs/aion-2.0",
-      "to": "2025-12-21"
-    },
-    {
-      "from": "2026-07-07",
-      "id": "aion-labs/aion-3.0",
-      "to": "2026-05-05"
-    },
-    {
-      "from": "2026-07-07",
-      "id": "aion-labs/aion-3.0-mini",
-      "to": "2026-05-14"
-    },
-    {
-      "from": "2024-09-01",
-      "id": "alibaba/qwen2-5-vl-72b-instruct",
-      "to": "2025-01-26"
-    },
-    {
-      "from": "2025-04-01",
-      "id": "alibaba/qwen3-235b-a22b",
-      "to": "2025-04-28"
-    },
-    {
-      "from": "2025-04-01",
-      "id": "alibaba/qwen3-32b",
-      "to": "2025-04-28"
-    },
-    {
-      "from": "2025-04-01",
-      "id": "alibaba/qwen3-coder-30b-a3b-instruct",
-      "to": "2025-07-31"
-    },
-    {
-      "from": "2025-04-01",
-      "id": "alibaba/qwen3-coder-480b-a35b-instruct",
-      "to": "2025-07-22"
-    },
-    {
-      "from": "2024-12-02",
-      "id": "cohere/command-r7b-12-2024",
-      "to": "2024-12-13"
-    },
-    {
-      "from": "2026-08-31",
-      "id": "ibm/granite-4.2-8b",
-      "to": "2026-08-25"
-    },
-    {
-      "from": "2026-09-12",
-      "id": "inference-net/schematron-v2-small",
-      "to": "2026-04-16"
-    },
-    {
-      "from": "2026-09-12",
-      "id": "inference-net/schematron-v2-turbo",
-      "to": "2026-04-16"
-    },
-    {
-      "from": "2024-12-11",
-      "id": "microsoft/phi-4-mini",
-      "to": "2025-02-26"
-    },
-    {
-      "from": "2024-11-19",
-      "id": "mistral/mistral-large-2407",
-      "to": "2024-07-24"
-    },
-    {
-      "from": "2025-08-13",
-      "id": "mistral/mistral-medium-3.1",
-      "to": "2025-08-12"
-    },
-    {
-      "from": "2024-07-01",
-      "id": "mistral/mistral-nemo",
-      "to": "2024-07-18"
-    },
-    {
-      "from": "2024-09-01",
-      "id": "mistral/pixtral-12b",
-      "to": "2024-09-11"
-    },
-    {
-      "from": "2026-01-01",
-      "id": "moonshotai/kimi-k2.5",
-      "to": "2026-01-26"
-    },
-    {
-      "from": "2025-04-07",
-      "id": "nvidia/llama-3.3-nemotron-super-49b-v1",
-      "to": "2025-03-18"
-    },
-    {
-      "from": "2026-02-10",
-      "id": "nvidia/llama-nemotron-embed-vl-1b-v2",
-      "to": "2025-12-18"
-    },
-    {
-      "from": "2026-03-31",
-      "id": "nvidia/llama-nemotron-rerank-vl-1b-v2",
-      "to": "2025-12-18"
-    },
-    {
-      "from": "2026-04-16",
-      "id": "nvidia/nemotron-3-content-safety",
-      "to": "2026-03-16"
-    },
-    {
-      "from": "2026-06-04",
-      "id": "nvidia/nemotron-3.5-content-safety",
-      "to": "2026-06-02"
-    },
-    {
-      "from": "2026-03-24",
-      "id": "nvidia/nemotron-cascade-2-30b-a3b",
-      "to": "2026-03-19"
-    },
-    {
-      "from": "2026-03-20",
-      "id": "rekaai/reka-edge",
-      "to": "2026-03-11"
-    },
-    {
-      "from": "2025-03-12",
-      "id": "rekaai/reka-flash-3",
-      "to": "2025-03-10"
-    },
-    {
-      "from": "2025-09-01",
-      "id": "sarvam/sarvam-105b",
-      "to": "2026-02-18"
-    },
-    {
-      "from": "2026-08-20",
-      "id": "tencent/hy-mt2-1.8b",
-      "to": "2026-05-21"
-    },
-    {
-      "from": "2026-08-20",
-      "id": "tencent/hy-mt2-30b-a3b",
-      "to": "2026-05-21"
-    },
-    {
-      "from": "2026-08-19",
-      "id": "tencent/hy-mt2-7b",
-      "to": "2026-05-21"
-    },
-    {
-      "from": "2026-01-01",
-      "id": "upstage/solar-pro3",
-      "to": "2026-01-26"
-    },
-    {
-      "from": "2026-01-19",
-      "id": "zhipuai/glm-image",
-      "to": "2026-01-14"
-    }
-  ],
+  "releaseDateConflicts": [],
   "sources": {
     "derived": {
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 422 个模型实体；合规拦截 1 个文件",
+      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 417 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
@@ -2228,7 +2057,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4224 条（对话类 3229 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4238 条（对话类 3243 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2236,11 +2065,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 555 条；api.json 231 provider / 9080 条；benchmarks[] 1171 条，已拦截 AA 血缘 183 条，非编程口径跳过 607 条",
+      "note": "models.json 555 条；api.json 232 provider / 9080 条；benchmarks[] 1171 条，已拦截 AA 血缘 183 条，非编程口径跳过 607 条",
       "ok": true
     },
     "openrouter": {
-      "note": "470 条；已剔除 artificial_analysis 289 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "468 条；已剔除 artificial_analysis 287 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -2248,7 +2077,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "477 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "482 条（language 323 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -2358,7 +2187,5 @@
     "withFlop": 87
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
-  "warnings": [
-    "34 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
-  ]
+  "warnings": []
 }
