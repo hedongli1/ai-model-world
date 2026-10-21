@@ -3,12 +3,12 @@
   "coding": {
     "_note": "ModelRecord.coding[] 的落地情况。一个赛制一条成绩，跨赛制永不混算。byLeague 是「该赛制覆盖了几个模型」，各赛制之间会重叠（一个模型可以有多条成绩）。flagship 是广场首屏当家门面的命中率——全站覆盖率会被长尾微调模型稀释，首屏才是用户真正看到的东西；without 如实列出仍然没有任何编程成绩的门面。modelsOnlyElo 是只有 WebDev Arena Elo、没有任何百分数成绩的模型：它们能排名，但读不出「解决了几成任务」，前端别把 Elo 塞进百分数的分位池。",
     "byAttribution": {
-      "third-party": 920,
+      "third-party": 928,
       "vendor-self-reported": 232
     },
     "byLeague": {
-      "aider_polyglot": 59,
-      "ale_bench": 151,
+      "aider_polyglot": 60,
+      "ale_bench": 153,
       "algotune": 27,
       "claw_eval": 6,
       "cursorbench": 17,
@@ -16,8 +16,8 @@
       "frontier_code": 49,
       "frontier_swe": 5,
       "gso": 38,
-      "livebench_agentic_coding": 111,
-      "livebench_coding": 129,
+      "livebench_agentic_coding": 113,
+      "livebench_coding": 131,
       "livecodebench": 8,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -35,14 +35,14 @@
       "swe_bench_verified": 46,
       "swe_marathon": 6,
       "terminal_bench": 62,
-      "terminal_bench_2_0": 67,
+      "terminal_bench_2_0": 68,
       "terminal_bench_2_1": 5,
       "webdev_arena_elo": 134
     },
     "byUnit": {
       "elo": 134,
-      "index": 178,
-      "pct": 840
+      "index": 180,
+      "pct": 846
     },
     "flagship": {
       "total": 40,
@@ -79,9 +79,9 @@
         "zhipuai/glm-5.3-prime"
       ]
     },
-    "liveModels": 666,
+    "liveModels": 687,
     "modelsOnlyElo": 33,
-    "modelsWithAny": 260
+    "modelsWithAny": 262
   },
   "codingLeaguesBlocked": {
     "_note": "通过了合规过滤、但因为口径不是「写代码 / 软件工程」而没有进入 coding[] 的榜单，以及因为血缘指向 Artificial Analysis / LMArena 而被拦掉的条数。逐条理由写在 scripts/sync/sources/models-dev.ts 的 CODING_LEAGUES 与 sources/epoch.ts 的 CODING_BENCHMARKS 上方。",
@@ -112,222 +112,222 @@
   },
   "counts": {
     "epochParamStrippedMatches": 4,
-    "fromModelsDev": 578,
-    "models": 697,
+    "fromModelsDev": 601,
+    "models": 718,
     "pendingDiscoveries": 93,
-    "promotedDiscoveries": 88,
+    "promotedDiscoveries": 86,
     "quickPromotedDiscoveries": 22,
     "releaseDateOutliersDropped": 21,
-    "resurrected": 1,
+    "resurrected": 0,
     "retiredThisRun": 31,
     "retiredTotal": 31,
-    "vendors": 75
+    "vendors": 78
   },
   "coverage": {
     "benchmarks.aime": {
-      "filled": 208,
-      "pct": 29.8,
-      "total": 697
+      "filled": 211,
+      "pct": 29.4,
+      "total": 718
     },
     "benchmarks.arc_agi_2": {
-      "filled": 119,
-      "pct": 17.1,
-      "total": 697
+      "filled": 120,
+      "pct": 16.7,
+      "total": 718
     },
     "benchmarks.eci": {
-      "filled": 221,
-      "pct": 31.7,
-      "total": 697
+      "filled": 225,
+      "pct": 31.3,
+      "total": 718
     },
     "benchmarks.fiction_live": {
-      "filled": 44,
-      "pct": 6.3,
-      "total": 697
+      "filled": 46,
+      "pct": 6.4,
+      "total": 718
     },
     "benchmarks.gpqa_diamond": {
-      "filled": 211,
-      "pct": 30.3,
-      "total": 697
+      "filled": 214,
+      "pct": 29.8,
+      "total": 718
     },
     "benchmarks.swe_bench_pro": {
       "filled": 58,
-      "pct": 8.3,
-      "total": 697
+      "pct": 8.1,
+      "total": 718
     },
     "benchmarks.swe_bench_vendor": {
       "filled": 42,
-      "pct": 6,
-      "total": 697
+      "pct": 5.8,
+      "total": 718
     },
     "benchmarks.swe_bench_verified": {
       "filled": 48,
-      "pct": 6.9,
-      "total": 697
+      "pct": 6.7,
+      "total": 718
     },
     "benchmarks.webdev_arena_elo": {
       "filled": 136,
-      "pct": 19.5,
-      "total": 697
+      "pct": 18.9,
+      "total": 718
     },
     "benchmarks.任一编程信号": {
       "filled": 110,
-      "pct": 15.8,
-      "total": 697
+      "pct": 15.3,
+      "total": 718
     },
     "benchmarks.任一编程信号(含 WebDev Arena)": {
       "filled": 177,
-      "pct": 25.4,
-      "total": 697
+      "pct": 24.7,
+      "total": 718
     },
     "capabilities.promptCaching": {
-      "filled": 610,
-      "pct": 87.5,
-      "total": 697
+      "filled": 621,
+      "pct": 86.5,
+      "total": 718
     },
     "capabilities.reasoning": {
-      "filled": 581,
-      "pct": 83.4,
-      "total": 697
+      "filled": 604,
+      "pct": 84.1,
+      "total": 718
     },
     "capabilities.structuredOutput": {
       "filled": 1,
       "pct": 0.1,
-      "total": 697
+      "total": 718
     },
     "capabilities.toolCall": {
-      "filled": 581,
-      "pct": 83.4,
-      "total": 697
+      "filled": 604,
+      "pct": 84.1,
+      "total": 718
     },
     "coding.两条以上赛制": {
-      "filled": 221,
-      "pct": 31.7,
-      "total": 697
+      "filled": 223,
+      "pct": 31.1,
+      "total": 718
     },
     "coding.任一百分数成绩": {
-      "filled": 234,
-      "pct": 33.6,
-      "total": 697
+      "filled": 236,
+      "pct": 32.9,
+      "total": 718
     },
     "coding.任一编程成绩": {
-      "filled": 267,
-      "pct": 38.3,
-      "total": 697
+      "filled": 269,
+      "pct": 37.5,
+      "total": 718
     },
     "coding.有第三方复核成绩": {
-      "filled": 242,
-      "pct": 34.7,
-      "total": 697
+      "filled": 244,
+      "pct": 34,
+      "total": 718
     },
     "contextWindow": {
-      "filled": 686,
-      "pct": 98.4,
-      "total": 697
+      "filled": 706,
+      "pct": 98.3,
+      "total": 718
     },
     "id": {
-      "filled": 697,
+      "filled": 718,
       "pct": 100,
-      "total": 697
+      "total": 718
     },
     "knowledgeCutoff": {
-      "filled": 292,
-      "pct": 41.9,
-      "total": 697
+      "filled": 302,
+      "pct": 42.1,
+      "total": 718
     },
     "license": {
-      "filled": 177,
-      "pct": 25.4,
-      "total": 697
+      "filled": 195,
+      "pct": 27.2,
+      "total": 718
     },
     "maxOutput": {
-      "filled": 663,
-      "pct": 95.1,
-      "total": 697
+      "filled": 682,
+      "pct": 95,
+      "total": 718
     },
     "modalities.input": {
-      "filled": 697,
+      "filled": 718,
       "pct": 100,
-      "total": 697
+      "total": 718
     },
     "modalities.output": {
-      "filled": 697,
+      "filled": 718,
       "pct": 100,
-      "total": 697
+      "total": 718
     },
     "name": {
-      "filled": 697,
+      "filled": 718,
       "pct": 100,
-      "total": 697
+      "total": 718
     },
     "openWeights": {
-      "filled": 581,
-      "pct": 83.4,
-      "total": 697
+      "filled": 604,
+      "pct": 84.1,
+      "total": 718
     },
     "params.activeB": {
-      "filled": 41,
-      "pct": 5.9,
-      "total": 697
+      "filled": 42,
+      "pct": 5.8,
+      "total": 718
     },
     "params.confidence!=unknown": {
-      "filled": 627,
-      "pct": 90,
-      "total": 697
+      "filled": 648,
+      "pct": 90.3,
+      "total": 718
     },
     "params.sizeTier": {
-      "filled": 345,
-      "pct": 49.5,
-      "total": 697
+      "filled": 348,
+      "pct": 48.5,
+      "total": 718
     },
     "params.totalB": {
-      "filled": 282,
-      "pct": 40.5,
-      "total": 697
+      "filled": 300,
+      "pct": 41.8,
+      "total": 718
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 428,
-      "pct": 61.4,
-      "total": 697
+      "filled": 435,
+      "pct": 60.6,
+      "total": 718
     },
     "pricing.inputPerMTok": {
-      "filled": 610,
-      "pct": 87.5,
-      "total": 697
+      "filled": 621,
+      "pct": 86.5,
+      "total": 718
     },
     "pricing.outputPerMTok": {
-      "filled": 601,
-      "pct": 86.2,
-      "total": 697
+      "filled": 611,
+      "pct": 85.1,
+      "total": 718
     },
     "releaseDate": {
-      "filled": 697,
+      "filled": 718,
       "pct": 100,
-      "total": 697
+      "total": 718
     },
     "releaseDatePrecision.day": {
-      "filled": 695,
+      "filled": 716,
       "pct": 99.7,
-      "total": 697
+      "total": 718
     },
     "scores.三条以上榜单": {
-      "filled": 292,
-      "pct": 41.9,
-      "total": 697
+      "filled": 297,
+      "pct": 41.4,
+      "total": 718
     },
     "scores.任一成绩": {
-      "filled": 346,
-      "pct": 49.6,
-      "total": 697
+      "filled": 352,
+      "pct": 49,
+      "total": 718
     },
     "trainingComputeFlop": {
-      "filled": 91,
-      "pct": 13.1,
-      "total": 697
+      "filled": 92,
+      "pct": 12.8,
+      "total": 718
     },
     "vendorId": {
-      "filled": 697,
+      "filled": 718,
       "pct": 100,
-      "total": 697
+      "total": 718
     }
   },
   "epochBenchmarkRows": {
@@ -380,7 +380,7 @@
         "curated": false,
         "file": "adversarial_nli_external.csv",
         "inEci": true,
-        "landed": 3,
+        "landed": 5,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 19,
@@ -395,7 +395,7 @@
         "curated": true,
         "file": "aider_polyglot_external.csv",
         "inEci": true,
-        "landed": 63,
+        "landed": 64,
         "multiplier": 1,
         "outOfRange": 0,
         "rows": 77,
@@ -410,7 +410,7 @@
         "curated": true,
         "file": "otis_mock_aime_2024_2025.csv",
         "inEci": true,
-        "landed": 208,
+        "landed": 211,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 304,
@@ -425,7 +425,7 @@
         "curated": true,
         "file": "ale_bench_external.csv",
         "inEci": false,
-        "landed": 154,
+        "landed": 156,
         "multiplier": 1,
         "outOfRange": 0,
         "rows": 128,
@@ -470,7 +470,7 @@
         "curated": false,
         "file": "arc_agi_external.csv",
         "inEci": true,
-        "landed": 118,
+        "landed": 119,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 295,
@@ -485,7 +485,7 @@
         "curated": true,
         "file": "arc_agi_2_external.csv",
         "inEci": true,
-        "landed": 119,
+        "landed": 120,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 274,
@@ -500,7 +500,7 @@
         "curated": false,
         "file": "arc_ai2_external.csv",
         "inEci": true,
-        "landed": 14,
+        "landed": 16,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 145,
@@ -515,7 +515,7 @@
         "curated": false,
         "file": "balrog_external.csv",
         "inEci": true,
-        "landed": 47,
+        "landed": 49,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 41,
@@ -530,7 +530,7 @@
         "curated": false,
         "file": "bbh_external.csv",
         "inEci": true,
-        "landed": 14,
+        "landed": 15,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 92,
@@ -560,7 +560,7 @@
         "curated": false,
         "file": "bool_q_external.csv",
         "inEci": false,
-        "landed": 7,
+        "landed": 8,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 206,
@@ -650,7 +650,7 @@
         "curated": false,
         "file": "critpt_external.csv",
         "inEci": false,
-        "landed": 179,
+        "landed": 180,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 233,
@@ -725,7 +725,7 @@
         "curated": false,
         "file": "dtbench_external.csv",
         "inEci": true,
-        "landed": 220,
+        "landed": 222,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 235,
@@ -755,7 +755,7 @@
         "curated": true,
         "file": "epoch_capabilities_index/eci_scores.csv",
         "inEci": false,
-        "landed": 221,
+        "landed": 225,
         "multiplier": 1,
         "outOfRange": 0,
         "rows": 270,
@@ -770,7 +770,7 @@
         "curated": false,
         "file": "enigma_eval_external.csv",
         "inEci": false,
-        "landed": 50,
+        "landed": 52,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 46,
@@ -800,7 +800,7 @@
         "curated": true,
         "file": "fictionlivebench_external.csv",
         "inEci": true,
-        "landed": 44,
+        "landed": 46,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 62,
@@ -845,7 +845,7 @@
         "curated": false,
         "file": "frontiermath.csv",
         "inEci": true,
-        "landed": 96,
+        "landed": 97,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 101,
@@ -875,7 +875,7 @@
         "curated": false,
         "file": "frontiermath_tier_4.csv",
         "inEci": true,
-        "landed": 67,
+        "landed": 68,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 72,
@@ -965,7 +965,7 @@
         "curated": false,
         "file": "geobench_external.csv",
         "inEci": true,
-        "landed": 29,
+        "landed": 31,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 32,
@@ -980,7 +980,7 @@
         "curated": true,
         "file": "gpqa_diamond.csv",
         "inEci": true,
-        "landed": 211,
+        "landed": 214,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 324,
@@ -995,7 +995,7 @@
         "curated": false,
         "file": "gsm8k_external.csv",
         "inEci": true,
-        "landed": 9,
+        "landed": 11,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 235,
@@ -1025,7 +1025,7 @@
         "curated": false,
         "file": "hella_swag_external.csv",
         "inEci": true,
-        "landed": 12,
+        "landed": 14,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 135,
@@ -1040,7 +1040,7 @@
         "curated": false,
         "file": "hle_external.csv",
         "inEci": false,
-        "landed": 61,
+        "landed": 62,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 56,
@@ -1085,7 +1085,7 @@
         "curated": false,
         "file": "lmca_external.csv",
         "inEci": true,
-        "landed": 204,
+        "landed": 206,
         "multiplier": 1,
         "outOfRange": 0,
         "rows": 197,
@@ -1100,7 +1100,7 @@
         "curated": false,
         "file": "math_level_5.csv",
         "inEci": true,
-        "landed": 91,
+        "landed": 94,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 108,
@@ -1160,7 +1160,7 @@
         "curated": false,
         "file": "mmlu_external.csv",
         "inEci": true,
-        "landed": 45,
+        "landed": 48,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 249,
@@ -1190,7 +1190,7 @@
         "curated": false,
         "file": "open_book_qa_external.csv",
         "inEci": true,
-        "landed": 3,
+        "landed": 5,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 71,
@@ -1235,7 +1235,7 @@
         "curated": false,
         "file": "piqa_external.csv",
         "inEci": true,
-        "landed": 14,
+        "landed": 16,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 140,
@@ -1310,7 +1310,7 @@
         "curated": false,
         "file": "simplebench_external.csv",
         "inEci": true,
-        "landed": 104,
+        "landed": 105,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 104,
@@ -1340,7 +1340,7 @@
         "curated": false,
         "file": "spatialviz_bench_external.csv",
         "inEci": false,
-        "landed": 7,
+        "landed": 8,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 8,
@@ -1445,7 +1445,7 @@
         "curated": true,
         "file": "terminalbench_external.csv",
         "inEci": true,
-        "landed": 68,
+        "landed": 69,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 204,
@@ -1475,7 +1475,7 @@
         "curated": false,
         "file": "trivia_qa_external.csv",
         "inEci": true,
-        "landed": 14,
+        "landed": 16,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 115,
@@ -1490,7 +1490,7 @@
         "curated": false,
         "file": "vending_bench_2_external.csv",
         "inEci": false,
-        "landed": 99,
+        "landed": 100,
         "multiplier": 1,
         "outOfRange": 0,
         "rows": 69,
@@ -1520,7 +1520,7 @@
         "curated": false,
         "file": "vpct_external.csv",
         "inEci": true,
-        "landed": 36,
+        "landed": 38,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 38,
@@ -1550,7 +1550,7 @@
         "curated": false,
         "file": "weirdml_external.csv",
         "inEci": true,
-        "landed": 149,
+        "landed": 151,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 174,
@@ -1580,7 +1580,7 @@
         "curated": false,
         "file": "wino_grande_external.csv",
         "inEci": true,
-        "landed": 17,
+        "landed": 19,
         "multiplier": 100,
         "outOfRange": 0,
         "rows": 145,
@@ -1594,8 +1594,8 @@
     },
     "nonEpochLeagues": {
       "claw_eval": 6,
-      "livebench_agentic_coding": 112,
-      "livebench_coding": 132,
+      "livebench_agentic_coding": 114,
+      "livebench_coding": 134,
       "livecodebench": 8,
       "livecodebench_pro": 2,
       "livecodebench_v6": 1,
@@ -1618,32 +1618,32 @@
     "_note": "「上游有多少 / 我们接住多少」。**分母必须用去重后的模型实体，不是 CSV 行数。**Epoch 的一个模型会占很多行（每个 reasoning effort 一行、带日期的快照版本各占一行），拿行数当分母算出来的 ECI「丢了 69%」是假告警，真实情况见 upstreamModels/matchedModels。剩下的未匹配绝大多数是压根不在 models.dev 收录范围里的历史模型（Claude 2、Gemini 1.5、Llama 3-70B 这类），不是名称归一化的问题——unmatchedSamples 可以逐条核对。另外 matchedModels 与 landedModels 数的是两个不同的群体，两边不相等不是矛盾：前者数「上游有多少个模型被我们接住了」，后者数「我们有多少个模型这一列拿到了值」。grok-4.20 与 grok-4.20-reasoning 在我们这边是两个模型、在 Epoch 那边是同一个实体，于是 landed 会大于 matched；反过来某个实体是靠别的别名键接住的、那个键上恰好没有这一项成绩时，matched 又会大于 landed。",
     "byBenchmark": {
       "aime": {
-        "landedModels": 208,
-        "matchedModels": 153,
+        "landedModels": 211,
+        "matchedModels": 155,
         "upstreamModels": 196,
         "upstreamRows": 296
       },
       "arc_agi_2": {
-        "landedModels": 119,
+        "landedModels": 120,
         "matchedModels": 83,
         "upstreamModels": 90,
         "upstreamRows": 272
       },
       "eci": {
-        "landedModels": 221,
+        "landedModels": 225,
         "matchedModels": 150,
         "upstreamModels": 224,
         "upstreamRows": 244
       },
       "fiction_live": {
-        "landedModels": 44,
+        "landedModels": 46,
         "matchedModels": 26,
         "upstreamModels": 39,
         "upstreamRows": 40
       },
       "gpqa_diamond": {
-        "landedModels": 211,
-        "matchedModels": 159,
+        "landedModels": 214,
+        "matchedModels": 162,
         "upstreamModels": 215,
         "upstreamRows": 314
       },
@@ -1663,9 +1663,9 @@
     "matchTiers": {
       "loose": 37,
       "param-stripped": 4,
-      "strict": 214
+      "strict": 219
     },
-    "matchedEntities": 282,
+    "matchedEntities": 285,
     "unmatchedSamples": [
       {
         "benchmarks": [
@@ -1911,55 +1911,56 @@
   "fallbackCoverage": {
     "_note": "models.dev 缺项时的兜底源贡献（存活模型口径）。before 是只认 models.dev 时的覆盖数，after 是兜底之后。仲裁顺序：定价 models.dev → LiteLLM → OpenRouter → Vercel；上下文 / 最大输出 / 模态 models.dev → OpenRouter → Vercel → LiteLLM。LiteLLM 只在第一方 provider 有条目、或所有托管商条目一致时才采信；图像/语音按张按分钟的价一律不折算。OpenRouter 的 benchmarks.* 已整段剔除，兜底只读 pricing / context_length / architecture。",
     "after": {
-      "contextWindow": 655,
-      "maxOutput": 633,
-      "modalities": 666,
-      "pricing.inputPerMTok": 586,
-      "pricing.outputPerMTok": 578
+      "contextWindow": 675,
+      "maxOutput": 652,
+      "modalities": 687,
+      "pricing.inputPerMTok": 597,
+      "pricing.outputPerMTok": 588
     },
     "before": {
-      "contextWindow": 567,
-      "maxOutput": 544,
-      "modalities": 578,
-      "pricing.inputPerMTok": 479,
-      "pricing.outputPerMTok": 473
+      "contextWindow": 587,
+      "maxOutput": 563,
+      "modalities": 601,
+      "pricing.inputPerMTok": 489,
+      "pricing.outputPerMTok": 482
     },
     "bySource": {
       "contextWindow": {
-        "openrouter": 53,
+        "litellm": 2,
+        "openrouter": 51,
         "vercel-gateway": 35
       },
       "maxOutput": {
-        "litellm": 1,
-        "openrouter": 53,
+        "litellm": 3,
+        "openrouter": 51,
         "vercel-gateway": 35
       },
       "modalities": {
-        "openrouter": 53,
+        "openrouter": 51,
         "vercel-gateway": 35
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 46,
-        "openrouter": 31,
+        "litellm": 45,
+        "openrouter": 32,
         "vercel-gateway": 10
       },
       "pricing.inputPerMTok": {
-        "litellm": 56,
+        "litellm": 57,
         "openrouter": 40,
         "vercel-gateway": 11
       },
       "pricing.outputPerMTok": {
-        "litellm": 55,
+        "litellm": 56,
         "openrouter": 39,
         "vercel-gateway": 11
       }
     },
-    "liveModels": 666
+    "liveModels": 687
   },
-  "generatedAt": "2026-10-21T06:31:01.339Z",
+  "generatedAt": "2026-10-21T18:14:44.731Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
-    "matchedModels": 129,
+    "matchedModels": 131,
     "releaseSource": "LIVE_BENCH_RELEASES",
     "releasesSkipped": [
       "2024-06-24",
@@ -2043,19 +2044,19 @@
   },
   "releaseDateConflicts": [
     {
-      "from": "2025-07-29",
-      "id": "alibaba/qwen3-30b-a3b-instruct-2507",
-      "to": "2025-07-28"
+      "from": "2025-04-30",
+      "id": "meta/llama-guard-4-12b",
+      "to": "2025-04-29"
     },
     {
-      "from": "2025-11-01",
-      "id": "anthropic/claude-opus-4-5-20251101",
-      "to": "2025-11-24"
+      "from": "2024-06-26",
+      "id": "openai/o3-deep-research",
+      "to": "2025-06-26"
     },
     {
-      "from": "2024-10-01",
-      "id": "openai/whisper-large-v3",
-      "to": "2023-11-06"
+      "from": "2024-06-26",
+      "id": "openai/o4-mini-deep-research",
+      "to": "2025-06-26"
     }
   ],
   "sources": {
@@ -2068,7 +2069,7 @@
       "ok": true
     },
     "huggingface": {
-      "note": "请求 218 个开源模型，成功 214，失败 4",
+      "note": "请求 238 个开源模型，成功 234，失败 4",
       "ok": true
     },
     "litellm": {
@@ -2080,7 +2081,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 578 条；api.json 232 provider / 9164 条；benchmarks[] 1171 条，已拦截 AA 血缘 183 条，非编程口径跳过 607 条",
+      "note": "models.json 601 条；api.json 232 provider / 9199 条；benchmarks[] 1171 条，已拦截 AA 血缘 183 条，非编程口径跳过 607 条",
       "ok": true
     },
     "openrouter": {
@@ -2099,7 +2100,7 @@
   "trainingCompute": {
     "_note": "ModelRecord.trainingComputeFlop 的落地情况，来源 Epoch model_metadata.csv。闭源模型从不公布参数量，训练算力是唯一有第三方估算的「体型」代理，closedFlagships 数的是 openai / anthropic / google / xai 里有 ECI 的模型。without 如实列出没拿到的闭源旗舰——多数是 Epoch 也没估算，不是匹配问题。",
     "closedFlagships": {
-      "total": 105,
+      "total": 107,
       "withFlop": 12,
       "without": [
         "anthropic/claude-3-5-haiku-20241022",
@@ -2128,6 +2129,8 @@
         "google/gemini-2.0-flash",
         "google/gemini-2.5-flash",
         "google/gemini-2.5-flash-lite",
+        "google/gemini-2.5-flash-lite-preview-06-17",
+        "google/gemini-2.5-flash-preview-05-20",
         "google/gemini-2.5-pro",
         "google/gemini-2.5-pro-preview",
         "google/gemini-3-flash",
@@ -2197,9 +2200,9 @@
         "xai/grok-4.7"
       ]
     },
-    "liveModels": 666,
+    "liveModels": 687,
     "upstreamRows": 329,
-    "withFlop": 88
+    "withFlop": 89
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
   "warnings": [
