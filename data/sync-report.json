@@ -79,7 +79,7 @@
         "zhipuai/glm-5.3-prime"
       ]
     },
-    "liveModels": 688,
+    "liveModels": 687,
     "modelsOnlyElo": 33,
     "modelsWithAny": 262
   },
@@ -114,13 +114,13 @@
     "epochParamStrippedMatches": 4,
     "fromModelsDev": 602,
     "models": 719,
-    "pendingDiscoveries": 93,
-    "promotedDiscoveries": 86,
+    "pendingDiscoveries": 90,
+    "promotedDiscoveries": 85,
     "quickPromotedDiscoveries": 22,
     "releaseDateOutliersDropped": 21,
     "resurrected": 0,
-    "retiredThisRun": 31,
-    "retiredTotal": 31,
+    "retiredThisRun": 32,
+    "retiredTotal": 32,
     "vendors": 79
   },
   "coverage": {
@@ -180,8 +180,8 @@
       "total": 719
     },
     "capabilities.promptCaching": {
-      "filled": 622,
-      "pct": 86.5,
+      "filled": 612,
+      "pct": 85.1,
       "total": 719
     },
     "capabilities.reasoning": {
@@ -270,13 +270,13 @@
       "total": 719
     },
     "params.confidence!=unknown": {
-      "filled": 649,
-      "pct": 90.3,
+      "filled": 648,
+      "pct": 90.1,
       "total": 719
     },
     "params.sizeTier": {
-      "filled": 348,
-      "pct": 48.4,
+      "filled": 347,
+      "pct": 48.3,
       "total": 719
     },
     "params.totalB": {
@@ -285,18 +285,18 @@
       "total": 719
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 438,
-      "pct": 60.9,
+      "filled": 427,
+      "pct": 59.4,
       "total": 719
     },
     "pricing.inputPerMTok": {
-      "filled": 622,
-      "pct": 86.5,
+      "filled": 612,
+      "pct": 85.1,
       "total": 719
     },
     "pricing.outputPerMTok": {
-      "filled": 611,
-      "pct": 85,
+      "filled": 601,
+      "pct": 83.6,
       "total": 719
     },
     "releaseDate": {
@@ -1911,53 +1911,53 @@
   "fallbackCoverage": {
     "_note": "models.dev 缺项时的兜底源贡献（存活模型口径）。before 是只认 models.dev 时的覆盖数，after 是兜底之后。仲裁顺序：定价 models.dev → LiteLLM → OpenRouter → Vercel；上下文 / 最大输出 / 模态 models.dev → OpenRouter → Vercel → LiteLLM。LiteLLM 只在第一方 provider 有条目、或所有托管商条目一致时才采信；图像/语音按张按分钟的价一律不折算。OpenRouter 的 benchmarks.* 已整段剔除，兜底只读 pricing / context_length / architecture。",
     "after": {
-      "contextWindow": 676,
-      "maxOutput": 653,
-      "modalities": 688,
-      "pricing.inputPerMTok": 598,
-      "pricing.outputPerMTok": 588
+      "contextWindow": 675,
+      "maxOutput": 652,
+      "modalities": 687,
+      "pricing.inputPerMTok": 587,
+      "pricing.outputPerMTok": 577
     },
     "before": {
       "contextWindow": 588,
       "maxOutput": 564,
       "modalities": 602,
-      "pricing.inputPerMTok": 494,
-      "pricing.outputPerMTok": 486
+      "pricing.inputPerMTok": 479,
+      "pricing.outputPerMTok": 471
     },
     "bySource": {
       "contextWindow": {
         "litellm": 2,
         "openrouter": 51,
-        "vercel-gateway": 35
+        "vercel-gateway": 34
       },
       "maxOutput": {
         "litellm": 3,
         "openrouter": 51,
-        "vercel-gateway": 35
+        "vercel-gateway": 34
       },
       "modalities": {
         "openrouter": 51,
-        "vercel-gateway": 35
+        "vercel-gateway": 34
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 44,
-        "openrouter": 33,
+        "litellm": 47,
+        "openrouter": 31,
         "vercel-gateway": 10
       },
       "pricing.inputPerMTok": {
-        "litellm": 54,
-        "openrouter": 40,
+        "litellm": 57,
+        "openrouter": 41,
         "vercel-gateway": 10
       },
       "pricing.outputPerMTok": {
-        "litellm": 53,
-        "openrouter": 39,
+        "litellm": 56,
+        "openrouter": 40,
         "vercel-gateway": 10
       }
     },
-    "liveModels": 688
+    "liveModels": 687
   },
-  "generatedAt": "2026-10-22T18:09:06.545Z",
+  "generatedAt": "2026-10-23T06:27:31.062Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 131,
@@ -2065,7 +2065,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 602 条；api.json 232 provider / 9146 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "note": "models.json 602 条；api.json 230 provider / 8851 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
@@ -2077,7 +2077,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "486 条（language 323 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "478 条（language 316 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -2184,7 +2184,7 @@
         "xai/grok-4.7"
       ]
     },
-    "liveModels": 688,
+    "liveModels": 687,
     "upstreamRows": 329,
     "withFlop": 89
   },

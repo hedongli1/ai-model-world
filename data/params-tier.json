@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-10-22T18:09:06.545Z",
+  "generatedAt": "2026-10-23T06:27:31.062Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -690,10 +690,6 @@
       "basis": "price",
       "tier": 1
     },
-    "mistral/devstral-medium-2507": {
-      "basis": "price",
-      "tier": 2
-    },
     "mistral/magistral-medium-latest": {
       "basis": "price",
       "tier": 2
@@ -939,8 +935,8 @@
       "tier": 4
     },
     "openai/gpt-5.5-instant": {
-      "basis": "price+naming",
-      "tier": 3
+      "basis": "naming",
+      "tier": 1
     },
     "openai/gpt-5.5-pro": {
       "basis": "price+naming",
@@ -1214,10 +1210,6 @@
       "basis": "price+naming",
       "tier": 1
     },
-    "xai/grok-4.1-fast-non-reasoning": {
-      "basis": "price+naming",
-      "tier": 1
-    },
     "xai/grok-4.1-fast-reasoning": {
       "basis": "price+naming",
       "tier": 1
@@ -1288,11 +1280,11 @@
     },
     "xiaomi/mimo-v2-omni": {
       "basis": "price",
-      "tier": 1
+      "tier": 2
     },
     "xiaomi/mimo-v2-pro": {
       "basis": "price+naming",
-      "tier": 3
+      "tier": 4
     },
     "zhipuai/glm-4.5-flash": {
       "basis": "naming",
