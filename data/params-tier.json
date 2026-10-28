@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-10-27T18:54:25.795Z",
+  "generatedAt": "2026-10-28T07:20:01.513Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -86,19 +86,7 @@
       "basis": "price+naming",
       "tier": 1
     },
-    "alibaba/qwen3.5-flash-02-23": {
-      "basis": "price+naming",
-      "tier": 1
-    },
     "alibaba/qwen3.5-plus": {
-      "basis": "price+naming",
-      "tier": 4
-    },
-    "alibaba/qwen3.5-plus-02-15": {
-      "basis": "price+naming",
-      "tier": 4
-    },
-    "alibaba/qwen3.5-plus-20260420": {
       "basis": "price+naming",
       "tier": 4
     },
@@ -181,10 +169,6 @@
     "amazon/nova-premier": {
       "basis": "naming",
       "tier": 5
-    },
-    "amazon/nova-premier-v1": {
-      "basis": "price+naming",
-      "tier": 4
     },
     "amazon/nova-pro": {
       "basis": "price+naming",
@@ -323,7 +307,7 @@
       "tier": 2
     },
     "bytedance-seed/seed-1-6-flash": {
-      "basis": "price+naming",
+      "basis": "naming",
       "tier": 1
     },
     "bytedance-seed/seed-1-8": {
@@ -354,18 +338,6 @@
       "basis": "price+naming",
       "tier": 2
     },
-    "cohere/command-a-plus": {
-      "basis": "price+naming",
-      "tier": 4
-    },
-    "deepseek/deepseek-v3.1-terminus": {
-      "basis": "price",
-      "tier": 1
-    },
-    "deepseek/deepseek-v3.2-exp": {
-      "basis": "price",
-      "tier": 1
-    },
     "deepseek/deepseek-v3.2-thinking": {
       "basis": "price",
       "tier": 1
@@ -376,10 +348,6 @@
     },
     "deepseek/deepseek-v4.1-flash-fast": {
       "basis": "price+naming",
-      "tier": 2
-    },
-    "elorian/glimpse": {
-      "basis": "price",
       "tier": 2
     },
     "fireworks/ember-1": {
@@ -634,10 +602,6 @@
       "basis": "price",
       "tier": 1
     },
-    "meta/muse-wonder": {
-      "basis": "price",
-      "tier": 4
-    },
     "meta/muse-wonder-1.0": {
       "basis": "price",
       "tier": 4
@@ -648,18 +612,6 @@
     },
     "microsoft/mai-code-1.1-flash": {
       "basis": "price+naming",
-      "tier": 2
-    },
-    "microsoft/phi-4": {
-      "basis": "price",
-      "tier": 1
-    },
-    "minimax/minimax-01": {
-      "basis": "price",
-      "tier": 2
-    },
-    "minimax/minimax-m1": {
-      "basis": "price",
       "tier": 2
     },
     "minimax/minimax-m2-her": {
@@ -703,10 +655,6 @@
       "tier": 4
     },
     "mistral/mistral-large-4": {
-      "basis": "price+naming",
-      "tier": 4
-    },
-    "mistral/mistral-large-4-0": {
       "basis": "price+naming",
       "tier": 4
     },
@@ -774,14 +722,6 @@
       "basis": "price+naming",
       "tier": 2
     },
-    "openai/gpt-3.5-turbo-0613": {
-      "basis": "price+naming",
-      "tier": 2
-    },
-    "openai/gpt-3.5-turbo-16k": {
-      "basis": "price+naming",
-      "tier": 2
-    },
     "openai/gpt-4": {
       "basis": "price",
       "tier": 5
@@ -819,10 +759,6 @@
       "tier": 3
     },
     "openai/gpt-4o-mini": {
-      "basis": "price+naming",
-      "tier": 1
-    },
-    "openai/gpt-4o-mini-2024-07-18": {
       "basis": "price+naming",
       "tier": 1
     },
@@ -883,10 +819,6 @@
       "tier": 3
     },
     "openai/gpt-5.2": {
-      "basis": "price",
-      "tier": 3
-    },
-    "openai/gpt-5.2-chat": {
       "basis": "price",
       "tier": 3
     },
@@ -954,25 +886,13 @@
       "basis": "price",
       "tier": 2
     },
-    "openai/gpt-5.6-luna-pro": {
-      "basis": "price+naming",
-      "tier": 4
-    },
     "openai/gpt-5.6-sol": {
       "basis": "price",
       "tier": 4
     },
-    "openai/gpt-5.6-sol-pro": {
-      "basis": "price+naming",
-      "tier": 5
-    },
     "openai/gpt-5.6-terra": {
       "basis": "price",
       "tier": 3
-    },
-    "openai/gpt-5.6-terra-pro": {
-      "basis": "price+naming",
-      "tier": 4
     },
     "openai/gpt-6-astra": {
       "basis": "price",
@@ -982,53 +902,21 @@
       "basis": "price+naming",
       "tier": 3
     },
-    "openai/gpt-6-astra-pro": {
-      "basis": "price+naming",
-      "tier": 5
-    },
     "openai/gpt-6-luna": {
       "basis": "price",
       "tier": 1
-    },
-    "openai/gpt-6-luna-pro": {
-      "basis": "price+naming",
-      "tier": 3
     },
     "openai/gpt-6-sol": {
       "basis": "price",
       "tier": 3
     },
-    "openai/gpt-6-sol-pro": {
-      "basis": "price+naming",
-      "tier": 4
-    },
     "openai/gpt-6.1-sol": {
       "basis": "price",
       "tier": 3
     },
-    "openai/gpt-6.1-sol-pro": {
-      "basis": "price+naming",
-      "tier": 4
-    },
     "openai/gpt-6.1-terra": {
       "basis": "price",
       "tier": 2
-    },
-    "openai/gpt-6.1-terra-pro": {
-      "basis": "price+naming",
-      "tier": 4
-    },
-    "openai/gpt-audio": {
-      "basis": "price",
-      "tier": 3
-    },
-    "openai/gpt-audio-mini": {
-      "basis": "price+naming",
-      "tier": 2
-    },
-    "openai/gpt-chat-latest": {
-      "basis": "price",
-      "tier": 4
     },
     "openai/gpt-image-1": {
       "basis": "price",
@@ -1106,10 +994,6 @@
       "basis": "price+naming",
       "tier": 4
     },
-    "perplexity/sonar-pro-search": {
-      "basis": "price+naming",
-      "tier": 4
-    },
     "perplexity/sonar-reasoning-pro": {
       "basis": "price+naming",
       "tier": 4
@@ -1153,10 +1037,6 @@
     "sakana/sakana-namazu": {
       "basis": "price",
       "tier": 2
-    },
-    "tencent/hunyuan-a13b-instruct": {
-      "basis": "price",
-      "tier": 1
     },
     "tencent/hy-mt2-lite": {
       "basis": "price+naming",
@@ -1229,10 +1109,6 @@
     "xai/grok-4.1-fast-reasoning": {
       "basis": "price+naming",
       "tier": 1
-    },
-    "xai/grok-4.20": {
-      "basis": "price",
-      "tier": 2
     },
     "xai/grok-4.20-0309-non-reasoning": {
       "basis": "price",
@@ -1321,10 +1197,6 @@
     "zhipuai/glm-5.3-flashx": {
       "basis": "price",
       "tier": 2
-    },
-    "zhipuai/glm-5.3-prime": {
-      "basis": "price",
-      "tier": 3
     },
     "zhipuai/glm-5v-turbo": {
       "basis": "price+naming",

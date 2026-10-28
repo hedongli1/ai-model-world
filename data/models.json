@@ -27,7 +27,7 @@
     {
       "id": "aime",
       "inEci": true,
-      "models": 212,
+      "models": 213,
       "randomBaseline": 0.1,
       "releaseDate": "2024-12-19",
       "scoreCeiling": 100,
@@ -231,7 +231,7 @@
     {
       "id": "critpt",
       "inEci": false,
-      "models": 180,
+      "models": 181,
       "randomBaseline": 0,
       "releaseDate": "2025-09-30",
       "scoreCeiling": 100,
@@ -291,7 +291,7 @@
     {
       "id": "dtbench",
       "inEci": true,
-      "models": 222,
+      "models": 223,
       "randomBaseline": 40,
       "releaseDate": "2026-08-12",
       "scoreCeiling": 100,
@@ -315,7 +315,7 @@
     {
       "id": "eci",
       "inEci": false,
-      "models": 225,
+      "models": 226,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -495,7 +495,7 @@
     {
       "id": "gpqa_diamond",
       "inEci": true,
-      "models": 215,
+      "models": 216,
       "randomBaseline": 25,
       "releaseDate": "2023-11-20",
       "scoreCeiling": 97,
@@ -579,7 +579,7 @@
     {
       "id": "livebench_coding",
       "inEci": false,
-      "models": 134,
+      "models": 136,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -627,7 +627,7 @@
     {
       "id": "lmca",
       "inEci": true,
-      "models": 206,
+      "models": 207,
       "randomBaseline": 0,
       "releaseDate": "2026-08-12",
       "scoreCeiling": 85,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-27T18:54:25.795Z",
+  "generatedAt": "2026-10-28T07:20:01.513Z",
   "models": [
     {
       "benchmarks": {
@@ -1875,13 +1875,14 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
       "releaseDate": "2024-09-19",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -2151,6 +2152,144 @@
       ],
       "slug": "alibaba-qwen-2-5-7b-instruct",
       "trainingComputeFlop": 8.2188e+23,
+      "vendorId": "alibaba"
+    },
+    {
+      "benchmarks": {
+        "aime": 66.39,
+        "arc_agi_2": null,
+        "eci": 138.15,
+        "fiction_live": null,
+        "gpqa_diamond": 63.76,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": false,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [
+        {
+          "attribution": "third-party",
+          "league": "livebench_coding",
+          "score": 58.16,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
+          "unit": "pct"
+        }
+      ],
+      "contextWindow": 40960,
+      "firstSeenAt": "2026-10-28T07:20:01.513Z",
+      "id": "alibaba/qwen-3-14b",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 16384,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Qwen 3 14B",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "totalB": 14
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.12,
+        "outputPerMTok": 0.24
+      },
+      "provenance": {
+        "benchmarks.aime": "epoch.ai",
+        "benchmarks.eci": "epoch.ai",
+        "benchmarks.gpqa_diamond": "epoch.ai",
+        "capabilities.promptCaching": "derived",
+        "coding": "derived",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
+        "name": "derived",
+        "params.totalB": "derived",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
+        "releaseDate": "epoch.ai",
+        "releaseDatePrecision": "epoch.ai",
+        "scores": "derived",
+        "trainingComputeFlop": "epoch.ai",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2025-04-28",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "aime",
+          "score": 66.39,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "critpt",
+          "score": 0,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "dtbench",
+          "score": 64,
+          "source": "epoch.ai",
+          "sourceUrl": "https://conceptualreasoning.ai/dtbench",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "eci",
+          "score": 138.15,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "index"
+        },
+        {
+          "attribution": "third-party",
+          "league": "gpqa_diamond",
+          "score": 63.76,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench_coding",
+          "score": 58.16,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "lmca",
+          "score": 18.19,
+          "source": "epoch.ai",
+          "sourceUrl": "https://conceptualreasoning.ai/lmca",
+          "unit": "pct"
+        }
+      ],
+      "slug": "alibaba-qwen-3-14b",
+      "trainingComputeFlop": 3.1968e+24,
       "vendorId": "alibaba"
     },
     {
@@ -3204,7 +3343,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -3233,12 +3372,11 @@
         "totalB": 73.41
       },
       "pricing": {
-        "cachedInputPerMTok": 0.4,
-        "inputPerMTok": 0.8,
-        "outputPerMTok": 1
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -3248,9 +3386,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -3707,13 +3842,14 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
       "releaseDate": "2025-04-28",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -4139,13 +4275,14 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
       "releaseDate": "2025-04-28",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -5904,7 +6041,7 @@
       "id": "alibaba/qwen3-coder",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 65536,
+      "maxOutput": 32768,
       "modalities": {
         "input": [
           "text"
@@ -5923,19 +6060,19 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.1,
+        "cachedInputPerMTok": 0.022,
         "inputPerMTok": 0.4,
         "outputPerMTok": 1.6
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
         "coding": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
         "pricing.inputPerMTok": "litellm",
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "vercel-gateway",
@@ -6438,7 +6575,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.07,
         "inputPerMTok": 0.2,
-        "outputPerMTok": 0.89504
+        "outputPerMTok": 1.2
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -7792,11 +7929,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-10-06",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "alibaba-qwen3-vl-30b-a3b-thinking",
       "trainingComputeFlop": null,
@@ -7928,11 +8066,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-10-14",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "alibaba-qwen3-vl-8b-instruct",
       "trainingComputeFlop": null,
@@ -8959,7 +9098,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -9006,7 +9145,7 @@
         "totalB": 403.4
       },
       "pricing": {
-        "cachedInputPerMTok": 0.3,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.6,
         "outputPerMTok": 3.6
       },
@@ -9027,7 +9166,6 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "epoch.ai",
@@ -9717,12 +9855,13 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-02-25",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -10142,12 +10281,13 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-02-16",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -10356,12 +10496,13 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-02-16",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -14719,11 +14860,12 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-10-31",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "amazon-nova-premier-v1",
       "trainingComputeFlop": null,
@@ -20696,12 +20838,12 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2026-02-04",
+      "releaseDate": "2026-02-05",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -21708,12 +21850,12 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2026-05-27",
+      "releaseDate": "2026-05-28",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -27252,8 +27394,8 @@
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "vercel-gateway",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
         "vendorId": "derived"
@@ -27279,7 +27421,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": null,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -27307,16 +27449,15 @@
         "activeB": null,
         "confidence": "estimated",
         "sizeTier": 1,
-        "sizeTierBasis": "price+naming",
+        "sizeTierBasis": "naming",
         "totalB": null
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.075,
-        "outputPerMTok": 0.3
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -27325,8 +27466,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -28315,11 +28454,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-07-22",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "bytedance-seed-ui-tars-1-5-7b",
       "trainingComputeFlop": null,
@@ -29068,11 +29208,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-22",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "cohere-command-a-plus",
       "trainingComputeFlop": null,
@@ -34001,13 +34142,14 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
       "releaseDate": "2025-09-22",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -34547,13 +34689,14 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
       "releaseDate": "2025-09-29",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -36771,8 +36914,8 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.15,
-        "inputPerMTok": 1.32,
+        "cachedInputPerMTok": 0.145,
+        "inputPerMTok": 1.65,
         "outputPerMTok": 3.3
       },
       "provenance": {
@@ -37465,7 +37608,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.006,
         "inputPerMTok": 0.23184,
-        "outputPerMTok": 0.96
+        "outputPerMTok": 1
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -38157,77 +38300,6 @@
       "slug": "deepseek-deepseek-v4-1-flash-fast",
       "trainingComputeFlop": null,
       "vendorId": "deepseek"
-    },
-    {
-      "benchmarks": {
-        "aime": null,
-        "arc_agi_2": null,
-        "eci": null,
-        "fiction_live": null,
-        "gpqa_diamond": null,
-        "swe_bench_pro": null,
-        "swe_bench_vendor": null,
-        "swe_bench_verified": null,
-        "webdev_arena_elo": null
-      },
-      "capabilities": {
-        "promptCaching": true,
-        "reasoning": null,
-        "structuredOutput": null,
-        "toolCall": null
-      },
-      "coding": [],
-      "contextWindow": 262144,
-      "firstSeenAt": "2026-10-17T06:06:15.190Z",
-      "id": "elorian/glimpse",
-      "knowledgeCutoff": null,
-      "license": null,
-      "maxOutput": 256000,
-      "modalities": {
-        "input": [
-          "image",
-          "text",
-          "video"
-        ],
-        "output": [
-          "text"
-        ]
-      },
-      "name": "Glimpse",
-      "openWeights": null,
-      "params": {
-        "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 2,
-        "sizeTierBasis": "price",
-        "totalB": null
-      },
-      "pricing": {
-        "cachedInputPerMTok": 0.06,
-        "inputPerMTok": 0.6,
-        "outputPerMTok": 3
-      },
-      "provenance": {
-        "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
-        "name": "derived",
-        "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
-        "releaseDate": "vercel-gateway",
-        "releaseDatePrecision": "vercel-gateway",
-        "vendorId": "derived"
-      },
-      "releaseDate": "2026-10-16",
-      "releaseDatePrecision": "day",
-      "retiredAt": null,
-      "scores": [],
-      "slug": "elorian-glimpse",
-      "trainingComputeFlop": null,
-      "vendorId": "elorian"
     },
     {
       "benchmarks": {
@@ -42493,7 +42565,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -42521,7 +42593,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": false
@@ -42553,7 +42625,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.2,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 2,
         "outputPerMTok": 120
       },
@@ -42568,7 +42640,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -49200,11 +49271,11 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
       },
-      "releaseDate": "2023-07-02",
+      "releaseDate": "2023-08-10",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [],
@@ -51090,11 +51161,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-08-11",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "liquid-lfm-2-5-2-6b",
       "trainingComputeFlop": null,
@@ -51158,11 +51230,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-10-13",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "liquid-lfm-2-5-24b-a2b",
       "trainingComputeFlop": null,
@@ -51235,6 +51308,74 @@
       "retiredAt": null,
       "scores": [],
       "slug": "liquid-lfm2-24b-a2b",
+      "trainingComputeFlop": null,
+      "vendorId": "liquid"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 128000,
+      "firstSeenAt": "2026-10-28T07:20:01.513Z",
+      "id": "liquid/lfm2.5-24b-a2b",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 8200,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Lfm2.5 24B A2B",
+      "openWeights": null,
+      "params": {
+        "activeB": 2,
+        "confidence": "estimated",
+        "totalB": 24
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.025,
+        "inputPerMTok": 0.05,
+        "outputPerMTok": 0.7
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
+        "name": "derived",
+        "params.activeB": "derived",
+        "params.totalB": "derived",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
+        "releaseDate": "vercel-gateway",
+        "releaseDatePrecision": "vercel-gateway",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-10-13",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "liquid-lfm2-5-24b-a2b",
       "trainingComputeFlop": null,
       "vendorId": "liquid"
     },
@@ -52031,8 +52172,8 @@
         "totalB": 8.03
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0272,
-        "inputPerMTok": 0.025,
+        "cachedInputPerMTok": 0.03,
+        "inputPerMTok": 0.02,
         "outputPerMTok": 0.05
       },
       "provenance": {
@@ -53097,7 +53238,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": null,
         "structuredOutput": null,
         "toolCall": null
@@ -53112,12 +53253,12 @@
           "unit": "index"
         }
       ],
-      "contextWindow": 524288,
+      "contextWindow": 128000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "meta/llama-4-maverick",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 16384,
+      "maxOutput": 8192,
       "modalities": {
         "input": [
           "image",
@@ -53137,23 +53278,22 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
-        "inputPerMTok": 0.1875,
-        "outputPerMTok": 0.6525
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.24,
+        "outputPerMTok": 0.97
       },
       "provenance": {
         "benchmarks.arc_agi_2": "epoch.ai",
         "benchmarks.eci": "epoch.ai",
         "capabilities.promptCaching": "derived",
         "coding": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
         "scores": "derived",
@@ -53378,12 +53518,12 @@
         "toolCall": null
       },
       "coding": [],
-      "contextWindow": 1310720,
+      "contextWindow": 128000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "meta/llama-4-scout",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 16384,
+      "maxOutput": 8192,
       "modalities": {
         "input": [
           "image",
@@ -53411,9 +53551,9 @@
         "benchmarks.arc_agi_2": "epoch.ai",
         "benchmarks.eci": "epoch.ai",
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
         "pricing.inputPerMTok": "litellm",
@@ -53934,12 +54074,12 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2026-08-09",
+      "releaseDate": "2026-08-10",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -54536,13 +54676,12 @@
       "id": "meta/muse-spark-1.2-contributor",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 943718,
+      "maxOutput": 1048576,
       "modalities": {
         "input": [
           "image",
           "pdf",
-          "text",
-          "video"
+          "text"
         ],
         "output": [
           "text"
@@ -54564,9 +54703,9 @@
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "litellm",
@@ -54923,13 +55062,12 @@
       "id": "meta/muse-spark-1.3-contributor",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 943718,
+      "maxOutput": 1048576,
       "modalities": {
         "input": [
           "image",
           "pdf",
-          "text",
-          "video"
+          "text"
         ],
         "output": [
           "text"
@@ -54951,9 +55089,9 @@
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "litellm",
@@ -55186,12 +55324,13 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-10-12",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -55880,13 +56019,14 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
       "releaseDate": "2024-12-12",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -56461,11 +56601,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-01-15",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "minimax-minimax-01",
       "trainingComputeFlop": null,
@@ -56597,11 +56738,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-06-17",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "minimax-minimax-m1",
       "trainingComputeFlop": null,
@@ -56792,12 +56934,12 @@
         "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-10-23",
+      "releaseDate": "2025-10-27",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -58894,7 +59036,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -58939,7 +59081,7 @@
         "totalB": 121.8
       },
       "pricing": {
-        "cachedInputPerMTok": 0.04,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.4,
         "outputPerMTok": 2
       },
@@ -58955,7 +59097,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -59859,8 +60000,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.33564,
-        "outputPerMTok": 0.44752
+        "inputPerMTok": 0.3345,
+        "outputPerMTok": 0.446
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -61506,12 +61647,12 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-12-01",
+      "releaseDate": "2025-12-02",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -62008,12 +62149,13 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-10-06",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -65993,13 +66135,13 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-09-04",
+      "releaseDate": "2025-09-05",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -69881,11 +70023,11 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-12-14",
+      "releaseDate": "2025-12-15",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [],
@@ -70198,9 +70340,9 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -70365,7 +70507,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": false
@@ -70395,11 +70537,10 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.2,
-        "outputPerMTok": 0.2
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
@@ -70407,8 +70548,6 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
@@ -70639,7 +70778,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 235929,
+      "maxOutput": 1048576,
       "modalities": {
         "input": [
           "image",
@@ -70660,20 +70799,20 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.02,
-        "inputPerMTok": 0.15,
+        "cachedInputPerMTok": 0.04,
+        "inputPerMTok": 0.2,
         "outputPerMTok": 0.5
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
         "vendorId": "derived"
@@ -71213,11 +71352,12 @@
         "name": "derived",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-21",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "nvidia-switchyard",
       "trainingComputeFlop": null,
@@ -71521,12 +71661,13 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2023-06-13",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -71751,11 +71892,12 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2023-08-28",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-3-5-turbo-16k",
       "trainingComputeFlop": null,
@@ -74747,6 +74889,14 @@
           "source": "epoch.ai",
           "sourceUrl": "https://aider.chat/docs/leaderboards/#polyglot-leaderboard",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench_coding",
+          "score": 55.02,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
+          "unit": "pct"
         }
       ],
       "contextWindow": 128000,
@@ -74909,6 +75059,14 @@
           "score": 67.2,
           "source": "epoch.ai",
           "sourceUrl": "https://github.com/lechmazur/Writing",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "livebench_coding",
+          "score": 55.02,
+          "source": "livebench",
+          "sourceUrl": "https://livebench.ai/#/?release=2025-04-25",
           "unit": "pct"
         },
         {
@@ -75079,12 +75237,13 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2024-07-18",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -79079,12 +79238,12 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-12-10",
+      "releaseDate": "2025-12-11",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -79514,12 +79673,13 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-12-10",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -80458,12 +80618,12 @@
         "params.sizeTier": "derived",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-12-10",
+      "releaseDate": "2025-12-11",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -83821,11 +83981,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-07-09",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-5-6-luna-pro",
       "trainingComputeFlop": null,
@@ -84361,12 +84522,13 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-07-09",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -84823,11 +84985,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-07-09",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-5-6-terra-pro",
       "trainingComputeFlop": null,
@@ -85397,11 +85560,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-04",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-6-astra-pro",
       "trainingComputeFlop": null,
@@ -85784,11 +85948,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-22",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-6-luna-pro",
       "trainingComputeFlop": null,
@@ -86195,11 +86360,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-22",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-6-sol-pro",
       "trainingComputeFlop": null,
@@ -86606,11 +86772,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-29",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-6-1-sol-pro",
       "trainingComputeFlop": null,
@@ -86820,11 +86987,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-10-26",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-6-1-terra-pro",
       "trainingComputeFlop": null,
@@ -86890,11 +87058,12 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-01-19",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-audio",
       "trainingComputeFlop": null,
@@ -86960,11 +87129,12 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-01-19",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-audio-mini",
       "trainingComputeFlop": null,
@@ -87031,11 +87201,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-05-05",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "openai-gpt-chat-latest",
       "trainingComputeFlop": null,
@@ -90413,11 +90584,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-10-30",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "perplexity-sonar-pro-search",
       "trainingComputeFlop": null,
@@ -90652,9 +90824,9 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "vercel-gateway",
+        "pricing.inputPerMTok": "vercel-gateway",
+        "pricing.outputPerMTok": "vercel-gateway",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
         "vendorId": "derived"
@@ -90680,7 +90852,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -90741,14 +90913,13 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.03,
-        "inputPerMTok": 0.06,
-        "outputPerMTok": 0.12
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
         "benchmarks.swe_bench_pro": "models.dev",
         "benchmarks.swe_bench_vendor": "models.dev",
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "coding": "derived",
@@ -90757,9 +90928,6 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -91197,7 +91365,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": null,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -91282,14 +91450,13 @@
         "totalB": 501.2
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
-        "inputPerMTok": 0.25,
-        "outputPerMTok": 1
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
       },
       "provenance": {
         "benchmarks.swe_bench_pro": "models.dev",
         "benchmarks.swe_bench_vendor": "models.dev",
-        "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "coding": "derived",
@@ -91302,9 +91469,6 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
         "scores": "derived",
@@ -91993,7 +92157,7 @@
       "id": "sakana/fugu-ultra",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 128000,
+      "maxOutput": 1000000,
       "modalities": {
         "input": [
           "image",
@@ -92024,7 +92188,7 @@
         "capabilities.toolCall": "models.dev",
         "coding": "derived",
         "contextWindow": "models.dev",
-        "maxOutput": "openrouter",
+        "maxOutput": "vercel-gateway",
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
@@ -92787,11 +92951,12 @@
         "pricing.inputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-10-13",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "scaledown-extract",
       "trainingComputeFlop": null,
@@ -92853,11 +93018,12 @@
         "pricing.inputPerMTok": "litellm",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-10-13",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "scaledown-summarize",
       "trainingComputeFlop": null,
@@ -93733,11 +93899,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-07-08",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "tencent-hunyuan-a13b-instruct",
       "trainingComputeFlop": null,
@@ -95723,7 +95890,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -95753,7 +95920,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.015,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.25,
         "outputPerMTok": 0.25
       },
@@ -95768,7 +95935,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -97112,12 +97278,13 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "epoch.ai",
         "releaseDatePrecision": "epoch.ai",
+        "retiredAt": "derived",
         "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-02-17",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [
         {
           "attribution": "third-party",
@@ -97665,7 +97832,7 @@
       "id": "xai/grok-4.20-multi-agent",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 1800000,
+      "maxOutput": 2000000,
       "modalities": {
         "input": [
           "image",
@@ -97692,9 +97859,9 @@
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "litellm",
@@ -102023,13 +102190,13 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-07-25",
+      "releaseDate": "2025-07-28",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -102180,13 +102347,13 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-07-25",
+      "releaseDate": "2025-07-28",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -103081,7 +103248,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.01,
-        "inputPerMTok": 0.0605,
+        "inputPerMTok": 0.07,
         "outputPerMTok": 0.4
       },
       "provenance": {
@@ -103099,7 +103266,7 @@
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
         "pricing.cachedInputPerMTok": "litellm",
-        "pricing.inputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "vercel-gateway",
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
@@ -105207,7 +105374,7 @@
         "toolCall": null
       },
       "coding": [],
-      "contextWindow": 1048576,
+      "contextWindow": 1000000,
       "firstSeenAt": "2026-09-18T17:11:37.522Z",
       "id": "zhipuai/glm-5.3-flashx",
       "knowledgeCutoff": null,
@@ -105216,8 +105383,7 @@
       "modalities": {
         "input": [
           "image",
-          "text",
-          "video"
+          "text"
         ],
         "output": [
           "text"
@@ -105239,9 +105405,9 @@
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
+        "contextWindow": "vercel-gateway",
+        "maxOutput": "vercel-gateway",
+        "modalities": "vercel-gateway",
         "name": "derived",
         "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "litellm",
@@ -105318,11 +105484,12 @@
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-09-23",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-10-28",
       "scores": [],
       "slug": "zhipuai-glm-5-3-prime",
       "trainingComputeFlop": null,
@@ -105579,39 +105746,39 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
+      "fetchedAt": "2026-10-28T07:20:01.513Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
+      "fetchedAt": "2026-10-28T07:20:01.513Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 419 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
+      "fetchedAt": "2026-10-28T07:20:01.513Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
-      "note": "4323 条（对话类 3309 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-10-28T07:20:01.513Z",
+      "note": "4332 条（对话类 3318 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
+      "fetchedAt": "2026-10-28T07:20:01.513Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
-      "note": "models.json 607 条；api.json 232 provider / 8944 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-10-28T07:20:01.513Z",
+      "note": "models.json 607 条；api.json 233 provider / 8947 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
-      "note": "463 条；已剔除 artificial_analysis 282 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
-      "ok": true
+      "fetchedAt": null,
+      "note": "抓取失败：Unterminated string in JSON at position 147449 (line 1 column 147450)",
+      "ok": false
     },
     "override": {
       "fetchedAt": null,
@@ -105619,8 +105786,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-27T18:54:25.795Z",
-      "note": "496 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-28T07:20:01.513Z",
+      "note": "498 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -105834,16 +106001,6 @@
       "motif": "whale",
       "name": "DeepSeek",
       "nameZh": "深度求索"
-    },
-    {
-      "accentColor": "#7c8da6",
-      "continent": "west",
-      "country": "ZZ",
-      "homepage": null,
-      "id": "elorian",
-      "motif": "wanderer",
-      "name": "Elorian",
-      "nameZh": "Elorian"
     },
     {
       "accentColor": "#7c8da6",
