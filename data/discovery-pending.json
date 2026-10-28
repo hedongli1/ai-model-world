@@ -1,7 +1,19 @@
 {
   "_note": "只有单一上游源收录、尚未达到多源佐证门槛的模型。等到第二个独立源也收录它，下一次同步就会自动晋升进 data/models.json。例外：厂商已在 src/data/vendor-registry.ts 登记的，openrouter 或 vercel-gateway 单源即晋升，不会出现在这里。",
-  "generatedAt": "2026-10-28T07:20:01.513Z",
+  "generatedAt": "2026-10-28T19:04:52.144Z",
   "pending": [
+    {
+      "id": "aion-labs/aion-3.5",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "aion-labs/aion-3.5-mini",
+      "sources": [
+        "openrouter"
+      ]
+    },
     {
       "id": "anthropic/claude-fable-5-batch",
       "sources": [
@@ -99,12 +111,6 @@
       ]
     },
     {
-      "id": "elorian/glimpse",
-      "sources": [
-        "vercel-gateway"
-      ]
-    },
-    {
       "id": "google/gemini-2.5-flash-batch",
       "sources": [
         "vercel-gateway"
@@ -168,6 +174,30 @@
       "id": "interfaze/interfaze-beta",
       "sources": [
         "vercel-gateway"
+      ]
+    },
+    {
+      "id": "moondream/moondream3-preview",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "moondream/moondream3.1-9b-a2b",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "nex-agi/nex-n2.5-mini",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "nex-agi/nex-n2.5-pro",
+      "sources": [
+        "openrouter"
       ]
     },
     {
@@ -429,6 +459,18 @@
       ]
     },
     {
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "prism-ml/ternary-bonsai-2-9b",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
       "id": "scaledown/scaledown-extract-1",
       "sources": [
         "vercel-gateway"
@@ -444,6 +486,24 @@
       "id": "stealth/glyph-cluster",
       "sources": [
         "vercel-gateway"
+      ]
+    },
+    {
+      "id": "typesafe/jev-router",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "unbiased/pareto-26.10",
+      "sources": [
+        "openrouter"
+      ]
+    },
+    {
+      "id": "unbiased/pareto-26.9",
+      "sources": [
+        "openrouter"
       ]
     },
     {
