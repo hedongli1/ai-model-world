@@ -399,7 +399,7 @@
     {
       "id": "frontiermath_erdos",
       "inEci": false,
-      "models": 13,
+      "models": 14,
       "randomBaseline": 0,
       "releaseDate": "2026-09-03",
       "scoreCeiling": 100,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-10-29T19:11:05.492Z",
+  "generatedAt": "2026-10-30T07:42:08.324Z",
   "models": [
     {
       "benchmarks": {
@@ -22895,7 +22895,7 @@
         {
           "attribution": "third-party",
           "league": "mirrorcode",
-          "score": 77.4,
+          "score": 78.89,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
@@ -23147,7 +23147,7 @@
         {
           "attribution": "third-party",
           "league": "mirrorcode",
-          "score": 77.4,
+          "score": 78.89,
           "source": "epoch.ai",
           "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
@@ -37715,8 +37715,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.24,
-        "outputPerMTok": 1.115
+        "inputPerMTok": 0.24486,
+        "outputPerMTok": 1.19015
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -47013,6 +47013,14 @@
           "score": 54.96,
           "source": "epoch.ai",
           "sourceUrl": "https://www.frontierswe.com/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontiermath_erdos",
+          "score": 1.47,
+          "source": "epoch.ai",
+          "sourceUrl": null,
           "unit": "pct"
         },
         {
@@ -60267,8 +60275,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.33399,
-        "outputPerMTok": 0.44532
+        "inputPerMTok": 0.3339,
+        "outputPerMTok": 0.4452
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -62223,9 +62231,9 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.14,
-        "inputPerMTok": 1.36,
-        "outputPerMTok": 4.18
+        "cachedInputPerMTok": 0.07,
+        "inputPerMTok": 0.7,
+        "outputPerMTok": 2.1
       },
       "provenance": {
         "benchmarks.eci": "epoch.ai",
@@ -106280,37 +106288,37 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 419 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
-      "note": "4518 条（对话类 3489 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
+      "note": "4537 条（对话类 3500 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
-      "note": "models.json 607 条；api.json 233 provider / 8918 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
+      "note": "models.json 607 条；api.json 233 provider / 8924 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
       "note": "456 条；已剔除 artificial_analysis 186 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -106320,8 +106328,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-10-29T19:11:05.492Z",
-      "note": "499 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-10-30T07:42:08.324Z",
+      "note": "500 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },

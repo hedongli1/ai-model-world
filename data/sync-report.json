@@ -861,12 +861,12 @@
         "curated": false,
         "file": "frontiermath_erdos.csv",
         "inEci": false,
-        "landed": 13,
+        "landed": 14,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 13,
+        "rows": 14,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 13,
+        "scored": 14,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1958,7 +1958,7 @@
     },
     "liveModels": 694
   },
-  "generatedAt": "2026-10-29T19:11:05.492Z",
+  "generatedAt": "2026-10-30T07:42:08.324Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 131,
@@ -2056,7 +2056,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4518 条（对话类 3489 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4537 条（对话类 3500 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2064,7 +2064,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 607 条；api.json 233 provider / 8918 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "note": "models.json 607 条；api.json 233 provider / 8924 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
@@ -2076,7 +2076,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "499 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "500 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
