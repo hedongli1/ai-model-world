@@ -115,7 +115,7 @@
     "epochParamStrippedMatches": 4,
     "fromModelsDev": 607,
     "models": 731,
-    "pendingDiscoveries": 90,
+    "pendingDiscoveries": 89,
     "promotedDiscoveries": 88,
     "quickPromotedDiscoveries": 21,
     "releaseDateOutliersDropped": 21,
@@ -136,8 +136,8 @@
       "total": 731
     },
     "benchmarks.eci": {
-      "filled": 227,
-      "pct": 31.1,
+      "filled": 226,
+      "pct": 30.9,
       "total": 731
     },
     "benchmarks.fiction_live": {
@@ -335,7 +335,7 @@
     "_note": "有分数的 CSV 行数，仅用于确认解析器读到了东西。**不是模型数，不要当覆盖率分母用**，见 epochMatch。",
     "aime": 298,
     "arc_agi_2": 284,
-    "eci": 246,
+    "eci": 244,
     "fiction_live": 40,
     "gpqa_diamond": 316,
     "swe_bench_verified": 35,
@@ -367,6 +367,10 @@
       {
         "file": "gdp_pdf_external.csv",
         "reason": "metadata 无条目，表头里也认不出唯一分数列（Model version | GDP.pdf score | Release date | Organization | Country | Training compute (FLOP) | Training compute notes | Name | Provider | Last updated | Source | Source link | Notes | id）"
+      },
+      {
+        "file": "lech_mazur_writing_external.csv",
+        "reason": "metadata 无条目，列 \"Mean score\" 实测区间 6.05–8.6，量纲无法判定"
       },
       {
         "file": "live_bench_external.csv",
@@ -756,12 +760,12 @@
         "curated": true,
         "file": "epoch_capabilities_index/eci_scores.csv",
         "inEci": false,
-        "landed": 227,
+        "landed": 226,
         "multiplier": 1,
         "outOfRange": 0,
-        "rows": 273,
+        "rows": 271,
         "scoreColumn": "eci",
-        "scored": 246,
+        "scored": 244,
         "selfRun": true,
         "supersededBy": null,
         "unit": "index",
@@ -1066,21 +1070,6 @@
         "supersededBy": null,
         "unit": "pct",
         "upstreamName": "LAMBADA"
-      },
-      "lech_mazur_writing": {
-        "curated": false,
-        "file": "lech_mazur_writing_external.csv",
-        "inEci": true,
-        "landed": 61,
-        "multiplier": 10,
-        "outOfRange": 0,
-        "rows": 49,
-        "scoreColumn": "Mean score",
-        "scored": 49,
-        "selfRun": false,
-        "supersededBy": null,
-        "unit": "pct",
-        "upstreamName": "Lech Mazur Writing"
       },
       "lmca": {
         "curated": false,
@@ -1430,7 +1419,7 @@
       "swe_bench_verified": {
         "curated": true,
         "file": "swe_bench_verified.csv",
-        "inEci": true,
+        "inEci": false,
         "landed": 48,
         "multiplier": 100,
         "outOfRange": 0,
@@ -1595,6 +1584,7 @@
     },
     "nonEpochLeagues": {
       "claw_eval": 6,
+      "lech_mazur_writing": 6,
       "livebench_agentic_coding": 114,
       "livebench_coding": 135,
       "livecodebench": 8,
@@ -1631,10 +1621,10 @@
         "upstreamRows": 284
       },
       "eci": {
-        "landedModels": 227,
-        "matchedModels": 152,
-        "upstreamModels": 226,
-        "upstreamRows": 246
+        "landedModels": 226,
+        "matchedModels": 151,
+        "upstreamModels": 225,
+        "upstreamRows": 244
       },
       "fiction_live": {
         "landedModels": 46,
@@ -1958,7 +1948,7 @@
     },
     "liveModels": 695
   },
-  "generatedAt": "2026-10-30T18:49:09.280Z",
+  "generatedAt": "2026-10-31T07:28:30.400Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 131,
@@ -2049,7 +2039,7 @@
       "ok": true
     },
     "epoch.ai": {
-      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 81 个；训练算力 329 行；去重后 419 个模型实体；合规拦截 1 个文件",
+      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 329 行；去重后 419 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
@@ -2057,7 +2047,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4541 条（对话类 3504 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4546 条（对话类 3507 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2065,7 +2055,7 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 607 条；api.json 234 provider / 8930 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "note": "models.json 607 条；api.json 235 provider / 8936 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
@@ -2077,14 +2067,14 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "500 条（language 321 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "499 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
   "trainingCompute": {
     "_note": "ModelRecord.trainingComputeFlop 的落地情况，来源 Epoch model_metadata.csv。闭源模型从不公布参数量，训练算力是唯一有第三方估算的「体型」代理，closedFlagships 数的是 openai / anthropic / google / xai 里有 ECI 的模型。without 如实列出没拿到的闭源旗舰——多数是 Epoch 也没估算，不是匹配问题。",
     "closedFlagships": {
-      "total": 107,
+      "total": 106,
       "withFlop": 12,
       "without": [
         "anthropic/claude-3-5-haiku-20241022",
@@ -2153,7 +2143,6 @@
         "openai/gpt-5.2-chat",
         "openai/gpt-5.2-chat-latest",
         "openai/gpt-5.2-pro",
-        "openai/gpt-5.3-codex",
         "openai/gpt-5.4",
         "openai/gpt-5.4-mini",
         "openai/gpt-5.4-nano",
