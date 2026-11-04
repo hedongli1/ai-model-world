@@ -112,11 +112,11 @@
   },
   "counts": {
     "epochParamStrippedMatches": 4,
-    "fromModelsDev": 607,
+    "fromModelsDev": 608,
     "models": 734,
-    "pendingDiscoveries": 90,
-    "promotedDiscoveries": 91,
-    "quickPromotedDiscoveries": 22,
+    "pendingDiscoveries": 91,
+    "promotedDiscoveries": 90,
+    "quickPromotedDiscoveries": 21,
     "releaseDateOutliersDropped": 22,
     "resurrected": 0,
     "retiredThisRun": 36,
@@ -185,8 +185,8 @@
       "total": 734
     },
     "capabilities.reasoning": {
-      "filled": 610,
-      "pct": 83.1,
+      "filled": 611,
+      "pct": 83.2,
       "total": 734
     },
     "capabilities.structuredOutput": {
@@ -195,8 +195,8 @@
       "total": 734
     },
     "capabilities.toolCall": {
-      "filled": 610,
-      "pct": 83.1,
+      "filled": 611,
+      "pct": 83.2,
       "total": 734
     },
     "coding.两条以上赛制": {
@@ -260,8 +260,8 @@
       "total": 734
     },
     "openWeights": {
-      "filled": 610,
-      "pct": 83.1,
+      "filled": 611,
+      "pct": 83.2,
       "total": 734
     },
     "params.activeB": {
@@ -285,8 +285,8 @@
       "total": 734
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 438,
-      "pct": 59.7,
+      "filled": 437,
+      "pct": 59.5,
       "total": 734
     },
     "pricing.inputPerMTok": {
@@ -594,12 +594,12 @@
         "curated": false,
         "file": "chess_puzzles.csv",
         "inEci": true,
-        "landed": 107,
+        "landed": 108,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 155,
+        "rows": 161,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 155,
+        "scored": 161,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1344,12 +1344,12 @@
         "curated": false,
         "file": "spireclimb.csv",
         "inEci": true,
-        "landed": 7,
+        "landed": 8,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 7,
+        "rows": 8,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 7,
+        "scored": 8,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1359,12 +1359,12 @@
         "curated": false,
         "file": "spireclimb_sts1_a20_heart.csv",
         "inEci": false,
-        "landed": 7,
+        "landed": 8,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 7,
+        "rows": 8,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 7,
+        "scored": 8,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1374,12 +1374,12 @@
         "curated": false,
         "file": "spireclimb_sts2_a10.csv",
         "inEci": false,
-        "landed": 7,
+        "landed": 8,
         "multiplier": 100,
         "outOfRange": 0,
-        "rows": 7,
+        "rows": 8,
         "scoreColumn": "Best score (across scorers)",
-        "scored": 7,
+        "scored": 8,
         "selfRun": true,
         "supersededBy": null,
         "unit": "pct",
@@ -1908,46 +1908,46 @@
       "pricing.outputPerMTok": 585
     },
     "before": {
-      "contextWindow": 593,
-      "maxOutput": 568,
-      "modalities": 607,
-      "pricing.inputPerMTok": 483,
-      "pricing.outputPerMTok": 475
+      "contextWindow": 594,
+      "maxOutput": 569,
+      "modalities": 608,
+      "pricing.inputPerMTok": 484,
+      "pricing.outputPerMTok": 476
     },
     "bySource": {
       "contextWindow": {
         "litellm": 2,
-        "openrouter": 53,
+        "openrouter": 52,
         "vercel-gateway": 38
       },
       "maxOutput": {
         "litellm": 3,
-        "openrouter": 53,
+        "openrouter": 52,
         "vercel-gateway": 38
       },
       "modalities": {
-        "openrouter": 53,
+        "openrouter": 52,
         "vercel-gateway": 38
       },
       "pricing.cachedInputPerMTok": {
         "litellm": 47,
-        "openrouter": 30,
+        "openrouter": 28,
         "vercel-gateway": 14
       },
       "pricing.inputPerMTok": {
-        "litellm": 59,
-        "openrouter": 40,
+        "litellm": 62,
+        "openrouter": 36,
         "vercel-gateway": 13
       },
       "pricing.outputPerMTok": {
-        "litellm": 57,
-        "openrouter": 40,
+        "litellm": 60,
+        "openrouter": 36,
         "vercel-gateway": 13
       }
     },
     "liveModels": 698
   },
-  "generatedAt": "2026-11-04T07:58:34.292Z",
+  "generatedAt": "2026-11-04T20:32:09.082Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 131,
@@ -2008,7 +2008,6 @@
   "quickPromoted": {
     "_note": "走「注册厂商单源快速晋升」进入快照的模型：厂商在 src/data/vendor-registry.ts 里登记过，且被 openrouter 或 vercel-gateway 任一源收录（litellm 单源不算）。目的是大厂新模型上线当天就能进站，不必等第二个网关跟上。",
     "models": [
-      "alibaba/qwen3.5-flash-02-23",
       "bytedance-seed/ui-tars-1.5-7b",
       "cohere/command-a-plus",
       "inclusionai/ling-3.1-flash-1019",
@@ -2047,7 +2046,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "4525 条（对话类 3483 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "4622 条（对话类 3576 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2055,11 +2054,11 @@
       "ok": true
     },
     "models.dev": {
-      "note": "models.json 607 条；api.json 235 provider / 8928 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "note": "models.json 608 条；api.json 235 provider / 8940 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "note": "455 条；已剔除 artificial_analysis 194 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "454 条；已剔除 artificial_analysis 192 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
