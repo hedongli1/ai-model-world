@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-06T20:04:41.218Z",
+  "generatedAt": "2026-11-07T07:44:26.090Z",
   "models": [
     {
       "benchmarks": {
@@ -15069,7 +15069,7 @@
         "totalB": 72
       },
       "pricing": {
-        "cachedInputPerMTok": 1.003,
+        "cachedInputPerMTok": 2.5,
         "inputPerMTok": 2.5,
         "outputPerMTok": 5
       },
@@ -51525,6 +51525,73 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-11-07T07:44:26.090Z",
+      "id": "liquid/lfm-3-1.7b",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "LFM 3 1.7B",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "totalB": 1.7
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.02,
+        "inputPerMTok": 0.08,
+        "outputPerMTok": 0.2
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.totalB": "derived",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-06",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "liquid-lfm-3-1-7b",
+      "trainingComputeFlop": null,
+      "vendorId": "liquid"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
         "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
@@ -51664,7 +51731,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
@@ -51694,7 +51761,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.4,
         "inputPerMTok": 0.4,
         "outputPerMTok": 0.75
       },
@@ -51709,6 +51776,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -70913,9 +70981,9 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.01,
+        "cachedInputPerMTok": 0.0125,
         "inputPerMTok": 0.05,
-        "outputPerMTok": 0.2
+        "outputPerMTok": 0.16
       },
       "provenance": {
         "benchmarks.swe_bench_vendor": "models.dev",
@@ -91830,7 +91898,7 @@
         "openWeights": "models.dev",
         "params.activeB": "derived",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "openrouter",
         "pricing.outputPerMTok": "openrouter",
         "releaseDate": "models.dev",
@@ -95718,6 +95786,76 @@
     },
     {
       "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-11-07T07:44:26.090Z",
+      "id": "thinkingmachines/inkling-2-small",
+      "knowledgeCutoff": null,
+      "license": "LicenseRef-Proprietary",
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Inkling 2 Small",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-05",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "thinkingmachines-inkling-2-small",
+      "trainingComputeFlop": null,
+      "vendorId": "thinkingmachines"
+    },
+    {
+      "benchmarks": {
         "aime": 90,
         "arc_agi_2": 40.14,
         "eci": 150.79,
@@ -96151,7 +96289,7 @@
         "totalB": 13
       },
       "pricing": {
-        "cachedInputPerMTok": 0.3995,
+        "cachedInputPerMTok": 0.35,
         "inputPerMTok": 0.35,
         "outputPerMTok": 0.65
       },
@@ -106355,38 +106493,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
-      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 334 行；去重后 416 个模型实体；合规拦截 1 个文件",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
+      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 334 行；去重后 417 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
-      "note": "4758 条（对话类 3708 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
+      "note": "4767 条（对话类 3715 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
-      "note": "models.json 608 条；api.json 235 provider / 8931 条；benchmarks[] 1173 条，已拦截 AA 血缘 183 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
+      "note": "models.json 609 条；api.json 235 provider / 8941 条；benchmarks[] 1174 条，已拦截 AA 血缘 184 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
-      "note": "458 条；已剔除 artificial_analysis 199 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
+      "note": "460 条；已剔除 artificial_analysis 199 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -106395,8 +106533,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-06T20:04:41.218Z",
-      "note": "497 条（language 319 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-07T07:44:26.090Z",
+      "note": "498 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
