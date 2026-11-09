@@ -469,6 +469,28 @@
         "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
       }
     },
+    "anthropic/claude-fable-5-2": {
+      "frontier_code": {
+        "attributionType": "vendor-self-reported",
+        "key": "frontier_code",
+        "league": "frontier_code",
+        "metric": "score",
+        "rawName": "FrontierCode",
+        "score": 49.1,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      },
+      "frontier_swe": {
+        "attributionType": "vendor-self-reported",
+        "key": "frontier_swe",
+        "league": "frontier_swe",
+        "metric": "score",
+        "rawName": "FrontierSWE",
+        "score": 69.9,
+        "sourceHost": "anthropic.com",
+        "sourceUrl": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      }
+    },
     "anthropic/claude-haiku-4-5": {
       "swe_bench_pro": {
         "attributionType": "third-party",
@@ -3734,5 +3756,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-09T08:38:26.382Z"
+  "generatedAt": "2026-11-09T23:08:54.911Z"
 }
