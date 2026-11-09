@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-08T18:29:00.805Z",
+  "generatedAt": "2026-11-09T08:38:26.382Z",
   "models": [
     {
       "benchmarks": {
@@ -9109,7 +9109,7 @@
         "totalB": 403.4
       },
       "pricing": {
-        "cachedInputPerMTok": 0.3,
+        "cachedInputPerMTok": 0.12,
         "inputPerMTok": 0.6,
         "outputPerMTok": 3.6
       },
@@ -48540,7 +48540,7 @@
         "totalB": 25.81
       },
       "pricing": {
-        "cachedInputPerMTok": 0.049,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.1,
         "outputPerMTok": 0.34
       },
@@ -68875,12 +68875,10 @@
         ]
       },
       "name": "Kimi K3.1 Pro",
-      "openWeights": false,
+      "openWeights": true,
       "params": {
         "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 4,
-        "sizeTierBasis": "price+naming",
+        "confidence": "unknown",
         "totalB": null
       },
       "pricing": {
@@ -68898,7 +68896,6 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
-        "params.sizeTier": "derived",
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
@@ -88103,7 +88100,7 @@
         "totalB": 114.66
       },
       "pricing": {
-        "cachedInputPerMTok": 0.066,
+        "cachedInputPerMTok": 0.075,
         "inputPerMTok": 0.15,
         "outputPerMTok": 0.6
       },
@@ -106494,37 +106491,37 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 341 行；去重后 417 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
       "note": "4870 条（对话类 3815 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
-      "note": "models.json 609 条；api.json 235 provider / 8940 条；benchmarks[] 1174 条，已拦截 AA 血缘 184 条，非编程口径跳过 609 条",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
+      "note": "models.json 609 条；api.json 235 provider / 8938 条；benchmarks[] 1174 条，已拦截 AA 血缘 184 条，非编程口径跳过 609 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
       "note": "461 条；已剔除 artificial_analysis 200 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
@@ -106534,7 +106531,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-08T18:29:00.805Z",
+      "fetchedAt": "2026-11-09T08:38:26.382Z",
       "note": "498 条（language 320 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
