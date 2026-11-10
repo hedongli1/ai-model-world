@@ -63,7 +63,7 @@
     {
       "id": "apex_agents",
       "inEci": true,
-      "models": 70,
+      "models": 71,
       "randomBaseline": 0,
       "releaseDate": "2026-01-21",
       "scoreCeiling": 100,
@@ -135,7 +135,7 @@
     {
       "id": "blueprint_bench_2",
       "inEci": false,
-      "models": 42,
+      "models": 43,
       "randomBaseline": 0,
       "releaseDate": "2026-05-04",
       "scoreCeiling": 100,
@@ -231,7 +231,7 @@
     {
       "id": "critpt",
       "inEci": false,
-      "models": 193,
+      "models": 194,
       "randomBaseline": 0,
       "releaseDate": "2025-09-30",
       "scoreCeiling": 100,
@@ -375,7 +375,7 @@
     {
       "id": "frontier_swe",
       "inEci": true,
-      "models": 24,
+      "models": 25,
       "randomBaseline": 0,
       "releaseDate": "2026-09-02",
       "scoreCeiling": 100,
@@ -1095,7 +1095,7 @@
     {
       "id": "vending_bench_2",
       "inEci": false,
-      "models": 102,
+      "models": 103,
       "randomBaseline": null,
       "releaseDate": "2025-11-18",
       "scoreCeiling": null,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-10T08:49:08.035Z",
+  "generatedAt": "2026-11-10T20:35:36.851Z",
   "models": [
     {
       "benchmarks": {
@@ -27485,6 +27485,144 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1024000,
+      "firstSeenAt": "2026-11-10T20:35:36.851Z",
+      "id": "baidu/ernie-5.5-flash-preview",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 921600,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Ernie 5.5 Flash Preview",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.028,
+        "inputPerMTok": 0.28,
+        "outputPerMTok": 1.13
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-10",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "baidu-ernie-5-5-flash-preview",
+      "trainingComputeFlop": null,
+      "vendorId": "baidu"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 1024000,
+      "firstSeenAt": "2026-11-10T20:35:36.851Z",
+      "id": "baidu/ernie-light-dt-1.0-intl",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Ernie Light DT 1.0 Intl",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.113,
+        "inputPerMTok": 1.13,
+        "outputPerMTok": 3.94
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-10",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "baidu-ernie-light-dt-1-0-intl",
+      "trainingComputeFlop": null,
+      "vendorId": "baidu"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
         "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
@@ -36311,8 +36449,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.028,
-        "inputPerMTok": 0.156702,
-        "outputPerMTok": 0.391755
+        "inputPerMTok": 0.156996,
+        "outputPerMTok": 0.399
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -37886,8 +38024,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.24,
-        "outputPerMTok": 1.19015
+        "inputPerMTok": 0.246708,
+        "outputPerMTok": 1.2
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -47345,6 +47483,125 @@
         }
       ],
       "slug": "google-gemini-4-argon",
+      "trainingComputeFlop": null,
+      "vendorId": "google"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-11-10T20:35:36.851Z",
+      "id": "google/gemini-4-carbon",
+      "knowledgeCutoff": "2026-03",
+      "license": null,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "pdf",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Gemini 4 Carbon",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 3,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.1,
+        "inputPerMTok": 2,
+        "outputPerMTok": 10
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "scores": "derived",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-10",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "apex_agents",
+          "score": 84.2,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "blueprint_bench_2",
+          "score": 58.57,
+          "source": "epoch.ai",
+          "sourceUrl": "https://andonlabs.com/evals/blueprint-bench-2",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "critpt",
+          "score": 36,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "frontier_swe",
+          "score": 61.2,
+          "source": "epoch.ai",
+          "sourceUrl": "https://www.frontierswe.com/",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "vending_bench_2",
+          "score": 16484.21,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "usd"
+        }
+      ],
+      "slug": "google-gemini-4-carbon",
       "trainingComputeFlop": null,
       "vendorId": "google"
     },
@@ -60985,8 +61242,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.33579,
-        "outputPerMTok": 0.44772
+        "inputPerMTok": 0.33642,
+        "outputPerMTok": 0.44856
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -107162,38 +107419,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 343 行；去重后 420 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
-      "note": "4892 条（对话类 3837 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
+      "note": "4908 条（对话类 3853 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
-      "note": "models.json 612 条；api.json 235 provider / 8967 条；benchmarks[] 1195 条，已拦截 AA 血缘 187 条，非编程口径跳过 623 条",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
+      "note": "models.json 613 条；api.json 235 provider / 8994 条；benchmarks[] 1195 条，已拦截 AA 血缘 187 条，非编程口径跳过 623 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
-      "note": "465 条；已剔除 artificial_analysis 204 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
+      "note": "469 条；已剔除 artificial_analysis 204 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -107202,8 +107459,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-10T08:49:08.035Z",
-      "note": "505 条（language 324 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-10T20:35:36.851Z",
+      "note": "506 条（language 325 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
