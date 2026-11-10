@@ -363,7 +363,7 @@
     {
       "id": "frontier_code",
       "inEci": true,
-      "models": 51,
+      "models": 52,
       "randomBaseline": 0,
       "releaseDate": "2026-06-08",
       "scoreCeiling": 100,
@@ -1035,7 +1035,7 @@
     {
       "id": "terminal_bench",
       "inEci": false,
-      "models": 62,
+      "models": 63,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-09T23:08:54.911Z",
+  "generatedAt": "2026-11-10T08:49:08.035Z",
   "models": [
     {
       "benchmarks": {
@@ -3801,7 +3801,7 @@
       "id": "alibaba/qwen3-14b",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 16384,
+      "maxOutput": 36864,
       "modalities": {
         "input": [
           "text"
@@ -3819,8 +3819,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.12,
-        "outputPerMTok": 0.24
+        "inputPerMTok": 0.1,
+        "outputPerMTok": 0.22
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -36311,8 +36311,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.028,
-        "inputPerMTok": 0.15,
-        "outputPerMTok": 0.3
+        "inputPerMTok": 0.156702,
+        "outputPerMTok": 0.391755
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -53884,8 +53884,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.13,
-        "inputPerMTok": 0.59,
-        "outputPerMTok": 0.724
+        "inputPerMTok": 0.6,
+        "outputPerMTok": 0.71
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -54838,6 +54838,118 @@
       "retiredAt": null,
       "scores": [],
       "slug": "meta-muse-ember",
+      "trainingComputeFlop": null,
+      "vendorId": "meta"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 40.9,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "frontier_code",
+          "score": 27.2,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+          "unit": "pct"
+        }
+      ],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-11-10T08:49:08.035Z",
+      "id": "meta/muse-ember-1.0",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 524288,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "pdf",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Muse Ember",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.004,
+        "inputPerMTok": 0.1,
+        "outputPerMTok": 0.5
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "coding": "derived",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "scores": "derived",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-09",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "frontier_code",
+          "score": 27.2,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 40.9,
+          "source": "models.dev",
+          "sourceUrl": "https://research.meta.ai/blog/muse-ember",
+          "unit": "pct"
+        }
+      ],
+      "slug": "meta-muse-ember-1-0",
       "trainingComputeFlop": null,
       "vendorId": "meta"
     },
@@ -107050,38 +107162,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 343 行；去重后 420 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
-      "note": "4889 条（对话类 3834 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
+      "note": "4892 条（对话类 3837 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
-      "note": "models.json 611 条；api.json 235 provider / 8959 条；benchmarks[] 1186 条，已拦截 AA 血缘 186 条，非编程口径跳过 617 条",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
+      "note": "models.json 612 条；api.json 235 provider / 8967 条；benchmarks[] 1195 条，已拦截 AA 血缘 187 条，非编程口径跳过 623 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
-      "note": "464 条；已剔除 artificial_analysis 201 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
+      "note": "465 条；已剔除 artificial_analysis 204 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -107090,7 +107202,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-09T23:08:54.911Z",
+      "fetchedAt": "2026-11-10T08:49:08.035Z",
       "note": "505 条（language 324 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
