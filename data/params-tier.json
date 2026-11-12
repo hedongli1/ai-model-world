@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-11-11T08:19:25.502Z",
+  "generatedAt": "2026-11-12T08:48:53.983Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -330,12 +330,8 @@
       "basis": "price",
       "tier": 2
     },
-    "bytedance-seed/seed-1-6": {
-      "basis": "price",
-      "tier": 2
-    },
     "bytedance-seed/seed-1-6-flash": {
-      "basis": "price+naming",
+      "basis": "naming",
       "tier": 1
     },
     "bytedance-seed/seed-1-8": {
