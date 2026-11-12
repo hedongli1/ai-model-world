@@ -1035,7 +1035,7 @@
     {
       "id": "terminal_bench",
       "inEci": false,
-      "models": 63,
+      "models": 64,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-12T08:48:53.983Z",
+  "generatedAt": "2026-11-12T21:04:20.437Z",
   "models": [
     {
       "benchmarks": {
@@ -1687,7 +1687,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": false
@@ -1716,7 +1716,7 @@
         "totalB": 27.43
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.12,
         "inputPerMTok": 0.351,
         "outputPerMTok": 0.555
       },
@@ -1731,6 +1731,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -3801,7 +3802,7 @@
       "id": "alibaba/qwen3-14b",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 36864,
+      "maxOutput": 16384,
       "modalities": {
         "input": [
           "text"
@@ -3819,8 +3820,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.22
+        "inputPerMTok": 0.12,
+        "outputPerMTok": 0.24
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -4999,7 +5000,7 @@
         "totalB": 235.09
       },
       "pricing": {
-        "cachedInputPerMTok": 0.055,
+        "cachedInputPerMTok": 0.15,
         "inputPerMTok": 0.3,
         "outputPerMTok": 2.89855072
       },
@@ -5258,7 +5259,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.0216,
-        "inputPerMTok": 0.10869565,
+        "inputPerMTok": 0.11,
         "outputPerMTok": 0.5
       },
       "provenance": {
@@ -9379,9 +9380,9 @@
         "totalB": 9.65
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0375,
+        "cachedInputPerMTok": 0.06,
         "inputPerMTok": 0.1,
-        "outputPerMTok": 0.167
+        "outputPerMTok": 0.2
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -14706,7 +14707,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.00875,
+        "cachedInputPerMTok": 0.0087,
         "inputPerMTok": 0.035,
         "outputPerMTok": 0.14
       },
@@ -32940,8 +32941,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.05977899,
-        "inputPerMTok": 0.59778991,
-        "outputPerMTok": 2.39115964
+        "inputPerMTok": 0.7,
+        "outputPerMTok": 2.4
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -38407,8 +38408,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.223,
-        "outputPerMTok": 1.115
+        "inputPerMTok": 0.24,
+        "outputPerMTok": 1.19015
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -40674,7 +40675,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.015,
+        "cachedInputPerMTok": 0.01,
         "inputPerMTok": 0.09,
         "outputPerMTok": 0.36
       },
@@ -40692,7 +40693,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -40821,8 +40822,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.01,
-        "inputPerMTok": 0.1,
-        "outputPerMTok": 0.4
+        "inputPerMTok": 0.09,
+        "outputPerMTok": 0.36
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -40835,7 +40836,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.cachedInputPerMTok": "litellm",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -40943,14 +40944,14 @@
       "params": {
         "activeB": null,
         "confidence": "estimated",
-        "sizeTier": 1,
+        "sizeTier": 2,
         "sizeTierBasis": "price+naming",
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.015,
+        "cachedInputPerMTok": 0.0285,
         "inputPerMTok": 0.1425,
-        "outputPerMTok": 0.6
+        "outputPerMTok": 3.325
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -48279,6 +48280,103 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 57,
+          "source": "models.dev",
+          "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "unit": "pct"
+        }
+      ],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-11-12T21:04:20.437Z",
+      "id": "google/gemini-4-hydrogen",
+      "knowledgeCutoff": "2026-03",
+      "license": null,
+      "maxOutput": 65536,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "pdf",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Gemini 4 Hydrogen",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 3,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.075,
+        "inputPerMTok": 1.5,
+        "outputPerMTok": 7.5
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "coding": "derived",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "scores": "derived",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-12",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "terminal_bench",
+          "score": 57,
+          "source": "models.dev",
+          "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+          "unit": "pct"
+        }
+      ],
+      "slug": "google-gemini-4-hydrogen",
+      "trainingComputeFlop": null,
+      "vendorId": "google"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
         "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
@@ -48819,14 +48917,14 @@
       "params": {
         "activeB": null,
         "confidence": "estimated",
-        "sizeTier": 3,
+        "sizeTier": 2,
         "sizeTierBasis": "price+naming",
         "totalB": null
       },
       "pricing": {
         "cachedInputPerMTok": null,
         "inputPerMTok": 1.5,
-        "outputPerMTok": 17.5
+        "outputPerMTok": 9
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -53864,7 +53962,7 @@
         "totalB": 8.03
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0272,
+        "cachedInputPerMTok": 0.01,
         "inputPerMTok": 0.02,
         "outputPerMTok": 0.05
       },
@@ -58778,7 +58876,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -58806,7 +58904,7 @@
         "totalB": 456.07
       },
       "pricing": {
-        "cachedInputPerMTok": 0.3026,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.55,
         "outputPerMTok": 2.2
       },
@@ -58822,7 +58920,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.totalB": "huggingface",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "epoch.ai",
@@ -61866,8 +61963,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.02,
-        "inputPerMTok": 0.15,
-        "outputPerMTok": 0.15
+        "inputPerMTok": 0.2,
+        "outputPerMTok": 0.2
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -92548,7 +92645,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": false,
+        "promptCaching": true,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -92581,7 +92678,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": null,
+        "cachedInputPerMTok": 0.075,
         "inputPerMTok": 0.15,
         "outputPerMTok": 1.5
       },
@@ -92595,6 +92692,7 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -108482,38 +108580,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 343 行；去重后 421 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
       "note": "请求 240 个开源模型，成功 236，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
-      "note": "5919 条（对话类 3903 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
+      "note": "5942 条（对话类 3916 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
-      "note": "models.json 613 条；api.json 235 provider / 8988 条；benchmarks[] 1195 条，已拦截 AA 血缘 187 条，非编程口径跳过 623 条",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
+      "note": "models.json 614 条；api.json 235 provider / 9107 条；benchmarks[] 1205 条，已拦截 AA 血缘 188 条，非编程口径跳过 631 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
-      "note": "468 条；已剔除 artificial_analysis 208 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
+      "note": "473 条；已剔除 artificial_analysis 209 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -108522,8 +108620,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-12T08:48:53.983Z",
-      "note": "507 条（language 324 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-12T21:04:20.437Z",
+      "note": "508 条（language 325 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
