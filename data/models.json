@@ -615,7 +615,7 @@
     {
       "id": "livecodebench_v6",
       "inEci": false,
-      "models": 1,
+      "models": 3,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -999,7 +999,7 @@
     {
       "id": "swe_bench_vendor",
       "inEci": false,
-      "models": 42,
+      "models": 44,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-14T18:50:58.610Z",
+  "generatedAt": "2026-11-15T08:24:30.990Z",
   "models": [
     {
       "benchmarks": {
@@ -4488,7 +4488,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.11,
         "inputPerMTok": 0.2,
-        "outputPerMTok": 0.75
+        "outputPerMTok": 0.6
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -7787,7 +7787,7 @@
         "totalB": 31.07
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0216,
+        "cachedInputPerMTok": 0.03,
         "inputPerMTok": 0.15,
         "outputPerMTok": 0.6
       },
@@ -9382,7 +9382,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.06,
         "inputPerMTok": 0.1,
-        "outputPerMTok": 0.18
+        "outputPerMTok": 0.2
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -12536,9 +12536,9 @@
         "totalB": 27.78
       },
       "pricing": {
-        "cachedInputPerMTok": 0.059,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.4,
-        "outputPerMTok": 2.7
+        "outputPerMTok": 2.5
       },
       "provenance": {
         "benchmarks.arc_agi_2": "epoch.ai",
@@ -14301,6 +14301,77 @@
       "slug": "alibaba-qwq-plus",
       "trainingComputeFlop": null,
       "vendorId": "alibaba"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 16384,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "allenai/olmocr-2-7b",
+      "knowledgeCutoff": null,
+      "license": "Apache-2.0",
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "olmOCR 2 7B",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 8.29
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.0107,
+        "inputPerMTok": 0.0714,
+        "outputPerMTok": 0.3451
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2025-10-22",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "allenai-olmocr-2-7b",
+      "trainingComputeFlop": null,
+      "vendorId": "allenai"
     },
     {
       "benchmarks": {
@@ -27295,7 +27366,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.01,
+        "inputPerMTok": 0.02,
         "outputPerMTok": null
       },
       "provenance": {
@@ -28779,7 +28850,78 @@
         "toolCall": true
       },
       "coding": [],
-      "contextWindow": 256000,
+      "contextWindow": 1024000,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "bytedance-seed/seed-2.1-lite",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 256000,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Seed 2.1 Lite",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-15",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "bytedance-seed-seed-2-1-lite",
+      "trainingComputeFlop": null,
+      "vendorId": "bytedance-seed"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1024000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "bytedance-seed/seed-2.1-pro",
       "knowledgeCutoff": null,
@@ -28990,7 +29132,7 @@
         "toolCall": true
       },
       "coding": [],
-      "contextWindow": 256000,
+      "contextWindow": 1024000,
       "firstSeenAt": "2026-08-31T10:07:26.393Z",
       "id": "bytedance-seed/seed-evolving",
       "knowledgeCutoff": null,
@@ -31708,6 +31850,78 @@
         }
       ],
       "slug": "deepreinforce-ornith-1-0-9b",
+      "trainingComputeFlop": null,
+      "vendorId": "deepreinforce"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "deepreinforce/ornith-1.5-122b",
+      "knowledgeCutoff": null,
+      "license": "MIT",
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Ornith 1.5 122B",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "totalB": 122
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.02,
+        "inputPerMTok": 0.16,
+        "outputPerMTok": 0.64
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-10-20",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "deepreinforce-ornith-1-5-122b",
       "trainingComputeFlop": null,
       "vendorId": "deepreinforce"
     },
@@ -36777,8 +36991,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.028,
-        "inputPerMTok": 0.154728,
-        "outputPerMTok": 0.399
+        "inputPerMTok": 0.17,
+        "outputPerMTok": 0.4
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -38408,8 +38622,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.243144,
-        "outputPerMTok": 1.19015
+        "inputPerMTok": 0.223,
+        "outputPerMTok": 1.1
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -48917,14 +49131,14 @@
       "params": {
         "activeB": null,
         "confidence": "estimated",
-        "sizeTier": 2,
+        "sizeTier": 3,
         "sizeTierBasis": "price+naming",
         "totalB": null
       },
       "pricing": {
         "cachedInputPerMTok": null,
         "inputPerMTok": 1.5,
-        "outputPerMTok": 9
+        "outputPerMTok": 17.5
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -49829,7 +50043,7 @@
         "totalB": 11.96
       },
       "pricing": {
-        "cachedInputPerMTok": 0.025,
+        "cachedInputPerMTok": 0.0225,
         "inputPerMTok": 0.05,
         "outputPerMTok": 0.25
       },
@@ -50803,6 +51017,222 @@
         "fiction_live": null,
         "gpqa_diamond": null,
         "swe_bench_pro": null,
+        "swe_bench_vendor": 63.1,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 63.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench_v6",
+          "score": 85.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash",
+          "unit": "pct"
+        }
+      ],
+      "contextWindow": 524288,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "huawei/openpangu-2.0-flash",
+      "knowledgeCutoff": "2026-06",
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "openPangu 2.0 Flash",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 100.14
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.02999,
+        "inputPerMTok": 0.11994,
+        "outputPerMTok": 0.23988
+      },
+      "provenance": {
+        "benchmarks.swe_bench_vendor": "models.dev",
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "coding": "derived",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "scores": "derived",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-06-30",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench_v6",
+          "score": 85.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 63.1,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Flash",
+          "unit": "pct"
+        }
+      ],
+      "slug": "huawei-openpangu-2-0-flash",
+      "trainingComputeFlop": null,
+      "vendorId": "huawei"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": 68.5,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 68.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Pro",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench_v6",
+          "score": 85.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Pro",
+          "unit": "pct"
+        }
+      ],
+      "contextWindow": 524288,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "huawei/openpangu-2.0-pro",
+      "knowledgeCutoff": "2026-06",
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "openPangu 2.0 Pro",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 541.49
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.11994,
+        "inputPerMTok": 0.47976,
+        "outputPerMTok": 2.17391
+      },
+      "provenance": {
+        "benchmarks.swe_bench_vendor": "models.dev",
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "coding": "derived",
+        "contextWindow": "models.dev",
+        "knowledgeCutoff": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "scores": "derived",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-07-31",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [
+        {
+          "attribution": "vendor-self-reported",
+          "league": "livecodebench_v6",
+          "score": 85.7,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Pro",
+          "unit": "pct"
+        },
+        {
+          "attribution": "vendor-self-reported",
+          "league": "swe_bench_vendor",
+          "score": 68.5,
+          "source": "models.dev",
+          "sourceUrl": "https://huggingface.co/openpangu/openPangu-2.0-Pro",
+          "unit": "pct"
+        }
+      ],
+      "slug": "huawei-openpangu-2-0-pro",
+      "trainingComputeFlop": null,
+      "vendorId": "huawei"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
         "swe_bench_vendor": null,
         "swe_bench_verified": null,
         "webdev_arena_elo": null
@@ -51483,11 +51913,12 @@
         "pricing.outputPerMTok": "litellm",
         "releaseDate": "vercel-gateway",
         "releaseDatePrecision": "vercel-gateway",
+        "retiredAt": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2025-02-26",
       "releaseDatePrecision": "day",
-      "retiredAt": null,
+      "retiredAt": "2026-11-15",
       "scores": [],
       "slug": "inception-mercury-coder-small",
       "trainingComputeFlop": null,
@@ -52066,17 +52497,17 @@
       },
       "capabilities": {
         "promptCaching": true,
-        "reasoning": null,
+        "reasoning": true,
         "structuredOutput": null,
-        "toolCall": null
+        "toolCall": true
       },
       "coding": [],
-      "contextWindow": 262144,
+      "contextWindow": 131072,
       "firstSeenAt": "2026-11-05T08:27:37.725Z",
       "id": "inclusionai/ling-3.0-tiny",
       "knowledgeCutoff": null,
-      "license": null,
-      "maxOutput": 250000,
+      "license": "MIT",
+      "maxOutput": 32768,
       "modalities": {
         "input": [
           "text"
@@ -52086,13 +52517,11 @@
         ]
       },
       "name": "Ling 3.0 Tiny",
-      "openWeights": null,
+      "openWeights": true,
       "params": {
         "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 1,
-        "sizeTierBasis": "price+naming",
-        "totalB": null
+        "confidence": "exact",
+        "totalB": 7.89
       },
       "pricing": {
         "cachedInputPerMTok": 0.003,
@@ -52101,14 +52530,18 @@
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
-        "name": "derived",
-        "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
         "releaseDate": "openrouter",
         "releaseDatePrecision": "openrouter",
         "vendorId": "derived"
@@ -52256,6 +52689,76 @@
       "retiredAt": null,
       "scores": [],
       "slug": "inclusionai-ling-3-1-flash-1019",
+      "trainingComputeFlop": null,
+      "vendorId": "inclusionai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": null,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1000000,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "inclusionai/ling-3.2-flash",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Ling 3.2 Flash",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": null,
+        "outputPerMTok": null
+      },
+      "provenance": {
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-05",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "inclusionai-ling-3-2-flash",
       "trainingComputeFlop": null,
       "vendorId": "inclusionai"
     },
@@ -52683,6 +53186,77 @@
       "slug": "kwaipilot-kat-coder-pro-v2-5",
       "trainingComputeFlop": null,
       "vendorId": "kwaipilot"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 16384,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "lightonai/lightonocr-2-1b",
+      "knowledgeCutoff": null,
+      "license": "Apache-2.0",
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "LightOnOCR 2 1B",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 1.01
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.0036,
+        "inputPerMTok": 0.0238,
+        "outputPerMTok": 0.0714
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-01-16",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "lightonai-lightonocr-2-1b",
+      "trainingComputeFlop": null,
+      "vendorId": "lightonai"
     },
     {
       "benchmarks": {
@@ -53235,9 +53809,9 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.015,
-        "inputPerMTok": 0.75,
-        "outputPerMTok": 2.95
+        "cachedInputPerMTok": 0.006,
+        "inputPerMTok": 0.3,
+        "outputPerMTok": 1.2
       },
       "provenance": {
         "benchmarks.swe_bench_pro": "models.dev",
@@ -53436,6 +54010,77 @@
       "slug": "meituan-longcat-2-5-preview",
       "trainingComputeFlop": null,
       "vendorId": "meituan"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": false,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 4096,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "meragpt/restyler-1",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 2048,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Restyler 1",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.04,
+        "outputPerMTok": 0.16
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-09-02",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "meragpt-restyler-1",
+      "trainingComputeFlop": null,
+      "vendorId": "meragpt"
     },
     {
       "benchmarks": {
@@ -53962,7 +54607,7 @@
         "totalB": 8.03
       },
       "pricing": {
-        "cachedInputPerMTok": 0.01,
+        "cachedInputPerMTok": 0.02448,
         "inputPerMTok": 0.02,
         "outputPerMTok": 0.05
       },
@@ -60459,8 +61104,8 @@
       "openWeights": true,
       "params": {
         "activeB": null,
-        "confidence": "unknown",
-        "totalB": null
+        "confidence": "exact",
+        "totalB": 206.56
       },
       "pricing": {
         "cachedInputPerMTok": 0.015,
@@ -60476,6 +61121,7 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
+        "params.totalB": "huggingface",
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
@@ -70602,8 +71248,8 @@
       "openWeights": true,
       "params": {
         "activeB": null,
-        "confidence": "unknown",
-        "totalB": null
+        "confidence": "exact",
+        "totalB": 2722.74
       },
       "pricing": {
         "cachedInputPerMTok": 0.2,
@@ -70621,6 +71267,7 @@
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
+        "params.totalB": "huggingface",
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
@@ -72904,7 +73551,7 @@
       "id": "nvidia/nemotron-3.5-super-vl",
       "knowledgeCutoff": null,
       "license": null,
-      "maxOutput": 943718,
+      "maxOutput": 235929,
       "modalities": {
         "input": [
           "image",
@@ -72927,7 +73574,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.02,
         "inputPerMTok": 0.15,
-        "outputPerMTok": 0.47
+        "outputPerMTok": 0.5
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -87792,6 +88439,79 @@
     },
     {
       "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1050000,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "openai/gpt-6-cyber",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 128000,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "GPT-6 Cyber",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 5,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 2,
+        "inputPerMTok": 20,
+        "outputPerMTok": 100
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "litellm",
+        "pricing.inputPerMTok": "litellm",
+        "pricing.outputPerMTok": "litellm",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-05",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "openai-gpt-6-cyber",
+      "trainingComputeFlop": null,
+      "vendorId": "openai"
+    },
+    {
+      "benchmarks": {
         "aime": 98.89,
         "arc_agi_2": 59.31,
         "eci": 156.41,
@@ -90073,7 +90793,7 @@
         "totalB": 114.66
       },
       "pricing": {
-        "cachedInputPerMTok": 0.075,
+        "cachedInputPerMTok": 0.0714,
         "inputPerMTok": 0.15,
         "outputPerMTok": 0.6
       },
@@ -90321,9 +91041,9 @@
         "totalB": 19.11
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0275,
-        "inputPerMTok": 0.055,
-        "outputPerMTok": 0.2
+        "cachedInputPerMTok": 0.02,
+        "inputPerMTok": 0.05,
+        "outputPerMTok": 0.19
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -92486,6 +93206,77 @@
       "slug": "openbmb-minicpm5-2b",
       "trainingComputeFlop": null,
       "vendorId": "openbmb"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": false
+      },
+      "coding": [],
+      "contextWindow": 16384,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "opendatalab/mineru2.5-2509-1.2b",
+      "knowledgeCutoff": null,
+      "license": "AGPL-3.0",
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "MinerU2.5 2509 1.2B",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 1.16
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.0036,
+        "inputPerMTok": 0.0238,
+        "outputPerMTok": 0.0714
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2025-09-17",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "opendatalab-mineru2-5-2509-1-2b",
+      "trainingComputeFlop": null,
+      "vendorId": "opendatalab"
     },
     {
       "benchmarks": {
@@ -96325,6 +97116,150 @@
       },
       "capabilities": {
         "promptCaching": false,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "swiss-ai/apertus-v1.5-70b",
+      "knowledgeCutoff": null,
+      "license": "Apache-2.0",
+      "maxOutput": 8192,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Apertus 1.5 70B",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 71.71
+      },
+      "pricing": {
+        "cachedInputPerMTok": null,
+        "inputPerMTok": 0.87,
+        "outputPerMTok": 3.1
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-07-24",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "swiss-ai-apertus-v1-5-70b",
+      "trainingComputeFlop": null,
+      "vendorId": "swiss-ai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "swiss-ai/apertus-v1.5-8b",
+      "knowledgeCutoff": null,
+      "license": "Apache-2.0",
+      "maxOutput": null,
+      "modalities": {
+        "input": [
+          "audio",
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Apertus v1.5 8B",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 8.61
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.0036,
+        "inputPerMTok": 0.0238,
+        "outputPerMTok": 0.119
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-10-15",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "swiss-ai-apertus-v1-5-8b",
+      "trainingComputeFlop": null,
+      "vendorId": "swiss-ai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": false,
         "reasoning": null,
         "structuredOutput": null,
         "toolCall": null
@@ -97775,7 +98710,7 @@
       "firstSeenAt": "2026-11-07T07:44:26.090Z",
       "id": "thinkingmachines/inkling-2-small",
       "knowledgeCutoff": null,
-      "license": "LicenseRef-Proprietary",
+      "license": "Apache-2.0",
       "maxOutput": 131072,
       "modalities": {
         "input": [
@@ -97787,13 +98722,11 @@
         ]
       },
       "name": "Inkling 2 Small",
-      "openWeights": false,
+      "openWeights": true,
       "params": {
         "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 1,
-        "sizeTierBasis": "price+naming",
-        "totalB": null
+        "confidence": "exact",
+        "totalB": 489.22
       },
       "pricing": {
         "cachedInputPerMTok": 0.03,
@@ -97806,12 +98739,12 @@
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
         "contextWindow": "models.dev",
-        "license": "models.dev",
+        "license": "huggingface",
         "maxOutput": "models.dev",
         "modalities": "models.dev",
         "name": "models.dev",
         "openWeights": "models.dev",
-        "params.sizeTier": "derived",
+        "params.totalB": "huggingface",
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
@@ -98213,14 +99146,14 @@
       "params": {
         "activeB": null,
         "confidence": "estimated",
-        "sizeTier": 3,
+        "sizeTier": 2,
         "sizeTierBasis": "price",
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.25,
-        "inputPerMTok": 2.5,
-        "outputPerMTok": 7.5
+        "cachedInputPerMTok": 0.03,
+        "inputPerMTok": 0.8,
+        "outputPerMTok": 3.2
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -98244,6 +99177,79 @@
       "retiredAt": null,
       "scores": [],
       "slug": "unbiased-pareto",
+      "trainingComputeFlop": null,
+      "vendorId": "unbiased"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": false,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 1048576,
+      "firstSeenAt": "2026-11-15T08:24:30.990Z",
+      "id": "unbiased/pareto-26.10",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Pareto 26.10",
+      "openWeights": false,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 2,
+        "sizeTierBasis": "price",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.03,
+        "inputPerMTok": 0.8,
+        "outputPerMTok": 3.2
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-10-15",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "unbiased-pareto-26-10",
       "trainingComputeFlop": null,
       "vendorId": "unbiased"
     },
@@ -108580,38 +109586,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 343 行；去重后 424 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
-      "note": "请求 240 个开源模型，成功 236，失败 4",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
+      "note": "请求 251 个开源模型，成功 247，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
-      "note": "5991 条（对话类 3928 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
+      "note": "5993 条（对话类 3928 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
-      "note": "models.json 614 条；api.json 236 provider / 9138 条；benchmarks[] 1205 条，已拦截 AA 血缘 188 条，非编程口径跳过 631 条",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
+      "note": "models.json 628 条；api.json 324 provider / 9878 条；benchmarks[] 1213 条，已拦截 AA 血缘 188 条，非编程口径跳过 635 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
-      "note": "471 条；已剔除 artificial_analysis 210 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
+      "note": "470 条；已剔除 artificial_analysis 209 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -108620,8 +109626,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-14T18:50:58.610Z",
-      "note": "510 条（language 325 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-15T08:24:30.990Z",
+      "note": "507 条（language 322 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -108685,6 +109691,16 @@
       "motif": "qilin",
       "name": "Alibaba",
       "nameZh": "阿里通义"
+    },
+    {
+      "accentColor": "#0fcb8c",
+      "continent": "west",
+      "country": "US",
+      "homepage": "https://allenai.org",
+      "id": "allenai",
+      "motif": "owl",
+      "name": "Allenai",
+      "nameZh": "Allen AI"
     },
     {
       "accentColor": "#ff9900",
@@ -108887,6 +109903,16 @@
       "nameZh": "Gryphe"
     },
     {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": null,
+      "id": "huawei",
+      "motif": "wanderer",
+      "name": "Huawei",
+      "nameZh": "Huawei"
+    },
+    {
       "accentColor": "#0f62fe",
       "continent": "west",
       "country": "US",
@@ -108975,6 +110001,16 @@
       "motif": "cat",
       "name": "Meituan",
       "nameZh": "美团龙猫"
+    },
+    {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": "https://meragpt.com",
+      "id": "meragpt",
+      "motif": "wanderer",
+      "name": "meraGPT",
+      "nameZh": "meraGPT"
     },
     {
       "accentColor": "#0866ff",
@@ -109115,6 +110151,16 @@
       "motif": "wanderer",
       "name": "Openbmb",
       "nameZh": "Openbmb"
+    },
+    {
+      "accentColor": "#7c8da6",
+      "continent": "west",
+      "country": "ZZ",
+      "homepage": null,
+      "id": "opendatalab",
+      "motif": "wanderer",
+      "name": "Opendatalab",
+      "nameZh": "Opendatalab"
     },
     {
       "accentColor": "#7c8da6",
@@ -109350,11 +110396,11 @@
       "accentColor": "#7c8da6",
       "continent": "west",
       "country": "ZZ",
-      "homepage": null,
+      "homepage": "https://unbiased.ai",
       "id": "unbiased",
       "motif": "wanderer",
-      "name": "Unbiased",
-      "nameZh": "Unbiased"
+      "name": "Pareto by Unbiased",
+      "nameZh": "Pareto by Unbiased"
     },
     {
       "accentColor": "#7c8da6",
