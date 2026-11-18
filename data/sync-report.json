@@ -80,7 +80,7 @@
         "zhipuai/glm-5.3-prime"
       ]
     },
-    "liveModels": 724,
+    "liveModels": 723,
     "modelsOnlyElo": 34,
     "modelsWithAny": 271
   },
@@ -116,12 +116,12 @@
     "fromModelsDev": 633,
     "models": 768,
     "pendingDiscoveries": 94,
-    "promotedDiscoveries": 91,
+    "promotedDiscoveries": 90,
     "quickPromotedDiscoveries": 20,
     "releaseDateOutliersDropped": 21,
     "resurrected": 0,
-    "retiredThisRun": 44,
-    "retiredTotal": 44,
+    "retiredThisRun": 45,
+    "retiredTotal": 45,
     "vendors": 86
   },
   "coverage": {
@@ -286,8 +286,8 @@
       "total": 768
     },
     "pricing.cachedInputPerMTok": {
-      "filled": 461,
-      "pct": 60,
+      "filled": 462,
+      "pct": 60.2,
       "total": 768
     },
     "pricing.inputPerMTok": {
@@ -1901,11 +1901,11 @@
   "fallbackCoverage": {
     "_note": "models.dev 缺项时的兜底源贡献（存活模型口径）。before 是只认 models.dev 时的覆盖数，after 是兜底之后。仲裁顺序：定价 models.dev → LiteLLM → OpenRouter → Vercel；上下文 / 最大输出 / 模态 models.dev → OpenRouter → Vercel → LiteLLM。LiteLLM 只在第一方 provider 有条目、或所有托管商条目一致时才采信；图像/语音按张按分钟的价一律不折算。OpenRouter 的 benchmarks.* 已整段剔除，兜底只读 pricing / context_length / architecture。",
     "after": {
-      "contextWindow": 712,
-      "maxOutput": 684,
-      "modalities": 724,
-      "pricing.inputPerMTok": 615,
-      "pricing.outputPerMTok": 605
+      "contextWindow": 711,
+      "maxOutput": 683,
+      "modalities": 723,
+      "pricing.inputPerMTok": 614,
+      "pricing.outputPerMTok": 604
     },
     "before": {
       "contextWindow": 619,
@@ -1918,36 +1918,36 @@
       "contextWindow": {
         "litellm": 2,
         "openrouter": 54,
-        "vercel-gateway": 37
+        "vercel-gateway": 36
       },
       "maxOutput": {
         "litellm": 3,
         "openrouter": 54,
-        "vercel-gateway": 37
+        "vercel-gateway": 36
       },
       "modalities": {
         "openrouter": 54,
-        "vercel-gateway": 37
+        "vercel-gateway": 36
       },
       "pricing.cachedInputPerMTok": {
-        "litellm": 54,
-        "openrouter": 33,
+        "litellm": 53,
+        "openrouter": 34,
         "vercel-gateway": 11
       },
       "pricing.inputPerMTok": {
-        "litellm": 65,
+        "litellm": 64,
         "openrouter": 36,
         "vercel-gateway": 12
       },
       "pricing.outputPerMTok": {
-        "litellm": 63,
+        "litellm": 62,
         "openrouter": 36,
         "vercel-gateway": 12
       }
     },
-    "liveModels": 724
+    "liveModels": 723
   },
-  "generatedAt": "2026-11-17T21:53:44.729Z",
+  "generatedAt": "2026-11-18T09:03:50.372Z",
   "livebench": {
     "_note": "LiveBench 官方榜（Apache-2.0，本轮调研里许可证最干净的一份）。release 清单优先从上游仓库的 LIVE_BENCH_RELEASES 常量解析，解析失败才用内置兜底清单——写死清单意味着新 release 不会被自动发现，与「发布后无人维护」的承诺相悖。releasesSkipped 里是题目集换代之前的 release，跨那个断点分数不可比（中位差 27.6 分）。",
     "matchedModels": 131,
@@ -2032,19 +2032,9 @@
   },
   "releaseDateConflicts": [
     {
-      "from": "2025-07-22",
-      "id": "alibaba/qwen3-coder",
-      "to": "2025-07-23"
-    },
-    {
-      "from": "2026-09-30",
-      "id": "google/gemini-4-argon",
-      "to": "2026-10-13"
-    },
-    {
-      "from": "2026-10-28",
-      "id": "google/gemini-4-carbon",
-      "to": "2026-11-10"
+      "from": "2026-02-12",
+      "id": "minimax/minimax-m2.5-highspeed",
+      "to": "2026-02-13"
     }
   ],
   "sources": {
@@ -2061,7 +2051,7 @@
       "ok": true
     },
     "litellm": {
-      "note": "6132 条（对话类 4017 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "note": "6221 条（对话类 4100 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
@@ -2073,7 +2063,7 @@
       "ok": true
     },
     "openrouter": {
-      "note": "474 条；已剔除 artificial_analysis 210 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "478 条；已剔除 artificial_analysis 267 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -2081,7 +2071,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "note": "520 条（language 326 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "note": "516 条（language 322 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
@@ -2189,12 +2179,12 @@
         "xai/grok-4.7"
       ]
     },
-    "liveModels": 724,
+    "liveModels": 723,
     "upstreamRows": 345,
     "withFlop": 93
   },
   "vendorRegistrySource": "src/data/vendor-registry.ts",
   "warnings": [
-    "3 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
+    "1 个已存在模型的发布日期发生变化，已记入 data/sync-report.json 待审"
   ]
 }
