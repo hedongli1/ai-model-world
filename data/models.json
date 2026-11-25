@@ -879,7 +879,7 @@
     {
       "id": "spireclimb",
       "inEci": true,
-      "models": 15,
+      "models": 16,
       "randomBaseline": 0,
       "releaseDate": "2026-10-14",
       "scoreCeiling": 100,
@@ -891,7 +891,7 @@
     {
       "id": "spireclimb_sts1_a20_heart",
       "inEci": false,
-      "models": 15,
+      "models": 16,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -903,7 +903,7 @@
     {
       "id": "spireclimb_sts2_a10",
       "inEci": false,
-      "models": 15,
+      "models": 16,
       "randomBaseline": null,
       "releaseDate": null,
       "scoreCeiling": null,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-24T23:15:20.132Z",
+  "generatedAt": "2026-11-25T10:24:52.656Z",
   "models": [
     {
       "benchmarks": {
@@ -12544,7 +12544,7 @@
         "totalB": 27.78
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0525,
+        "cachedInputPerMTok": 0.05,
         "inputPerMTok": 0.4,
         "outputPerMTok": 2.5
       },
@@ -12908,7 +12908,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.05,
-        "inputPerMTok": 0.2,
+        "inputPerMTok": 0.15,
         "outputPerMTok": 0.5
       },
       "provenance": {
@@ -34633,7 +34633,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.14,
-        "inputPerMTok": 0.27,
+        "inputPerMTok": 0.275,
         "outputPerMTok": 1.1
       },
       "provenance": {
@@ -39178,8 +39178,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.006,
-        "inputPerMTok": 0.28,
-        "outputPerMTok": 1.1
+        "inputPerMTok": 0.2907,
+        "outputPerMTok": 1.13
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -49298,6 +49298,30 @@
         },
         {
           "attribution": "third-party",
+          "league": "spireclimb",
+          "score": 51.17,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "spireclimb_sts1_a20_heart",
+          "score": 51.67,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "spireclimb_sts2_a10",
+          "score": 50.67,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
           "league": "vending_bench_2",
           "score": 16843.41,
           "source": "epoch.ai",
@@ -50865,9 +50889,9 @@
         "totalB": 25.81
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0425,
-        "inputPerMTok": 0.0765,
-        "outputPerMTok": 0.255
+        "cachedInputPerMTok": 0.05,
+        "inputPerMTok": 0.09,
+        "outputPerMTok": 0.3
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -67129,7 +67153,7 @@
         "webdev_arena_elo": null
       },
       "capabilities": {
-        "promptCaching": true,
+        "promptCaching": false,
         "reasoning": false,
         "structuredOutput": null,
         "toolCall": true
@@ -67170,7 +67194,7 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.04232,
+        "cachedInputPerMTok": null,
         "inputPerMTok": 0.4,
         "outputPerMTok": 2
       },
@@ -67186,7 +67210,6 @@
         "name": "models.dev",
         "openWeights": "models.dev",
         "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
@@ -101390,6 +101413,75 @@
       },
       "capabilities": {
         "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 524288,
+      "firstSeenAt": "2026-11-25T10:24:52.656Z",
+      "id": "upstage/solar-mini-4-5",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Solar Mini 4 5",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 1,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.001,
+        "inputPerMTok": 0.01,
+        "outputPerMTok": 0.04
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-24",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "upstage-solar-mini-4-5",
+      "trainingComputeFlop": null,
+      "vendorId": "upstage"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
         "reasoning": true,
         "structuredOutput": null,
         "toolCall": true
@@ -101446,6 +101538,75 @@
       "retiredAt": null,
       "scores": [],
       "slug": "upstage-solar-mini4",
+      "trainingComputeFlop": null,
+      "vendorId": "upstage"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": null,
+        "structuredOutput": null,
+        "toolCall": null
+      },
+      "coding": [],
+      "contextWindow": 524288,
+      "firstSeenAt": "2026-11-25T10:24:52.656Z",
+      "id": "upstage/solar-pro-4-contributor",
+      "knowledgeCutoff": null,
+      "license": null,
+      "maxOutput": 131072,
+      "modalities": {
+        "input": [
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "Solar PRO 4 Contributor",
+      "openWeights": null,
+      "params": {
+        "activeB": null,
+        "confidence": "estimated",
+        "sizeTier": 3,
+        "sizeTierBasis": "price+naming",
+        "totalB": null
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.018,
+        "inputPerMTok": 0.09,
+        "outputPerMTok": 0.36
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "contextWindow": "openrouter",
+        "maxOutput": "openrouter",
+        "modalities": "openrouter",
+        "name": "derived",
+        "params.sizeTier": "derived",
+        "pricing.cachedInputPerMTok": "openrouter",
+        "pricing.inputPerMTok": "openrouter",
+        "pricing.outputPerMTok": "openrouter",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-24",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "upstage-solar-pro-4-contributor",
       "trainingComputeFlop": null,
       "vendorId": "upstage"
     },
@@ -107128,9 +107289,9 @@
         "totalB": 306.66
       },
       "pricing": {
-        "cachedInputPerMTok": 0.0034,
-        "inputPerMTok": 0.155,
-        "outputPerMTok": 0.31
+        "cachedInputPerMTok": 0.0031,
+        "inputPerMTok": 0.14812,
+        "outputPerMTok": 0.29624
       },
       "provenance": {
         "benchmarks.swe_bench_pro": "models.dev",
@@ -107751,9 +107912,9 @@
         "totalB": null
       },
       "pricing": {
-        "cachedInputPerMTok": 0.02,
-        "inputPerMTok": 0.15,
-        "outputPerMTok": 0.42
+        "cachedInputPerMTok": 0.05,
+        "inputPerMTok": 0.5,
+        "outputPerMTok": 1
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -111824,38 +111985,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
       "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 345 行；去重后 430 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
       "note": "请求 328 个开源模型，成功 324，失败 4",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
-      "note": "7163 条（对话类 4933 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
+      "note": "7174 条（对话类 4940 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
-      "note": "models.json 640 条；api.json 326 provider / 10165 条；benchmarks[] 1215 条，已拦截 AA 血缘 190 条，非编程口径跳过 635 条",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
+      "note": "models.json 640 条；api.json 326 provider / 10194 条；benchmarks[] 1215 条，已拦截 AA 血缘 190 条，非编程口径跳过 635 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
-      "note": "470 条；已剔除 artificial_analysis 214 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
+      "note": "472 条；已剔除 artificial_analysis 214 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -111864,7 +112025,7 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-24T23:15:20.132Z",
+      "fetchedAt": "2026-11-25T10:24:52.656Z",
       "note": "517 条（language 322 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }

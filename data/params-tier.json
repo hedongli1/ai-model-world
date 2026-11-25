@@ -1,6 +1,6 @@
 {
   "_note": "闭源模型的「体型」代理指标：输出价格档位 × 厂商命名档位合成的 1–5 档规模。这份档位已经并进 data/models.json 的 params.sizeTier / params.sizeTierBasis，本文件只作为独立索引保留，方便离线核对。",
-  "generatedAt": "2026-11-24T23:15:20.132Z",
+  "generatedAt": "2026-11-25T10:24:52.656Z",
   "tiers": {
     "aion-labs/aion-2.0": {
       "basis": "price",
@@ -1234,9 +1234,17 @@
       "basis": "price",
       "tier": 2
     },
+    "upstage/solar-mini-4-5": {
+      "basis": "price+naming",
+      "tier": 1
+    },
     "upstage/solar-mini4": {
       "basis": "price",
       "tier": 1
+    },
+    "upstage/solar-pro-4-contributor": {
+      "basis": "price+naming",
+      "tier": 3
     },
     "upstage/solar-pro2": {
       "basis": "price",
