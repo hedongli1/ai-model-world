@@ -27,7 +27,7 @@
     {
       "id": "aime",
       "inEci": true,
-      "models": 221,
+      "models": 222,
       "randomBaseline": 0.1,
       "releaseDate": "2024-12-19",
       "scoreCeiling": 100,
@@ -171,7 +171,7 @@
     {
       "id": "chess_puzzles",
       "inEci": true,
-      "models": 115,
+      "models": 116,
       "randomBaseline": 4.96,
       "releaseDate": "2025-12-10",
       "scoreCeiling": 100,
@@ -495,7 +495,7 @@
     {
       "id": "gpqa_diamond",
       "inEci": true,
-      "models": 223,
+      "models": 224,
       "randomBaseline": 25,
       "releaseDate": "2023-11-20",
       "scoreCeiling": 97,
@@ -675,7 +675,7 @@
     {
       "id": "mirrorcode",
       "inEci": true,
-      "models": 49,
+      "models": 50,
       "randomBaseline": 0,
       "releaseDate": "2026-06-26",
       "scoreCeiling": 100,
@@ -855,7 +855,7 @@
     {
       "id": "simpleqa_verified",
       "inEci": true,
-      "models": 116,
+      "models": 117,
       "randomBaseline": 0,
       "releaseDate": "2025-09-09",
       "scoreCeiling": 100,
@@ -1177,7 +1177,7 @@
       "unit": "pct"
     }
   ],
-  "generatedAt": "2026-11-26T10:00:41.209Z",
+  "generatedAt": "2026-11-26T22:33:53.443Z",
   "models": [
     {
       "benchmarks": {
@@ -50521,7 +50521,7 @@
       "pricing": {
         "cachedInputPerMTok": 0.04,
         "inputPerMTok": 0.099,
-        "outputPerMTok": 0.299
+        "outputPerMTok": 0.2992
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -51018,9 +51018,9 @@
         "totalB": 25.81
       },
       "pricing": {
-        "cachedInputPerMTok": 0.05,
-        "inputPerMTok": 0.09,
-        "outputPerMTok": 0.3
+        "cachedInputPerMTok": 0.0425,
+        "inputPerMTok": 0.0765,
+        "outputPerMTok": 0.255
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -53648,6 +53648,78 @@
       "retiredAt": null,
       "scores": [],
       "slug": "inclusionai-ling-3-2-flash",
+      "trainingComputeFlop": null,
+      "vendorId": "inclusionai"
+    },
+    {
+      "benchmarks": {
+        "aime": null,
+        "arc_agi_2": null,
+        "eci": null,
+        "fiction_live": null,
+        "gpqa_diamond": null,
+        "swe_bench_pro": null,
+        "swe_bench_vendor": null,
+        "swe_bench_verified": null,
+        "webdev_arena_elo": null
+      },
+      "capabilities": {
+        "promptCaching": true,
+        "reasoning": true,
+        "structuredOutput": null,
+        "toolCall": true
+      },
+      "coding": [],
+      "contextWindow": 262144,
+      "firstSeenAt": "2026-11-26T22:33:53.443Z",
+      "id": "inclusionai/lingsante-3.1-air-vl",
+      "knowledgeCutoff": null,
+      "license": "MIT",
+      "maxOutput": 32768,
+      "modalities": {
+        "input": [
+          "image",
+          "text"
+        ],
+        "output": [
+          "text"
+        ]
+      },
+      "name": "LingSante 3.1 Air VL",
+      "openWeights": true,
+      "params": {
+        "activeB": null,
+        "confidence": "exact",
+        "totalB": 124.85
+      },
+      "pricing": {
+        "cachedInputPerMTok": 0.012,
+        "inputPerMTok": 0.06,
+        "outputPerMTok": 0.18
+      },
+      "provenance": {
+        "capabilities.promptCaching": "derived",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
+        "vendorId": "derived"
+      },
+      "releaseDate": "2026-11-19",
+      "releaseDatePrecision": "day",
+      "retiredAt": null,
+      "scores": [],
+      "slug": "inclusionai-lingsante-3-1-air-vl",
       "trainingComputeFlop": null,
       "vendorId": "inclusionai"
     },
@@ -57433,6 +57505,14 @@
           "source": "models.dev",
           "sourceUrl": "https://research.meta.ai/blog/muse-ember",
           "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "mirrorcode",
+          "score": 40,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
         }
       ],
       "contextWindow": 1048576,
@@ -57537,6 +57617,14 @@
           "score": 48.33,
           "source": "epoch.ai",
           "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "mirrorcode",
+          "score": 40,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
           "unit": "pct"
         },
         {
@@ -63853,8 +63941,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": null,
-        "inputPerMTok": 0.32805,
-        "outputPerMTok": 0.4374
+        "inputPerMTok": 0.32925,
+        "outputPerMTok": 0.439
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
@@ -67086,8 +67174,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.044,
-        "inputPerMTok": 0.4232,
-        "outputPerMTok": 2.116
+        "inputPerMTok": 0.4,
+        "outputPerMTok": 2
       },
       "provenance": {
         "benchmarks.eci": "epoch.ai",
@@ -69945,13 +70033,13 @@
         "pricing.cachedInputPerMTok": "models.dev",
         "pricing.inputPerMTok": "models.dev",
         "pricing.outputPerMTok": "models.dev",
-        "releaseDate": "models.dev",
-        "releaseDatePrecision": "models.dev",
+        "releaseDate": "openrouter",
+        "releaseDatePrecision": "openrouter",
         "scores": "derived",
         "trainingComputeFlop": "epoch.ai",
         "vendorId": "derived"
       },
-      "releaseDate": "2025-09-05",
+      "releaseDate": "2025-09-04",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [
@@ -70376,7 +70464,7 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.15,
-        "inputPerMTok": 0.57971014,
+        "inputPerMTok": 0.6,
         "outputPerMTok": 2.5
       },
       "provenance": {
@@ -93028,8 +93116,8 @@
       },
       "pricing": {
         "cachedInputPerMTok": 0.015,
-        "inputPerMTok": 0.045,
-        "outputPerMTok": 0.19
+        "inputPerMTok": 0.05,
+        "outputPerMTok": 0.194
       },
       "provenance": {
         "benchmarks.aime": "epoch.ai",
@@ -100272,7 +100360,7 @@
         "totalB": 298.79
       },
       "pricing": {
-        "cachedInputPerMTok": 0.035,
+        "cachedInputPerMTok": 0.033,
         "inputPerMTok": 0.14,
         "outputPerMTok": 0.58
       },
@@ -101208,11 +101296,11 @@
     },
     {
       "benchmarks": {
-        "aime": null,
+        "aime": 92.5,
         "arc_agi_2": null,
         "eci": null,
         "fiction_live": null,
-        "gpqa_diamond": null,
+        "gpqa_diamond": 86.81,
         "swe_bench_pro": null,
         "swe_bench_vendor": null,
         "swe_bench_verified": null,
@@ -101253,6 +101341,8 @@
         "outputPerMTok": 0.5
       },
       "provenance": {
+        "benchmarks.aime": "epoch.ai",
+        "benchmarks.gpqa_diamond": "epoch.ai",
         "capabilities.promptCaching": "derived",
         "capabilities.reasoning": "models.dev",
         "capabilities.toolCall": "models.dev",
@@ -101268,12 +101358,46 @@
         "pricing.outputPerMTok": "models.dev",
         "releaseDate": "models.dev",
         "releaseDatePrecision": "models.dev",
+        "scores": "derived",
         "vendorId": "derived"
       },
       "releaseDate": "2026-11-20",
       "releaseDatePrecision": "day",
       "retiredAt": null,
-      "scores": [],
+      "scores": [
+        {
+          "attribution": "third-party",
+          "league": "aime",
+          "score": 92.5,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "chess_puzzles",
+          "score": 39,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "gpqa_diamond",
+          "score": 86.81,
+          "source": "epoch.ai",
+          "sourceUrl": "https://epoch.ai/benchmarks",
+          "unit": "pct"
+        },
+        {
+          "attribution": "third-party",
+          "league": "simpleqa_verified",
+          "score": 9,
+          "source": "epoch.ai",
+          "sourceUrl": null,
+          "unit": "pct"
+        }
+      ],
       "slug": "thinkingmachines-inkling-2-mini",
       "trainingComputeFlop": null,
       "vendorId": "thinkingmachines"
@@ -108464,17 +108588,17 @@
       },
       "capabilities": {
         "promptCaching": true,
-        "reasoning": null,
+        "reasoning": true,
         "structuredOutput": null,
-        "toolCall": null
+        "toolCall": true
       },
       "coding": [],
       "contextWindow": 1048576,
       "firstSeenAt": "2026-11-24T23:15:20.132Z",
       "id": "xiaomi/mimo-v2.6-flash-mopd",
       "knowledgeCutoff": null,
-      "license": null,
-      "maxOutput": 32768,
+      "license": "MIT",
+      "maxOutput": 131072,
       "modalities": {
         "input": [
           "audio",
@@ -108486,14 +108610,12 @@
           "text"
         ]
       },
-      "name": "Mimo V2.6 Flash Mopd",
-      "openWeights": null,
+      "name": "MiMo-V2.6-Flash-MOPD",
+      "openWeights": true,
       "params": {
         "activeB": null,
-        "confidence": "estimated",
-        "sizeTier": 1,
-        "sizeTierBasis": "price+naming",
-        "totalB": null
+        "confidence": "exact",
+        "totalB": 302.8
       },
       "pricing": {
         "cachedInputPerMTok": 0.05,
@@ -108502,19 +108624,23 @@
       },
       "provenance": {
         "capabilities.promptCaching": "derived",
-        "contextWindow": "openrouter",
-        "maxOutput": "openrouter",
-        "modalities": "openrouter",
-        "name": "derived",
-        "params.sizeTier": "derived",
-        "pricing.cachedInputPerMTok": "openrouter",
-        "pricing.inputPerMTok": "openrouter",
-        "pricing.outputPerMTok": "openrouter",
-        "releaseDate": "openrouter",
-        "releaseDatePrecision": "openrouter",
+        "capabilities.reasoning": "models.dev",
+        "capabilities.toolCall": "models.dev",
+        "contextWindow": "models.dev",
+        "license": "huggingface",
+        "maxOutput": "models.dev",
+        "modalities": "models.dev",
+        "name": "models.dev",
+        "openWeights": "models.dev",
+        "params.totalB": "huggingface",
+        "pricing.cachedInputPerMTok": "models.dev",
+        "pricing.inputPerMTok": "models.dev",
+        "pricing.outputPerMTok": "models.dev",
+        "releaseDate": "models.dev",
+        "releaseDatePrecision": "models.dev",
         "vendorId": "derived"
       },
-      "releaseDate": "2026-11-23",
+      "releaseDate": "2026-09-27",
       "releaseDatePrecision": "day",
       "retiredAt": null,
       "scores": [],
@@ -112646,38 +112772,38 @@
   ],
   "sources": {
     "derived": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
       "note": "管线内推导的字段（规模档位、缓存能力、退役判定）",
       "ok": true
     },
     "epoch.ai": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
-      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 345 行；去重后 430 个模型实体；合规拦截 1 个文件",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
+      "note": "ZIP 92 个条目；取到 7/7 个指标；编程赛制 9 个；全榜单 80 个；训练算力 345 行；去重后 431 个模型实体；合规拦截 1 个文件",
       "ok": true
     },
     "huggingface": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
-      "note": "请求 332 个开源模型，成功 331，失败 1",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
+      "note": "请求 334 个开源模型，成功 333，失败 1",
       "ok": true
     },
     "litellm": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
       "note": "7190 条（对话类 4945 条）；用作新模型的第三方佐证，以及 models.dev 缺项时的定价/上下文兜底",
       "ok": true
     },
     "livebench": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
       "note": "Apache-2.0 / DATASHEET 明文「no copyrights on the data」。采用 6 个同期 release（2026-06-25, 2026-01-08, 2025-12-23, 2025-11-25, 2025-05-30, 2025-04-25）；跳过题目集换代前的 5 个（2024-06-24, 2024-07-26, 2024-08-31, 2024-11-25, 2025-04-02）——实测跨这个断点同一模型的 Coding 分中位差 27.6 分，不可同池。",
       "ok": true
     },
     "models.dev": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
-      "note": "models.json 647 条；api.json 326 provider / 10049 条；benchmarks[] 1215 条，已拦截 AA 血缘 190 条，非编程口径跳过 635 条",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
+      "note": "models.json 649 条；api.json 326 provider / 10065 条；benchmarks[] 1215 条，已拦截 AA 血缘 190 条，非编程口径跳过 635 条",
       "ok": true
     },
     "openrouter": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
-      "note": "474 条；已剔除 artificial_analysis 217 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
+      "note": "477 条；已剔除 artificial_analysis 219 处（AA ToS 合规）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     },
     "override": {
@@ -112686,8 +112812,8 @@
       "ok": true
     },
     "vercel-gateway": {
-      "fetchedAt": "2026-11-26T10:00:41.209Z",
-      "note": "518 条（language 322 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
+      "fetchedAt": "2026-11-26T22:33:53.443Z",
+      "note": "519 条（language 322 条）；用于新模型发现、发布日期投票，以及 models.dev 缺项时的定价/上下文/模态兜底",
       "ok": true
     }
   },
